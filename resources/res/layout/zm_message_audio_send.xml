@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/panelMsgLayout" android:paddingLeft="8dp" android:paddingTop="3dp" android:paddingRight="8dp" android:paddingBottom="3dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:id="@+id/txtScreenName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="56dp" android:text="@string/zm_lbl_content_you" style="@style/ZMTextView.ExSmall.Dimmed"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.zipow.videobox.view.AvatarView android:layout_gravity="top" android:id="@+id/avatarView" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="8dp" app:zm_avatarBorderSize="0dp"/>
+        <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/panelMessage" android:background="@drawable/zm_chatto_bg_voice" android:focusable="true" android:clickable="true" android:duplicateParentState="false" android:layout_width="100dp" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/imgVoice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_chatfrom_voice"/>
+            <TextView android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/txtVoicelength" android:paddingRight="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="30&quot;" android:layout_weight="1" style="@style/ZMTextView.Normal.OnLight"/>
+        </LinearLayout>
+        <ProgressBar android:layout_gravity="center_vertical" android:id="@+id/progressBar1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" style="@style/ZMProgressBar.Small"/>
+        <ImageView android:id="@+id/zm_mm_starred" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:src="@drawable/zm_mm_starred_message_icon"/>
+        <ImageView android:id="@+id/imgStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:src="@drawable/zm_mm_msg_state_fail" android:contentDescription="@string/zm_description_mm_msg_failed"/>
+    </LinearLayout>
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="48dp" layout="@layout/zm_message_reaction_labels_view_layout"/>
+</LinearLayout>

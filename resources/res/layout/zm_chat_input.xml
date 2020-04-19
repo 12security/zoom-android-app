@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/panelActions" android:background="#f0f0f0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@+id/panelSend" android:background="@color/zm_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@+id/btnMoreOpts" android:background="@null" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="10dp" android:paddingBottom="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:src="@drawable/zm_mm_more_btn" android:contentDescription="@string/zm_description_mm_btn_more"/>
+        <RelativeLayout android:gravity="top" android:orientation="horizontal" android:id="@+id/panelSendText" android:paddingTop="7dp" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:weightSum="1" android:layout_weight="1">
+            <com.zipow.videobox.view.CommandEditText android:textSize="16sp" android:textColorHint="@color/zm_im_search_text_hint" android:id="@+id/edtMessage" android:paddingBottom="9dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="0dp" android:text="" android:hint="@string/zm_lbl_type_message_120867" android:maxLines="3" android:maxLength="4096" android:layout_toLeftOf="@+id/panelSendbtns" android:inputType="none|text|textCapSentences|textMultiLine" app:zm_edtDisableColor="#00000000" app:zm_edtFocusColor="#00000000" app:zm_edtNormalColor="#00000000" style="@style/ZMEditText.Small"/>
+            <ImageView android:id="@+id/imgE2EFlag" android:visibility="gone" android:layout_width="15dp" android:layout_height="15dp" android:layout_marginBottom="4dp" android:src="@drawable/zm_e2e_flag" android:layout_alignRight="@+id/edtMessage" android:layout_alignBottom="@+id/edtMessage"/>
+            <LinearLayout android:gravity="bottom" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/panelSendbtns" android:paddingBottom="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBottom="@+id/edtMessage" android:layout_alignParentRight="true">
+                <ImageButton android:id="@+id/btnEmoji" android:background="@null" android:paddingLeft="10dp" android:paddingTop="2dp" android:paddingRight="5dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4dp" android:src="@drawable/zm_mm_emoji_btn" android:contentDescription="@string/zm_description_mm_btn_mode_emoji_23159"/>
+                <ImageButton android:id="@+id/btnSend" android:background="@null" android:visibility="gone" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="4dp" android:layout_marginBottom="-2dp" android:src="@drawable/zm_mm_btn_send" android:contentDescription="@string/zm_btn_send"/>
+                <ImageButton android:id="@+id/btnSetModeVoice" android:background="@null" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="4dp" android:layout_marginBottom="-2dp" android:src="@drawable/zm_mm_setmode_voice_btn" android:contentDescription="@string/zm_description_mm_btn_mode_voice"/>
+            </LinearLayout>
+            <View android:id="@+id/lineBelowSend" android:background="@color/zm_ui_kit_color_blue_2D8CFF" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="1dp" android:layout_below="@+id/edtMessage" android:layout_marginEnd="84dp"/>
+        </RelativeLayout>
+        <Button android:layout_gravity="center_vertical" android:id="@+id/btnHoldToTalk" android:visibility="visible" android:layout_width="0dp" android:layout_height="35dp" android:layout_marginTop="5dp" android:layout_marginRight="3dp" android:layout_marginBottom="5dp" android:text="@string/zm_mm_btn_hold_to_talk" android:layout_weight="1" style="@style/ZMButton.VoiceRecord"/>
+        <ImageButton android:id="@+id/btnSetModeKeyboard" android:background="@null" android:paddingLeft="5dp" android:paddingTop="10dp" android:paddingRight="10dp" android:paddingBottom="10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_mm_setmode_keyboard_btn" android:contentDescription="@string/zm_description_mm_btn_mode_keyboard"/>
+    </LinearLayout>
+    <com.zipow.videobox.view.p014mm.sticker.StickerInputView android:id="@+id/panelEmojis" android:background="@color/zm_white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TableLayout android:id="@+id/panelMoreOpts" android:background="@color/zm_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:background="@color/zm_white" android:layout_width="0dp" android:layout_height="70dp" android:layout_marginRight="0.2dp" android:layout_marginBottom="0.2dp" android:layout_weight="1">
+                <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageButton android:id="@+id/imgOptVideoCall" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_mm_opt_panel_videocall_icon" android:importantForAccessibility="no"/>
+                    <TextView android:gravity="center" android:id="@+id/txtOptVideoCall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/zm_mm_opt_video_call" android:importantForAccessibility="no" style="@style/UIKitTextView.SecondaryText.Small.Dimmed"/>
+                </LinearLayout>
+                <ImageView android:id="@+id/btnVideoCall" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/zm_mm_opt_btn_overlay" android:contentDescription="@string/zm_mm_opt_video_call"/>
+            </FrameLayout>
+            <FrameLayout android:background="@color/zm_white" android:layout_width="0dp" android:layout_height="70dp" android:layout_marginLeft="0.2dp" android:layout_marginRight="0.2dp" android:layout_marginBottom="0.2dp" android:layout_weight="1">
+                <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageButton android:id="@+id/imgOptVoiceCall" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_mm_opt_panel_voicecall_icon" android:importantForAccessibility="no"/>
+                    <TextView android:gravity="center" android:id="@+id/txtOptVoiceCall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/zm_mm_opt_voice_call" android:importantForAccessibility="no" style="@style/UIKitTextView.SecondaryText.Small.Dimmed"/>
+                </LinearLayout>
+                <ImageView android:id="@+id/btnVoiceCall" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/zm_mm_opt_btn_overlay" android:contentDescription="@string/zm_mm_opt_voice_call"/>
+            </FrameLayout>
+            <FrameLayout android:id="@+id/panelCamera" android:background="@color/zm_white" android:layout_width="0dp" android:layout_height="70dp" android:layout_marginLeft="0.2dp" android:layout_marginBottom="0.2dp" android:layout_weight="1">
+                <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageButton android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_mm_opt_panel_camera_icon" android:importantForAccessibility="no"/>
+                    <TextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/zm_mm_opt_camera" android:importantForAccessibility="no" style="@style/UIKitTextView.SecondaryText.Small.Dimmed"/>
+                </LinearLayout>
+                <ImageView android:id="@+id/btnCamera" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/zm_mm_opt_btn_overlay" android:contentDescription="@string/zm_mm_opt_camera"/>
+            </FrameLayout>
+        </TableRow>
+        <TableRow android:id="@+id/panelMoreOptsRow2" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:background="@color/zm_white" android:layout_width="0dp" android:layout_height="70dp" android:layout_marginTop="0.2dp" android:layout_marginRight="0.2dp" android:layout_marginBottom="0.5dp" android:layout_weight="1">
+                <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageButton android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_mm_opt_panel_pic_icon" android:importantForAccessibility="no"/>
+                    <TextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/zm_mm_opt_photo" android:importantForAccessibility="no" style="@style/UIKitTextView.SecondaryText.Small.Dimmed"/>
+                </LinearLayout>
+                <ImageView android:id="@+id/btnSendPicture" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/zm_mm_opt_btn_overlay" android:contentDescription="@string/zm_mm_opt_photo"/>
+            </FrameLayout>
+            <FrameLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/zm_white" android:layout_width="0dp" android:layout_height="70dp" android:layout_marginLeft="0.2dp" android:layout_marginTop="0.2dp" android:layout_marginRight="0.2dp" android:layout_marginBottom="0.5dp" android:layout_weight="1">
+                <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageButton android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_mm_opt_panel_file_icon" android:importantForAccessibility="no"/>
+                    <TextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/zm_mm_opt_file" android:importantForAccessibility="no" style="@style/UIKitTextView.SecondaryText.Small.Dimmed"/>
+                </LinearLayout>
+                <ImageView android:id="@+id/btnSendFile" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/zm_mm_opt_btn_overlay" android:contentDescription="@string/zm_mm_opt_file"/>
+            </FrameLayout>
+            <FrameLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/zm_white" android:layout_width="0dp" android:layout_height="70dp" android:layout_marginLeft="0.2dp" android:layout_marginTop="0.2dp" android:layout_marginBottom="0.5dp" android:layout_weight="1"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

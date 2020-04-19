@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="18dp" android:paddingBottom="18dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:id="@+id/txtLabel" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="18dp" android:maxLines="3" android:layout_weight="1" style="@style/UIKitTextView.BuddyName.Bold.Blue.Selector"/>
+    <ImageView android:id="@+id/ivSelect" android:visibility="visible" android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/zm_ic_selected" android:contentDescription="@string/zm_accessibility_icon_item_selected_19247"/>
+</LinearLayout>

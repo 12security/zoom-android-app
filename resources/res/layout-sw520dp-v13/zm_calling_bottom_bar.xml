@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:paddingLeft="20dp" android:paddingTop="5dp" android:paddingRight="20dp" android:paddingBottom="30dp" android:layout_width="400dp" android:layout_height="wrap_content" android:weightSum="1">
+        <Button android:textSize="20sp" android:textColor="#ffffff" android:id="@+id/btnDecline" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_btn_decline" android:layout_weight="0.45" style="@style/ZMButton.Red"/>
+        <View android:layout_width="0dp" android:layout_height="30dp" android:layout_weight="0.1"/>
+        <Button android:textSize="20sp" android:textColor="#ffffff" android:id="@+id/btnAccept" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_btn_accept" android:layout_weight="0.45" style="@style/ZMButton.Green"/>
+    </LinearLayout>
+</LinearLayout>

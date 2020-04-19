@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/zm_window_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="@dimen/zm_pt_titlebar_height">
+        <RelativeLayout android:id="@+id/panelSearchBar" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="@dimen/zm_pt_titlebar_height" style="@style/ZMTitleBar.Dark">
+            <RelativeLayout android:background="@drawable/zm_search_corner_bg" android:paddingLeft="5dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginRight="10dp" android:layout_toLeftOf="@+id/btnCancel" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true">
+                <ImageView android:id="@+id/imgSearch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:src="@drawable/zm_ic_search" android:layout_centerVertical="true"/>
+                <EditText android:id="@+id/edtSearch" android:paddingRight="30dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/zm_hint_search" android:layout_toRightOf="@+id/imgSearch" android:layout_centerVertical="true" android:imeOptions="actionSearch" style="@style/ZMEditText.GlobalSearch"/>
+                <ImageButton android:id="@+id/btnClearSearchView" android:background="@null" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_btn_clear_search_view" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/zm_description_mm_btn_clear_search_75317"/>
+            </RelativeLayout>
+            <Button android:id="@+id/btnCancel" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/zm_btn_cancel" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/ZMButton.TitleBar.OnDark"/>
+        </RelativeLayout>
+        <p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout android:id="@+id/panelTitleBar" android:layout_width="match_parent" android:layout_height="@dimen/zm_pt_titlebar_height" app:zm_leftButton="@+id/btnBack" app:zm_rightButton="@+id/invite_img" app:zm_title="@+id/txtTitle" style="@style/ZMTitleBar">
+            <Button android:id="@+id/btnBack" android:layout_width="wrap_content" android:layout_height="match_parent" style="@style/ZMBackButton"/>
+            <ImageView android:id="@+id/invite_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:src="@drawable/zm_session_members_invite"/>
+            <p021us.zoom.androidlib.widget.ZMDynTextSizeTextView android:ellipsize="end" android:gravity="center" android:id="@+id/txtTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" style="@style/ZMTextView.Title"/>
+        </p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+    </FrameLayout>
+    <EditText android:id="@+id/edtSearchDummy" android:background="@drawable/zm_search_bg_normal" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/zm_hint_search" android:cursorVisible="false" android:imeOptions="actionDone" style="@style/ZMEditText.ContextSearch"/>
+    <com.zipow.videobox.view.p014mm.MMConnectAlertView android:orientation="vertical" android:id="@+id/panelConnectionAlert" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/members_recycler_view" android:background="@drawable/zm_listview_bg" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

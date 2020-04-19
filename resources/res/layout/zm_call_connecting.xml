@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/viewFrame" android:background="@drawable/zm_audiocall_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/panelTopBar" android:background="@drawable/zm_calling_top_bg" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/zm_call_connecting_titlebar"/>
+    </LinearLayout>
+    <com.zipow.videobox.view.AvatarView android:id="@+id/avatarView" android:layout_width="180dp" android:layout_height="180dp" android:layout_centerInParent="true" app:zm_cornerRadiusRatio="0.32"/>
+    <include android:id="@+id/panelBottomBar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/zm_call_connecting_bottom_bar"/>
+</RelativeLayout>

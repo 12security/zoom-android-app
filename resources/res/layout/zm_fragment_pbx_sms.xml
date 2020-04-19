@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/layout_top_bar" android:layout_width="match_parent" android:layout_height="56dp">
+        <ImageView android:id="@+id/iv_keypad" android:layout_width="48dp" android:layout_height="match_parent" android:src="@drawable/zm_sip_ic_keyboard" android:scaleType="centerInside" android:contentDescription="@string/zm_sip_keypad_desc_117773" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <ImageView android:id="@+id/iv_new_chat" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/zm_sip_ic_new_chat" android:contentDescription="@string/zm_sip_new_sms_desc_117773" android:layout_marginStart="16dp" android:layout_marginEnd="14dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <RelativeLayout android:id="@+id/layout_search" android:background="@drawable/zm_sip_gray_search_corner_bg" android:visibility="gone" android:layout_width="0dp" android:layout_height="0dp" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:layout_marginStart="4dp" android:layout_marginEnd="16dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="@+id/iv_new_chat" app:layout_constraintStart_toEndOf="@+id/iv_keypad" app:layout_constraintTop_toTopOf="0">
+            <ImageView android:id="@+id/imgSearch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_sip_ic_search_message" android:layout_centerVertical="true" android:importantForAccessibility="no" android:layout_marginStart="9dp" android:layout_marginEnd="7dp"/>
+            <TextView android:textSize="@dimen/zm_ui_kit_text_size_16sp" android:textColor="#909096" android:id="@+id/tv_search" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/zm_sip_hint_search_message_117773" android:layout_centerVertical="true" android:paddingEnd="30dp" android:layout_toEndOf="@+id/imgSearch" style="@style/ZMEditText.GlobalSearch"/>
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View android:background="@color/zm_line_divider" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/layout_empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-58dp">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_pbx_pic_sms" android:importantForAccessibility="no"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_sip_sms_no_conversation_117773" style="@style/UIKitTextView.CellTitle"/>
+        </LinearLayout>
+        <com.zipow.videobox.view.sip.sms.PhonePBXMessageSessionRecyclerView android:id="@+id/rv_session_list" android:background="@color/zm_white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+</LinearLayout>

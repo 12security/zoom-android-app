@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="10dp" android:paddingTop="5dp" android:paddingRight="10dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="46dp">
+    <ImageView android:id="@+id/imgIcon" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/zm_ic_joinmeeting"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="50dp" android:layout_weight="1">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="10dp" android:layout_weight="1">
+            <TextView android:textStyle="bold" android:gravity="center_vertical" android:id="@+id/txtLabel" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/zm_lbl_join_a_meeting_21854" android:layout_weight="1" style="@style/ZMTextView.ChatsListActionItem.Label"/>
+            <TextView android:textStyle="bold" android:gravity="center_vertical" android:id="@+id/txtLabel2" android:visibility="gone" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/zm_btn_start" android:layout_weight="1" style="@style/ZMTextView.ChatsListActionItem.Label"/>
+            <TextView android:textStyle="bold" android:gravity="center_vertical" android:id="@+id/txtLabel3" android:visibility="gone" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/zm_btn_schedule" android:layout_weight="1" style="@style/ZMTextView.ChatsListActionItem.Label"/>
+        </LinearLayout>
+        <TextView android:id="@+id/txtDesc" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="10dp" android:text="@string/zm_lbl_join_a_meeting_desc" android:singleLine="true" android:layout_weight="1" style="@style/ZMTextView.Normal.Dimmed"/>
+    </LinearLayout>
+</LinearLayout>

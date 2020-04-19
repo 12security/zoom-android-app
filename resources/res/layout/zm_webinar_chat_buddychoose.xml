@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout android:id="@+id/panelTitleBar" android:layout_width="match_parent" android:layout_height="wrap_content" app:zm_leftButton="@+id/btnBack" app:zm_rightButton="@+id/viewRight" app:zm_title="@+id/txtTitle" style="@style/ZMTitleBar">
+        <Button android:id="@+id/btnBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_btn_cancel" android:layout_centerVertical="true" android:contentDescription="@string/zm_btn_cancel" style="@style/ZMButton.TitleBar"/>
+        <View android:id="@+id/viewRight" android:visibility="invisible" android:layout_width="50dp" android:layout_height="0dp"/>
+        <p021us.zoom.androidlib.widget.ZMDynTextSizeTextView android:ellipsize="end" android:gravity="center" android:id="@+id/txtTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/zm_mm_title_send_to" android:singleLine="true" style="@style/ZMTextView.Title"/>
+    </p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+    <com.zipow.videobox.view.ConfChatBuddyListView android:id="@+id/webinarChatBuddyListView" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

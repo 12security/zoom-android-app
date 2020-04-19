@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:shape="rectangle">
+    <corners android:radius="5dp"/>
+    <solid android:width="2px" android:color="@color/zm_mm_giphy_message_bg_on"/>
+    <stroke android:width="2px" android:color="@android:color/holo_blue_bright"/>
+    <size android:height="20dp" android:width="100dp"/>
+</shape>

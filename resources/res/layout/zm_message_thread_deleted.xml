@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/panelMsgLayout" android:paddingLeft="8dp" android:paddingTop="3dp" android:paddingRight="8dp" android:paddingBottom="3dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="56dp" layout="@layout/zm_mm_starred_message_title_view"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.zipow.videobox.view.AvatarView android:id="@+id/avatarView" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="8dp" app:zm_avatarBorderSize="0dp"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/panel_textMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0dp">
+            <com.zipow.videobox.view.EmojiTextView android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/txtMessage" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/zm_mm_bubble_width" style="@style/ZMTextView.MMMessage"/>
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/zm_mm_starred" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_mm_starred_message_icon" android:layout_marginStart="6dp"/>
+    </LinearLayout>
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="48dp" layout="@layout/zm_message_reaction_labels_view_layout"/>
+    <TextView android:id="@+id/txtStarDes" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginStart="48dp" style="@style/UIKitTextView.SecondaryText.Small.Dimmed"/>
+</LinearLayout>

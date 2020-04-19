@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/bg1" android:background="@drawable/zm_sip_income_avatar_ondark_bg1" android:layout_width="@dimen/zm_sip_income_avatar_bg1_size" android:layout_height="@dimen/zm_sip_income_avatar_bg1_size" android:layout_centerInParent="true" android:importantForAccessibility="no"/>
+    <View android:id="@+id/bg2" android:background="@drawable/zm_sip_income_avatar_ondark_bg2" android:layout_width="@dimen/zm_sip_income_avatar_bg2_size" android:layout_height="@dimen/zm_sip_income_avatar_bg2_size" android:layout_centerInParent="true" android:importantForAccessibility="no"/>
+    <ImageView android:id="@+id/content" android:layout_width="@dimen/zm_sip_income_avatar_content_size" android:layout_height="@dimen/zm_sip_income_avatar_content_size" android:layout_centerInParent="true" android:importantForAccessibility="no"/>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout android:gravity="center_vertical" android:id="@+id/panelTitleBar" android:layout_width="match_parent" android:layout_height="@dimen/zm_pt_titlebar_height" app:zm_leftButton="@+id/btnBack" app:zm_rightButton="@+id/btnRight" app:zm_title="@+id/txtTitle" style="@style/ZMTitleBar">
+        <Button android:id="@+id/btnBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:contentDescription="@string/zm_btn_back" style="@style/ZMBackButton"/>
+        <Button android:id="@+id/btnRight" android:layout_width="0dp" android:layout_height="0dp"/>
+        <p021us.zoom.androidlib.widget.ZMDynTextSizeTextView android:gravity="center_horizontal" android:id="@+id/txtTitle" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_title_select_time_zone" style="@style/ZMTextView.Title"/>
+    </p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+    <p021us.zoom.androidlib.widget.TimeZoneListView android:id="@+id/timeZoneListView" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

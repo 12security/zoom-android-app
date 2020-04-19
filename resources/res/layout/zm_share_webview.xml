@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/webheader" android:background="#ff000000" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/back" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:src="@drawable/zm_btn_browser_back"/>
+            <ImageView android:layout_gravity="center" android:id="@+id/forward" android:paddingLeft="0dp" android:paddingTop="5dp" android:paddingRight="5dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_btn_browser_forward"/>
+            <ImageView android:layout_gravity="center" android:id="@+id/bookmark" android:paddingLeft="0dp" android:paddingTop="5dp" android:paddingRight="10dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_ic_nav_bookmark"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:layout_marginRight="5dp" android:layout_marginBottom="5dp">
+                <EditText android:layout_gravity="center" android:id="@+id/editurl" android:paddingRight="30dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/zm_hint_input_url" android:singleLine="true" android:selectAllOnFocus="true" android:inputType="textUri" android:imeOptions="actionGo"/>
+                <ImageView android:id="@+id/urlRefresh" android:layout_width="25dp" android:layout_height="wrap_content" android:src="@drawable/zm_ic_reload" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                <ImageView android:id="@+id/urlDelete" android:visibility="gone" android:layout_width="25dp" android:layout_height="wrap_content" android:src="@drawable/zm_ic_close_normal" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                <ImageView android:id="@+id/urlLoadingStop" android:visibility="gone" android:layout_width="25dp" android:layout_height="wrap_content" android:src="@drawable/zm_ic_stop" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <ProgressBar android:id="@+id/webLoadingProgress" android:layout_width="match_parent" android:layout_height="3dp" android:max="100" android:progress="50" style="?android:attr/progressBarStyleHorizontal"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/webviewContainer" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <WebView android:id="@+id/webview" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <View android:id="@+id/shareWebToolbar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp"/>
+</LinearLayout>

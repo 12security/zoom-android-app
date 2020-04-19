@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/shareItemContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/zm_annotation_popup_min_width">
+        <RelativeLayout android:id="@+id/item_smart_recognition" android:background="@drawable/zm_settings_item_selector" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/ZMTextView.AnnoMoreItem">
+            <TextView android:gravity="left|center_vertical|center_horizontal|center" android:focusable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginRight="60dp" android:text="@string/zm_anno_smart_recognition_46296" style="@style/ZMTextView.AnnoMoreItemText"/>
+            <p021us.zoom.androidlib.widget.ZMCheckedTextView android:gravity="center_vertical" android:id="@+id/id_more_tip_shapeRecognition" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkMark="@drawable/zm_btn_toggle_default" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View android:background="@color/zm_addon_action_bar_bg" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="16dp" android:layout_marginRight="16dp"/>
+        <RelativeLayout android:id="@+id/item_save_white_board" android:background="@drawable/zm_settings_item_selector" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/ZMTextView.AnnoMoreItem">
+            <ImageView android:id="@+id/id_more_tip_save" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/zm_anno_more_tip_save" android:layout_centerVertical="true" android:contentDescription="@string/zm_anno_save_to_photos_46296"/>
+            <TextView android:gravity="left|center_vertical|center_horizontal|center" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:text="@string/zm_anno_save_to_photos_46296" android:layout_toRightOf="@+id/id_more_tip_save" style="@style/ZMTextView.AnnoMoreItemText"/>
+        </RelativeLayout>
+        <View android:id="@+id/id_newWhiteboard_separator" android:background="@color/zm_addon_action_bar_bg" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="16dp" android:layout_marginRight="16dp"/>
+        <RelativeLayout android:id="@+id/item_new_white_board" android:background="@drawable/zm_settings_item_selector" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/ZMTextView.AnnoMoreItem">
+            <ImageView android:id="@+id/id_more_tip_create" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/zm_anno_more_tip_new_page" android:layout_centerVertical="true" android:contentDescription="@string/zm_anno_new_whiteboard_46296"/>
+            <TextView android:gravity="center_vertical" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:text="@string/zm_anno_new_whiteboard_46296" android:layout_toRightOf="@+id/id_more_tip_create" style="@style/ZMTextView.AnnoMoreItemText"/>
+        </RelativeLayout>
+        <View android:id="@+id/id_more_tip_view_all_wb_separator" android:background="@color/zm_addon_action_bar_bg" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="16dp" android:layout_marginRight="16dp"/>
+        <RelativeLayout android:id="@+id/item_view_all_white_board" android:background="@drawable/zm_settings_item_selector" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/ZMTextView.AnnoMoreItem">
+            <FrameLayout android:id="@+id/id_more_tip_page_num_layout" android:background="@drawable/zm_anno_more_tip_page_num" android:layout_width="20dp" android:layout_height="20dp" android:layout_centerVertical="true">
+                <TextView android:textSize="8sp" android:textStyle="bold" android:gravity="center" android:layout_gravity="bottom" android:id="@+id/id_more_tip_page_num" android:layout_width="11dp" android:layout_height="11dp" android:layout_marginLeft="3dp" android:layout_marginBottom="3dp" android:text="1"/>
+            </FrameLayout>
+            <TextView android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/id_pageManagement" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:text="@string/zm_anno_view_all_whiteboards_46296" android:layout_toRightOf="@+id/id_more_tip_page_num_layout" style="@style/ZMTextView.AnnoMoreItemText"/>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

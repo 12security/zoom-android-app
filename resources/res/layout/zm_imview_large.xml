@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <include android:id="@+id/panelLeft" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" layout="@layout/zm_imview_left"/>
+    <View android:id="@+id/divider" android:background="#000103" android:layout_width="1dp" android:layout_height="match_parent"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/panelRight" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/zm_pt_titlebar_height" android:weightSum="1" style="@style/ZMTitleBar">
+            <com.zipow.videobox.view.AvatarView android:id="@+id/avatarViewRight" android:paddingLeft="6dp" android:paddingTop="4dp" android:paddingRight="6dp" android:paddingBottom="2dp" android:visibility="gone" android:layout_width="46dp" android:layout_height="40dp" android:layout_margin="0dp" android:layout_centerVertical="true"/>
+            <Button android:id="@+id/btnReturnToConf2" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_btn_return_to_conf" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/ZMButton.TitleBar"/>
+        </RelativeLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:gravity="center" android:orientation="vertical" android:id="@+id/panelMeeting" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/panelChatParent" android:background="@drawable/zm_window_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+                <FrameLayout android:id="@+id/panelChat" android:background="@drawable/zm_im_right_chat_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginRight="100dp"/>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</merge>

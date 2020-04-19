@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.zipow.videobox.view.mm.MMImageViewPager android:id="@+id/viewImage" android:background="#000000" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout android:id="@+id/panelTitleBar" android:background="#33000000" android:paddingLeft="5dp" android:paddingTop="2dp" android:paddingRight="5dp" android:paddingBottom="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:zm_leftButton="@+id/btnBack" app:zm_rightButton="@+id/btnSaveImage" app:zm_title="@+id/txtTitle">
+        <Button android:id="@+id/btnBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_btn_back" android:layout_centerVertical="true" style="@style/ZMBackButton.OnDark"/>
+        <Button android:id="@+id/btnSaveImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_mm_btn_save_image" android:layout_centerVertical="true" style="@style/ZMButton.TitleBar.OnDark"/>
+        <p021us.zoom.androidlib.widget.ZMDynTextSizeTextView android:ellipsize="end" android:gravity="center" android:id="@+id/txtTitle" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/zm_mm_title_image_viewer" android:singleLine="true" android:layout_centerVertical="true" style="@style/ZMTextView.Title.OnDark"/>
+    </p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+</FrameLayout>

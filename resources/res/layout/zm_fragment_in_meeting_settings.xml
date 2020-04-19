@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout android:id="@+id/panelTitleBar" android:layout_width="match_parent" android:layout_height="@dimen/zm_pt_titlebar_height" app:zm_leftButton="@+id/btnBack" app:zm_rightButton="@+id/viewRight" app:zm_title="@+id/txtTitle" style="@style/ZMTitleBar">
+        <Button android:id="@+id/btnBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_btn_close" style="@style/ZMButton.TitleBar"/>
+        <View android:id="@+id/viewRight" android:layout_width="0dp" android:layout_height="0dp"/>
+        <TextView android:gravity="center_horizontal" android:id="@+id/txtTitle" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_title_setting_meeting" style="@style/ZMTextView.Title"/>
+    </p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <p021us.zoom.androidlib.widget.ZMSettingsLayout android:orientation="vertical" android:paddingLeft="0dp" android:paddingRight="0dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:zm_settingsCategorySpacing="0dp">
+            <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/zm_in_meeting_settings_security"/>
+            <p021us.zoom.androidlib.widget.ZMSettingsCategory android:orientation="vertical" android:id="@+id/optionWatermark" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:layout_marginBottom="0dp" app:zm_dividerHeight="1px" app:zm_showTopDivider="false">
+                <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:paddingRight="@dimen/zm_setting_item_padding_right" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:gravity="left|center_vertical|center_horizontal|center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/zm_lbl_in_meeting_settings_add_watermark_147675" android:layout_weight="1" style="@style/ZMTextView.SettingsItem"/>
+                    <p021us.zoom.androidlib.widget.ZMCheckedTextView android:id="@+id/chkWatermark" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkMark="@drawable/zm_btn_toggle_default"/>
+                </LinearLayout>
+            </p021us.zoom.androidlib.widget.ZMSettingsCategory>
+            <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/zm_in_meeting_settings_content_share"/>
+            <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/zm_in_meeting_settings_host_controls"/>
+            <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/zm_in_meeting_settings_general"/>
+        </p021us.zoom.androidlib.widget.ZMSettingsLayout>
+    </ScrollView>
+</LinearLayout>

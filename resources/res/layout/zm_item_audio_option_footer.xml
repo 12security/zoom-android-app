@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textColor="@color/zm_text_blue" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/txtEditCountry" android:background="@color/zm_settings_category_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/zm_btn_edit_country_127873" style="@style/ZMTextView.SettingsItem"/>
+    <TextView android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/txtEditCountryDesc" android:paddingTop="8dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/zm_lbl_desc_dial_in_countries_127873" style="@style/ZMTextView.SettingsItemDesc.Small"/>
+    <View android:id="@+id/viewFooterDivider" android:background="@drawable/zm_settings_center_divider" android:layout_width="match_parent" android:layout_height="2px" android:layout_marginLeft="-20dp"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/optionIncludeTollFree" android:background="@color/zm_settings_category_background" android:paddingRight="@dimen/zm_setting_item_padding_right" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:gravity="left|center_vertical|center_horizontal|center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/zm_btn_include_toll_free_127873" android:layout_weight="1" style="@style/ZMTextView.SettingsItem.Small"/>
+        <p021us.zoom.androidlib.widget.ZMCheckedTextView android:id="@+id/chkIncludeTollFree" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkMark="@drawable/zm_btn_toggle_default"/>
+    </LinearLayout>
+</LinearLayout>

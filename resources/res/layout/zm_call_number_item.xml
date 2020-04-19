@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:paddingRight="@dimen/zm_setting_item_padding_right" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textColor="@color/zm_text_light_dark" android:textColorLink="@color/zm_link" android:id="@+id/txtNumber" android:paddingRight="5dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="1111111111" android:layout_weight="1" style="@style/ZMTextView.SettingsItem.Small"/>
+    <ImageView android:id="@+id/imgCall" android:padding="8dp" android:layout_width="@dimen/zm_btn_normal_height" android:layout_height="@dimen/zm_btn_normal_height" android:src="@drawable/zm_call_highlight"/>
+</LinearLayout>

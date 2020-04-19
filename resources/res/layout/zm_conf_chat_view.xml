@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/chatView" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="1">
+    <p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout android:id="@+id/panelTitleBar" android:layout_width="match_parent" android:layout_height="wrap_content" app:zm_leftButton="@+id/btnBack" app:zm_title="@+id/txtTitle" style="@style/ZMTitleBar">
+        <Button android:id="@+id/btnBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_btn_back" android:layout_centerVertical="true" style="@style/ZMBackButton"/>
+        <p021us.zoom.androidlib.widget.ZMDynTextSizeTextView android:ellipsize="end" android:gravity="center_horizontal" android:id="@+id/txtTitle" android:paddingLeft="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_lbl_everyone" android:singleLine="true" android:layout_centerVertical="true" style="@style/ZMTextView.Title"/>
+    </p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+    <com.zipow.videobox.view.ConfChatListViewOld android:id="@+id/chatListView" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <LinearLayout android:background="@color/zm_dim" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/linearLayout1" android:background="#f0f0f0" android:paddingLeft="4dp" android:paddingTop="5dp" android:paddingRight="4dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="1">
+        <EditText android:id="@+id/edtMessage" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="4" android:maxLength="1024" android:layout_weight="1" android:inputType="none|text|textCapSentences|textMultiLine" style="@style/ZMEditText.Small"/>
+        <Button android:layout_gravity="center_vertical" android:id="@+id/btnSend" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_btn_send" style="@style/ZMButton.NoBackground"/>
+    </LinearLayout>
+</LinearLayout>

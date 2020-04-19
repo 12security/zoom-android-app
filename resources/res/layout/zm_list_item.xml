@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:id="@+id/txtLabel" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:singleLine="true" android:layout_toLeftOf="@+id/ivSelect" style="@style/UIKitTextView.BuddyName.Bold.Blue.Selector"/>
+    <TextView android:id="@+id/txtSubLabel" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:singleLine="true" android:layout_below="@+id/txtLabel" android:layout_alignRight="@+id/txtLabel" style="@style/UIKitTextView.PrimaryText.Normal.Gray.Selector"/>
+    <ImageView android:id="@+id/ivSelect" android:visibility="visible" android:layout_width="15dp" android:layout_height="15dp" android:layout_marginTop="12dp" android:src="@drawable/zm_ic_selected" android:layout_alignTop="@+id/txtLabel" android:layout_alignParentRight="true" android:contentDescription="@string/zm_accessibility_icon_item_selected_19247"/>
+</RelativeLayout>

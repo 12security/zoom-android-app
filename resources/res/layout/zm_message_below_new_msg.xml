@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="horizontal" android:id="@+id/panelMsgLayout" android:paddingLeft="8dp" android:paddingTop="20dp" android:paddingRight="8dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="@color/zm_ui_kit_color_red_E02828" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="40dp" android:layout_toLeftOf="@+id/lable" android:layout_centerVertical="true"/>
+    <TextView android:id="@+id/lable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:text="@string/zm_lbl_below_new_msg_68444" android:layout_centerInParent="true" style="@style/UIKitTextView.SecondaryText.Small.warn"/>
+    <View android:background="@color/zm_ui_kit_color_red_E02828" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginRight="40dp" android:layout_toRightOf="@+id/lable" android:layout_centerVertical="true"/>
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout android:id="@+id/panelTitleBar" android:layout_width="match_parent" android:layout_height="wrap_content" app:zm_leftButton="@+id/btnLeft" app:zm_rightButton="@+id/btnRight" app:zm_title="@+id/txtTitle" style="@style/ZMTitleBar">
+            <LinearLayout android:layout_gravity="left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/btnLeft" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <Button android:id="@+id/btnExit" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_btn_exit" style="@style/ZMButton.NoBackground"/>
+                <Button android:id="@+id/btnBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_btn_back" style="@style/ZMBackButton"/>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/btnRight" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <Button android:id="@+id/btnClose" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="50dp" android:text="@string/zm_btn_close" style="@style/ZMButton.TitleBar"/>
+                <Button android:id="@+id/btnSelect" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="50dp" android:text="@string/zm_btn_select" style="@style/ZMButton.TitleBar"/>
+            </LinearLayout>
+            <p021us.zoom.androidlib.widget.ZMDynTextSizeTextView android:gravity="center_horizontal" android:id="@+id/txtTitle" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/ZMTextView.Title"/>
+        </p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+        <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/file_list_prompt" android:background="@color/zm_notification_background" android:paddingTop="8dp" android:paddingBottom="8dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="center" android:id="@+id/prompt_message" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:text="file list promt" android:layout_weight="1" style="@style/ZMTextView.Medium.OnLight"/>
+        </LinearLayout>
+        <ListView android:id="@+id/file_list" android:layout_width="match_parent" android:layout_height="0dp" android:drawSelectorOnTop="false" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/waitingProgress" android:padding="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ProgressBar android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" style="@style/ZMProgressBar.Small"/>
+        <TextView android:layout_gravity="center_vertical" android:id="@+id/txtWaitingPromt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_msg_loading" style="@style/ZMTextView.Medium"/>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/viewLogin" android:background="@drawable/zm_window_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:minWidth="500dp">
+    <p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout android:id="@+id/panelTitleBar" app:zm_leftButton="@+id/btnBack" app:zm_rightButton="@+id/btnSignup" app:zm_title="@+id/txtTitle" style="@style/ZMTitleBar.Light">
+        <Button android:gravity="left" android:id="@+id/btnBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_btn_cancel" android:contentDescription="@string/zm_btn_back" style="@style/UIKitButton.Medium.OnLight.NoBackground"/>
+        <Button android:gravity="right" android:id="@+id/btnSignup" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_btn_signup" style="@style/UIKitButton.Medium.OnLight.NoBackground"/>
+        <TextView android:id="@+id/txtTitle" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_title_login" style="@style/UIKitTextView.LargeTitle"/>
+    </p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:fillViewport="true" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="0dp" android:paddingTop="@dimen/zm_setting_item_group_spacing" android:paddingRight="0dp" android:paddingBottom="30dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <p021us.zoom.androidlib.widget.ZMSettingsCategory android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/zm_setting_item_padding_left" android:paddingRight="@dimen/zm_setting_item_padding_right" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <EditText android:textColorHint="@color/zm_im_search_text_hint" android:gravity="center" android:id="@+id/edtUserName" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="@string/zm_hint_zoom_account" android:maxLength="128" android:layout_weight="1" android:inputType="textEmailAddress" style="@style/ZMEditText.SettingsItem"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/zm_setting_item_padding_left" android:paddingRight="@dimen/zm_setting_item_padding_right" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <EditText android:textColorHint="@color/zm_im_search_text_hint" android:gravity="center" android:id="@+id/edtPassword" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="@string/zm_hint_zoom_pwd" android:selectAllOnFocus="true" android:maxLength="32" android:layout_weight="1" android:inputType="textPassword" android:contentDescription="@string/zm_hint_zoom_pwd" style="@style/ZMEditText.SettingsItem"/>
+                </LinearLayout>
+            </p021us.zoom.androidlib.widget.ZMSettingsCategory>
+            <ViewStub android:id="@+id/viewCloudSwitch" android:layout="@layout/zm_view_cloudswitch" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp"/>
+            <Button android:id="@+id/btnLoginZoom" android:layout_width="match_parent" android:layout_marginLeft="15dp" android:layout_marginTop="24dp" android:layout_marginRight="15dp" android:text="@string/zm_btn_login" style="@style/UIKitItinactivatedBtn.Large"/>
+            <RelativeLayout android:id="@+id/rlCnSignForgotPasswdPanel" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="8dp" android:layout_marginRight="8dp">
+                <Button android:id="@+id/linkSmsSign" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_btn_sms_login_137212" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/UIKitButton.Small.OnLight.NoBackground"/>
+                <Button android:id="@+id/linkCnForgetPassword" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_lbl_forget_password_57079" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/UIKitButton.Small.OnLight.NoBackground"/>
+            </RelativeLayout>
+            <Button android:layout_gravity="center_horizontal" android:id="@+id/linkForgetPassword" android:layout_width="wrap_content" android:layout_marginTop="5dp" android:text="@string/zm_lbl_forget_password_57079" style="@style/UIKitButton.Small.OnLight.NoBackground"/>
+            <ViewStub android:id="@+id/viewStubInternational" android:layout="@layout/zm_view_international_login" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <ViewStub android:id="@+id/viewStubChina" android:layout="@layout/zm_view_china_login" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/zm_white" android:paddingLeft="10dp" android:paddingTop="5dp" android:paddingRight="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="50dp">
+    <com.zipow.videobox.view.PListNameRoleLayout android:orientation="horizontal" android:paddingRight="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:ellipsize="end" android:id="@+id/txtGroupName" android:paddingRight="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/UIKitTextView.CellTitle"/>
+        <TextView android:textSize="@dimen/zm_ui_kit_text_size_15sp" android:textColor="@color/zm_ui_kit_color_gray_747487" android:id="@+id/txtJoined" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_description_mm_joined_69826" android:singleLine="true" style="@style/UIKitTextView.CellTitle"/>
+    </com.zipow.videobox.view.PListNameRoleLayout>
+</LinearLayout>

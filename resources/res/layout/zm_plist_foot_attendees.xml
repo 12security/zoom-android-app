@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p021us.zoom.androidlib.widget.ZMSettingsCategory xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:descendantFocusability="afterDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/btnViewAttendee" android:paddingTop="5dp" android:paddingRight="@dimen/zm_setting_item_padding_right" android:paddingBottom="5dp" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="1">
+        <TextView android:gravity="left" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/zm_webinar_txt_view_attendees" android:layout_weight="1" style="@style/ZMTextView.SettingsItem"/>
+        <ImageView android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_next_arrow"/>
+    </LinearLayout>
+</p021us.zoom.androidlib.widget.ZMSettingsCategory>

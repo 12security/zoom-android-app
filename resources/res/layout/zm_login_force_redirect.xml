@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:paddingTop="12dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:gravity="center" android:id="@+id/txtTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/zm_title_login_with_google" style="@style/ZMTextView.Large.DialogTitle"/>
+    <TextView android:gravity="center" android:id="@+id/txtSubTitle" android:paddingLeft="24dp" android:paddingRight="24dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/zm_alert_login_with_google_13762" android:lineSpacingExtra="4dp" style="@style/ZMTextView.Medium.Dimmed"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/llRedirect" android:background="@drawable/zm_btn_dialog_bg" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+        <View android:background="@drawable/zm_list_divider" android:layout_width="match_parent" android:layout_height="1dp" android:alpha="0.5"/>
+        <TextView android:gravity="center" android:id="@+id/txtOk" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="@dimen/zm_btn_normal_height" android:text="@string/zm_title_login_with_google" style="@style/ZMTextView.DialogItem"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/llCancel" android:background="@drawable/zm_btn_dialog_bg_bottom_corner" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:background="@drawable/zm_list_divider" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <TextView android:textStyle="bold" android:gravity="center" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="@dimen/zm_btn_normal_height" android:text="@string/zm_btn_cancel" style="@style/ZMTextView.DialogItem"/>
+    </LinearLayout>
+</LinearLayout>

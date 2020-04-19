@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:gravity="center" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/zm_ui_kit_page_left_padding" android:layout_marginTop="16dp" android:layout_marginRight="@dimen/zm_ui_kit_page_left_padding" android:layout_marginBottom="0dp" style="@style/UIKitTextView.DialogTitle.17SP"/>
+    <TextView android:gravity="center" android:id="@+id/msg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/zm_ui_kit_page_left_padding" android:layout_marginTop="5dp" android:layout_marginRight="@dimen/zm_ui_kit_page_left_padding" android:layout_marginBottom="25dp" style="@style/UIKitTextView.SecondaryText.Medium"/>
+    <View android:id="@+id/lineButton" style="@style/ZMBlackLine"/>
+    <TextView android:gravity="center" android:id="@+id/btnOK" android:background="@drawable/zm_ui_kit_big_round_dialog_bottom_btn_transparent_selector" android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/zm_btn_ok" android:contentDescription="@string/zm_btn_ok" style="@style/UIKitTextView.LargeTitle.Clickable"/>
+</LinearLayout>

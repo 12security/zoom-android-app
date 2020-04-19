@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/zm_ui_kit_text_size_20sp" android:textColor="#000000" android:ellipsize="end" android:id="@+id/labelTV" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Hana Song" android:lines="1"/>
+    <TextView android:textSize="13sp" android:textColor="#747487" android:ellipsize="end" android:id="@+id/phoneTV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+911" android:lines="1" android:lineSpacingExtra="1sp"/>
+</LinearLayout>

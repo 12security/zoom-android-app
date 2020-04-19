@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:background="@color/zm_ui_kit_color_white_ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/ivResult" android:visibility="gone" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginBottom="10dp" android:src="@drawable/zm_ic_selected_big" android:scaleType="centerInside" android:layout_above="@+id/tvResult" android:layout_centerHorizontal="true"/>
+    <ProgressBar android:id="@+id/progress" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginBottom="10dp" android:indeterminateDrawable="@drawable/zm_sip_transcript_loading" android:layout_above="@+id/tvResult" android:layout_centerHorizontal="true"/>
+    <TextView android:gravity="center" android:id="@+id/tvResult" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/zm_sip_transfer_success_61381" android:layout_centerInParent="true" style="@style/UIKitTextView.DialogTitle"/>
+    <TextView android:gravity="center" android:id="@+id/tv_timer" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_below="@+id/tvResult" style="@style/UIKitTextView.PrimaryText"/>
+</RelativeLayout>

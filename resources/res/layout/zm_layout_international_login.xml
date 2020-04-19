@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textColor="@color/zm_ui_kit_color_gray_747487" android:layout_gravity="left" android:id="@+id/panelLoginViaDivider" android:paddingLeft="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="44dp" android:text="@string/zm_lbl_or_sign_in_with" style="@style/UIKitTextView.SecondaryText.Medium"/>
+    <p021us.zoom.androidlib.widget.ZMSettingsCategory android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/panelActions" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/linkSSOLogin" android:paddingLeft="@dimen/zm_setting_item_padding_left" android:paddingRight="@dimen/zm_setting_item_padding_right" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_icon_sso" android:contentDescription=""/>
+            <TextView android:gravity="left" android:background="@null" android:paddingLeft="15dp" android:paddingRight="15dp" android:focusable="false" android:clickable="false" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/zm_login_with_sso" android:layout_weight="1" style="@style/UIKitTextView.SettingsItem"/>
+            <ImageView android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_next_arrow" android:contentDescription=""/>
+        </LinearLayout>
+        <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/btnLoginGoogle" android:paddingLeft="@dimen/zm_setting_item_padding_left" android:paddingRight="@dimen/zm_setting_item_padding_right" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_ic_other_contacts_google" android:contentDescription=""/>
+            <TextView android:gravity="left" android:paddingLeft="15dp" android:paddingRight="15dp" android:focusable="false" android:clickable="false" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/zm_login_with_google" android:layout_weight="1" style="@style/UIKitTextView.SettingsItem"/>
+            <ImageView android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_next_arrow" android:contentDescription=""/>
+        </LinearLayout>
+        <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/btnLoginFacebook" android:paddingLeft="@dimen/zm_setting_item_padding_left" android:paddingRight="@dimen/zm_setting_item_padding_right" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_ic_other_contacts_fb" android:contentDescription=""/>
+            <TextView android:gravity="left" android:background="@null" android:paddingLeft="15dp" android:paddingRight="15dp" android:focusable="false" android:clickable="false" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/zm_login_with_facebook" android:layout_weight="1" style="@style/UIKitTextView.SettingsItem"/>
+            <ImageView android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_next_arrow" android:contentDescription=""/>
+        </LinearLayout>
+    </p021us.zoom.androidlib.widget.ZMSettingsCategory>
+</LinearLayout>

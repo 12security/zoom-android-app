@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <Button android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/btnInviteZoom" android:layout_width="0dp" android:layout_height="40dp" android:text="@string/zm_lbl_invite_zoom_33300" android:layout_weight="1" style="@style/ZMButton.NoBackground"/>
+    <ImageView android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:src="@drawable/zm_next_arrow"/>
+</LinearLayout>

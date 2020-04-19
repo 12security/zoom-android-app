@@ -1,0 +1,40 @@
+package com.zipow.videobox.confapp;
+
+public interface ConfErrorCode {
+    public static final int CONF_FAIL_CANNOT_EMIT_WEBREQUEST = 15;
+    public static final int CONF_FAIL_CANNOT_START_TOKENEXPIRE = 16;
+    public static final int CONF_FAIL_CLIENT_INCOMPATIBLE = 10;
+    public static final int CONF_FAIL_CONFLOCKED = 12;
+    public static final int CONF_FAIL_CONF_USER_FULL = 9;
+    public static final int CONF_FAIL_DISALLOW_HOST_MEETING = 29;
+    public static final int CONF_FAIL_ENFORCE_LOGIN_REALNAME_AUTHENTICATION = 62;
+    public static final int CONF_FAIL_FORBID_TO_JOIN_INTERNAL_MEETING = 60;
+    public static final int CONF_FAIL_FORCE_REAL_NAME_AUTH = 65;
+    public static final int CONF_FAIL_FORCE_UPDATE_APP = 63;
+    public static final int CONF_FAIL_INFO_BARRIER_REJECT = 66;
+    public static final int CONF_FAIL_JOIN_WEBINAR_WITHSAMEEMAIL = 28;
+    public static final int CONF_FAIL_MEETING_NOT_EXIST = 8;
+    public static final int CONF_FAIL_MEETING_NOT_START = 7;
+    public static final int CONF_FAIL_MEETING_OVER = 6;
+    public static final int CONF_FAIL_MEETING_RESTRICTED = 13;
+    public static final int CONF_FAIL_MEETING_RESTRICTED_JBH = 14;
+    public static final int CONF_FAIL_MMR_ERR = 3;
+    public static final int CONF_FAIL_NETWORK_ERR = 1;
+    public static final int CONF_FAIL_NOT_SUPPORT_SIMULIVE_WEBINAR = 64;
+    public static final int CONF_FAIL_NO_MMR = 11;
+    public static final int CONF_FAIL_PASSWORD_ERR = 4;
+    public static final int CONF_FAIL_RECONNECT_ERR = 2;
+    public static final int CONF_FAIL_REGISTERWEBINAR_DENIED_EMAIL = 22;
+    public static final int CONF_FAIL_REGISTERWEBINAR_ENFORCE_LOGIN = 23;
+    public static final int CONF_FAIL_REGISTERWEBINAR_FULL = 19;
+    public static final int CONF_FAIL_REGISTERWEBINAR_HOSTREGISTER = 20;
+    public static final int CONF_FAIL_REGISTERWEBINAR_PANELISTREGISTER = 21;
+    public static final int CONF_FAIL_REMOVED_BY_HOST = 61;
+    public static final int CONF_FAIL_SESSION_ERR = 5;
+    public static final int CONF_FAIL_VANITY_NOT_EXIST = 27;
+    public static final int CONF_FAIL_WRITE_CONFIG_FILE = 50;
+    public static final int CONF_FAIL_ZC_CERTIFICATE_CHANGED = 24;
+    public static final int CONF_SUCCESS = 0;
+    public static final int SESSION_AUDIO_AUTOSTARTERR = 18;
+    public static final int SESSION_VIDEO_ERR = 17;
+}

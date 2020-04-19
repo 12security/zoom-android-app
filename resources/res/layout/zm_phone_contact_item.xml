@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="50dp" android:layout_centerVertical="true">
+        <TextView android:ellipsize="end" android:id="@+id/txtContactName" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:lines="1" style="@style/ZMTextView.Normal.OnLight"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtContactNumber" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="" android:lines="1" style="@style/ZMTextView.Small.Dimmed"/>
+    </LinearLayout>
+    <p021us.zoom.androidlib.widget.ZMCheckedTextView android:gravity="center_vertical" android:id="@+id/checked" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkMark="?android:attr/listChoiceIndicatorMultiple" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <TextView android:id="@+id/txtInZoom" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/ZMTextView.Normal.Dimmed"/>
+</RelativeLayout>

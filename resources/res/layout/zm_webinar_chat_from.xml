@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingLeft="16dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/layoutMsgHead" android:paddingTop="20dp" android:paddingBottom="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="65dp">
+        <TextView android:ellipsize="end" android:id="@+id/txtMsgLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="From Andy to Everyone" android:singleLine="true" android:layout_weight="1" style="@style/ZMTextView.ExSmall.ForInMeetingChat"/>
+        <TextView android:id="@+id/txtPrivateStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/zm_webinar_txt_private_label" style="@style/ZMTextView.Small.Warn"/>
+    </LinearLayout>
+    <TextView android:id="@+id/txtMsgValue" android:background="@drawable/zm_webinar_message_in" android:duplicateParentState="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_marginRight="65dp" android:text="This is webinar messageddddddddddddddddddddddddd\10This is webinar message" style="@style/ZMTextView.MMMessage"/>
+</LinearLayout>

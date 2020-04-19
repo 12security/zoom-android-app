@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:paddingTop="5dp" android:paddingBottom="5dp" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:layout_gravity="center" android:id="@+id/fileIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="15dp" android:src="@drawable/zm_ic_filetype_folder"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:ellipsize="end" android:id="@+id/txtFileName" android:layout_width="match_parent" android:layout_height="wrap_content" android:minWidth="150dp" android:text="TextView" android:scrollHorizontally="true" android:singleLine="true" style="@style/ZMTextView.Medium.OnLight"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/fileInfo" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp">
+            <TextView android:layout_gravity="left" android:id="@+id/txtDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Nov-11 2014 15:30" style="@style/ZMTextView.Small.Dimmed"/>
+            <TextView android:layout_gravity="left" android:id="@+id/separator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="  |  " style="@style/ZMTextView.Small.Dimmed"/>
+            <TextView android:layout_gravity="left" android:id="@+id/txtFileSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10.02M" style="@style/ZMTextView.Small.Dimmed"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:layout_gravity="center" android:id="@+id/folderIndicator" android:paddingLeft="2dp" android:paddingTop="2dp" android:paddingRight="2dp" android:paddingBottom="2dp" android:duplicateParentState="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_next_arrow"/>
+    <p021us.zoom.androidlib.widget.ZMCheckedTextView android:gravity="center_vertical" android:layout_gravity="center" android:id="@+id/check" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkMark="?android:attr/listChoiceIndicatorMultiple"/>
+</LinearLayout>

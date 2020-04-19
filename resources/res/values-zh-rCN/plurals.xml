@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="zm_accessibility_reacion_label_88133">
+        <item quantity="other">%s，%d位用户已添加此回复，按钮</item>
+    </plurals>
+    <plurals name="zm_accessibility_view_reply_88133">
+        <item quantity="other">查看%d条回复</item>
+    </plurals>
+    <plurals name="zm_accessibility_view_reply_new_all_88133">
+        <item quantity="other">，%d条@所有人的新消息</item>
+    </plurals>
+    <plurals name="zm_accessibility_view_reply_new_me_88133">
+        <item quantity="other">，%d条@我的新消息</item>
+    </plurals>
+    <plurals name="zm_accessibility_view_reply_new_msg_88133">
+        <item quantity="other">，%d条新消息</item>
+    </plurals>
+    <plurals name="zm_accessibility_waiting_room_unread_message_button_46304">
+        <item quantity="other">%s条新消息，按钮</item>
+    </plurals>
+    <plurals name="zm_add_buddy_time_exceed_44781">
+        <item quantity="other">尝试错误次数过多。请在%d分钟后重试。</item>
+    </plurals>
+    <plurals name="zm_description_tab_chats_77383">
+        <item quantity="other">开会和聊天%s未读消息选项卡</item>
+    </plurals>
+    <plurals name="zm_description_tab_sip_4_117773">
+        <item quantity="other">%1$s，%2$s个新通知</item>
+    </plurals>
+    <plurals name="zm_lbl_comment_more_reply_88133">
+        <item quantity="other">%d条回复</item>
+    </plurals>
+    <plurals name="zm_lbl_comment_reply_title_88133">
+        <item quantity="other">%d条回复</item>
+    </plurals>
+    <plurals name="zm_lbl_folder_items">
+        <item quantity="other">%d个文件</item>
+    </plurals>
+    <plurals name="zm_lbl_mark_unread_150170">
+        <item quantity="one">%d个已标记为未读</item>
+        <item quantity="other">%d个已标记为未读</item>
+    </plurals>
+    <plurals name="zm_lbl_message_at_all_150170">
+        <item quantity="one">%d＠所有人</item>
+        <item quantity="other">%d＠所有人</item>
+    </plurals>
+    <plurals name="zm_lbl_message_at_me_150170">
+        <item quantity="one">%d＠我</item>
+        <item quantity="other">%d＠我</item>
+    </plurals>
+    <plurals name="zm_lbl_new_unread_thread_88133">
+        <item quantity="other">%s条新消息</item>
+    </plurals>
+    <plurals name="zm_lbl_notification_snoozed_hour_19898">
+        <item quantity="other">%d小时</item>
+    </plurals>
+    <plurals name="zm_lbl_notification_snoozed_min_19898">
+        <item quantity="other">%d分钟</item>
+    </plurals>
+    <plurals name="zm_lbl_view_all_domain_120783">
+        <item quantity="other">查看/编辑所有%d个域</item>
+    </plurals>
+    <plurals name="zm_lbl_webinar_telephony_user_count">
+        <item quantity="other">共有%d位电话听众</item>
+    </plurals>
+    <plurals name="zm_mm_lbl_new_message_count_14491">
+        <item quantity="other">↑%s 条新消息</item>
+    </plurals>
+    <plurals name="zm_mm_msg_day_33479">
+        <item quantity="other">%d 天</item>
+    </plurals>
+    <plurals name="zm_mm_msg_hour_33479">
+        <item quantity="other">%d 小时</item>
+    </plurals>
+    <plurals name="zm_mm_msg_month_33479">
+        <item quantity="other">%d 个月</item>
+    </plurals>
+    <plurals name="zm_mm_msg_year_33479">
+        <item quantity="other">%d 年</item>
+    </plurals>
+    <plurals name="zm_mm_template_attachments_68416">
+        <item quantity="other">%1$d个附件</item>
+    </plurals>
+    <plurals name="zm_msg_charactors_left">
+        <item quantity="other">还可输入%d个字符</item>
+    </plurals>
+    <plurals name="zm_msg_hint_add_contact_group_68451">
+        <item quantity="other">%1$d个联系人已添加至%2$s</item>
+    </plurals>
+    <plurals name="zm_msg_invitations_sent">
+        <item quantity="other">已发出%d个邀请</item>
+    </plurals>
+    <plurals name="zm_msg_join_meeting_in_waiting_list">
+        <item quantity="other">%d个人已经在等候室等待加入会议</item>
+    </plurals>
+    <plurals name="zm_msg_notification_unread_num_8295">
+        <item quantity="other">%1$s(%2$d条未读消息)</item>
+    </plurals>
+    <plurals name="zm_pbx_voicemail_filter_inboxes_100064">
+        <item quantity="other">%1$s个收件箱</item>
+    </plurals>
+    <plurals name="zm_sip_calls_text_111498">
+        <item quantity="other">%1$d个来电</item>
+    </plurals>
+    <plurals name="zm_sip_delete_x_items_61381">
+        <item quantity="other">删除%d个项目</item>
+    </plurals>
+    <plurals name="zm_sip_desc_session_new_message_117773">
+        <item quantity="other">%1$s个新消息</item>
+    </plurals>
+    <plurals name="zm_title_edit_emoji_selected">
+        <item quantity="other">%d个表情被选中</item>
+    </plurals>
+</resources>

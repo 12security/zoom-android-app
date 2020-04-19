@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="horizontal" android:paddingLeft="20dp" android:paddingTop="5dp" android:paddingRight="20dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="46dp">
+    <TextView android:textColor="@color/zm_highlight" android:gravity="center" android:id="@+id/txtLabel" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Kubi Item" style="@style/ZMTextView.PopItem"/>
+</LinearLayout>

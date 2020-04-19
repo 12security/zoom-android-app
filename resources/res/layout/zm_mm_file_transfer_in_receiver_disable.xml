@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/panelMsgLayout" android:paddingLeft="8dp" android:paddingTop="6dp" android:paddingRight="8dp" android:paddingBottom="6dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.zipow.videobox.view.AvatarView android:layout_gravity="top" android:id="@+id/avatarView" android:layout_width="35dp" android:layout_height="35dp" android:layout_marginRight="5dp"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/zm_message_list_item_title_linear" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:id="@+id/txtScreenName" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ZMTextView.ExSmall.Dimmed"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@+id/panel_textMessage" android:background="@drawable/zm_chatfrom_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.zipow.videobox.view.EmojiTextView android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/txtMessage" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/zm_mm_bubble_width" android:text="@string/zm_msg_file_transfer_disabled_86061" style="@style/ZMTextView.MMMessage"/>
+                <com.zipow.videobox.view.EmojiTextView android:textSize="20sp" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/txtMessageForBigEmoji" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/zm_mm_bubble_width" style="@style/ZMTextView.MMMessage"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

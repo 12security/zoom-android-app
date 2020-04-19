@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RadioGroup android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/zmRadioGroupDomain" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RadioButton android:textSize="@dimen/zm_ui_kit_text_size_14sp" android:gravity="center_vertical" android:id="@+id/radioZoomLeftDomain" android:paddingTop="6dp" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:drawableLeft="@drawable/zm_btn_radio" android:drawablePadding="4dp" style="@style/ZMRadioButton.Normal.OnLight"/>
+        <RadioButton android:textSize="@dimen/zm_ui_kit_text_size_14sp" android:gravity="center_vertical" android:id="@+id/radioZoomRightDomain" android:paddingTop="6dp" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:button="@null" android:drawableLeft="@drawable/zm_btn_radio" android:drawablePadding="4dp" style="@style/ZMRadioButton.Normal.OnLight"/>
+    </RadioGroup>
+</LinearLayout>

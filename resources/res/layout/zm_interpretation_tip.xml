@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <p021us.zoom.androidlib.widget.ZMSettingsLayout android:orientation="vertical" android:paddingLeft="0dp" android:paddingTop="10dp" android:paddingRight="0dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" app:zm_settingsCategorySpacing="0dp">
+        <LinearLayout android:orientation="vertical" android:id="@+id/languageInterpretation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/zm_setting_item_padding_left" android:layout_marginRight="@dimen/zm_setting_item_padding_right">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/showLan" android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/zm_lan_unitedstates"/>
+                <TextView android:textSize="14sp" android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/showInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="@string/zm_tip_interpretation_2_88102"/>
+            </LinearLayout>
+            <TextView android:textSize="14sp" android:gravity="left|center_vertical|center_horizontal|center|start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/zm_tip_interpretation_available_88102"/>
+        </LinearLayout>
+    </p021us.zoom.androidlib.widget.ZMSettingsLayout>
+</ScrollView>

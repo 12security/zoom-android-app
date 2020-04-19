@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <p021us.zoom.androidlib.widget.ZMKeyboardDetector android:id="@+id/keyboardDetector" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="1">
+        <p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout android:id="@+id/panelTitleBar" android:layout_width="match_parent" android:layout_height="@dimen/zm_pt_titlebar_height" app:zm_leftButton="@+id/btnBack" app:zm_rightButton="@+id/panelTitleRight" app:zm_title="@+id/txtTitle" style="@style/ZMTitleBar">
+            <Button android:id="@+id/btnBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_centerVertical="true" android:contentDescription="@string/zm_btn_back" style="@style/ZMBackButton"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/panelTitleRight" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageButton android:id="@+id/btnSearch" android:background="@null" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="0dp" android:src="@drawable/zm_ic_search_blue_ondark" android:contentDescription="@string/zm_description_mm_btn_search"/>
+                <ImageButton android:id="@+id/btnManage" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_mm_title_btn_contact" android:contentDescription="@string/zm_description_mm_btn_chat_options" style="@style/ZMButton.TitleBar"/>
+                <Button android:id="@+id/btnJump" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_btn_jump" style="@style/ZMButton.TitleBar"/>
+            </LinearLayout>
+            <p021us.zoom.androidlib.widget.ZMDynTextSizeTextView android:gravity="center_horizontal" android:id="@+id/txtTitle" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_title_replies_88133" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/ZMTextView.Title"/>
+        </p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+        <com.zipow.videobox.view.p014mm.MMConnectAlertView android:orientation="vertical" android:id="@+id/panelConnectionAlert" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@+id/swipeRefreshLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.zipow.videobox.view.p014mm.MMCommentsRecyclerView android:id="@+id/commentsRecyclerView" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@null" style="@style/MMChatListView"/>
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/panelE2EHint" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/zm_message_hint_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:ellipsize="end" android:id="@+id/txtE2EHintMsg" android:padding="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="" android:maxLines="3" android:layout_weight="1" style="@style/ZMTextView.Small.OnDark"/>
+                    <ImageView android:id="@+id/btnE2EHintClose" android:padding="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_btn_chat_hint_closed"/>
+                </LinearLayout>
+                <LinearLayout android:background="@color/zm_toolbar_stopannotation_press" android:layout_width="match_parent" android:layout_height="1dp"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/panelBottomHint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+                <LinearLayout android:gravity="right" android:orientation="horizontal" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@+id/txtMarkUnread" android:background="@drawable/zm_corner_bg_red" android:padding="13dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="@string/zm_mm_lbl_mark_unread_14491" android:drawableRight="@drawable/zm_ic_arrow_white_down" android:drawablePadding="5dp" style="@style/UIKitTextView.PrimaryText.Normal.White"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@+id/txtMention" android:background="@drawable/zm_corner_bg_red" android:padding="13dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="" android:drawableRight="@drawable/zm_ic_arrow_white_down" android:drawablePadding="5dp" style="@style/UIKitTextView.PrimaryText.Normal.White"/>
+                    <TextView android:id="@+id/txtNewMsgMark" android:background="@drawable/zm_corner_bg_white" android:padding="13dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="@string/zm_lbl_jump_latest_68444" android:drawableRight="@drawable/zm_ic_arrow_red_down" android:drawablePadding="5dp" style="@style/UIKitTextView.PrimaryText.Normal"/>
+                    <TextView android:id="@+id/txtBottomHint" android:background="@drawable/zm_corner_bg_red" android:padding="13dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:drawableRight="@drawable/zm_ic_arrow_white_down" android:drawablePadding="5dp" style="@style/UIKitTextView.PrimaryText.Normal.White"/>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:background="@color/zm_dim" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <TextView android:enabled="false" android:textColorHint="@color/zm_text_deep_grey" android:id="@+id/txtDisableMsg" android:background="#ffffff" android:padding="5dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="50dp" style="@style/ZMEditText.Small"/>
+        <FrameLayout android:id="@+id/panelActions" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <com.zipow.videobox.view.p014mm.VoiceRecordView android:gravity="center" android:orientation="vertical" android:id="@+id/panelVoiceRcdHint" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

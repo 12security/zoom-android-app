@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingLeft="16dp" android:paddingTop="20dp" android:paddingRight="16dp" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="15sp" android:id="@+id/txtQuestion" android:scrollbars="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Beryl Cook is one of Britain’s most talented and amusing artists .Beryl’s pictures feature women of all shapes and sizes enjoying themselves?" style="@style/ZMTextView.OnLight.Medium"/>
+    <LinearLayout android:gravity="center_vertical" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+        <com.zipow.videobox.view.PListNameRoleLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:ellipsize="end" android:id="@+id/txtQuestionName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Beatruce Walters" android:maxLines="1" style="@style/ZMTextView.OnLight.Medium.DeepGrey"/>
+            <TextView android:textSize="11sp" android:id="@+id/txtQuestionTime" android:paddingLeft="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10:20 AM" style="@style/ZMTextView.OnLight.Small.Dimmed"/>
+        </com.zipow.videobox.view.PListNameRoleLayout>
+        <p021us.zoom.androidlib.widget.ZMLinearLayoutButton android:gravity="bottom" android:orientation="horizontal" android:id="@+id/llUpvote" android:paddingLeft="8dp" android:paddingTop="8dp" android:paddingBottom="8dp" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="13sp" android:id="@+id/txtUpVoteCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="1dp" android:text="24" style="@style/ZMTextView.OnLight.Medium.DeepGrey"/>
+            <ImageView android:id="@+id/imgUpVote" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-2dp" android:src="@drawable/zm_ic_upvote_active"/>
+        </p021us.zoom.androidlib.widget.ZMLinearLayoutButton>
+    </LinearLayout>
+    <View android:id="@+id/dividerLine" android:background="@color/zm_line_divider" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="4dp"/>
+</LinearLayout>

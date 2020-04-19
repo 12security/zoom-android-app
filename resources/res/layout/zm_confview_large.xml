@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <SurfaceView android:id="@+id/svPreview" android:layout_width="1px" android:layout_height="1px" android:layout_marginTop="-2dp"/>
+    <com.zipow.videobox.view.video.VideoView android:id="@+id/videoView" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/panelRecording" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:paddingRight="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_recording"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_lbl_recording" style="@style/ZMTextView.Normal.OnDark"/>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:id="@+id/panelStartingRecord" android:background="@drawable/zm_loading_bg" android:padding="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:id="@+id/txtStartingRecord" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_lbl_starting_record" style="@style/ZMTextView.Normal.OnDark"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/panelConnecting" android:background="@drawable/zm_calling_top_bg" android:layout_width="match_parent" android:layout_height="40dp">
+        <ProgressBar android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" style="@style/ZMProgressBar.Small"/>
+        <TextView android:layout_gravity="center_vertical" android:id="@+id/txtConnecting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_msg_connecting" style="@style/ZMTextView.Medium.OnDark"/>&quot; 
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/panelWaitingShare" android:background="@drawable/zm_loading_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ProgressBar android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" style="@style/ZMProgressBar.Small"/>
+        <TextView android:gravity="left" android:layout_gravity="center_vertical" android:id="@+id/txtMsgWaitingShare" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_msg_waiting_share" style="@style/ZMTextView.Medium.OnDark"/>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="bottom|left|center_vertical|center_horizontal|center" android:orientation="vertical" android:id="@+id/panelSharingTitle" android:background="@color/zm_sharing_title_bg" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:ellipsize="end" android:id="@+id/txtSharingTitle" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_msg_sharing" android:lines="1" style="@style/ZMTextView.Medium.OnDark"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtMyScreenName" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_msg_sharing" android:lines="1" style="@style/ZMTextView.Medium.OnDark"/>
+    </LinearLayout>
+    <com.zipow.videobox.view.ConfToolsPanelLarge android:id="@+id/panelTools" android:background="@drawable/zm_top_toolbar_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/btnBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_btn_back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/ZMBackButton"/>
+        <LinearLayout android:gravity="center" android:id="@+id/panelTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/confToolbar" android:layout_toRightOf="@+id/btnBack" android:layout_centerVertical="true">
+            <ImageView android:id="@+id/btnInfo" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_btn_meeting_running_info"/>
+            <TextView android:gravity="center" android:id="@+id/txtTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Zoom: 155-699-683" style="@style/ZMTextView.ExtremLarge.OnDark"/>
+        </LinearLayout>
+        <com.zipow.videobox.view.ConfToolbar android:id="@+id/confToolbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignWithParentIfMissing="true"/>
+    </com.zipow.videobox.view.ConfToolsPanelLarge>
+</FrameLayout>

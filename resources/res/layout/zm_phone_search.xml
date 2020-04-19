@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/panelSearchBarReal" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="@dimen/zm_pt_titlebar_height" style="@style/ZMTitleBar">
+        <RelativeLayout android:background="@drawable/zm_search_corner_bg" android:paddingLeft="5dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@+id/imgSearch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:src="@drawable/zm_ic_search" android:layout_centerVertical="true"/>
+            <EditText android:id="@+id/edtSearchReal" android:paddingRight="30dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/zm_hint_search_call_14480" android:layout_toRightOf="@+id/imgSearch" android:layout_centerVertical="true" android:imeOptions="actionDone" style="@style/ZMEditText.GlobalSearch"/>
+            <Button android:id="@+id/btnClearSearchView" android:background="@drawable/zm_btn_clear_search_view" android:visibility="gone" android:layout_width="30dp" android:layout_height="30dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/zm_sip_accessbility_delete_button_61381"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <com.zipow.videobox.view.sip.ZoomSipPhoneListView android:id="@+id/sipPhoneListView" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

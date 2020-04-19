@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/zm_voice_rcd_hint_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/imgVoiceRcdHint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_voice_rcd_hint_icon"/>
+            <ProgressBar android:layout_gravity="center_vertical" android:id="@+id/progressBarStartingRecording" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" style="@style/ZMProgressBar"/>
+        </LinearLayout>
+        <TextView android:gravity="center" android:id="@+id/txtRcdHintText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="135dp" android:text="@string/zm_mm_msg_rcd_hint_move_up_to_cancel" style="@style/ZMTextView.Normal.OnDark"/>
+    </LinearLayout>
+</LinearLayout>

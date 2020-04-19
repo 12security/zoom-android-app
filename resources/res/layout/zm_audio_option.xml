@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:minWidth="600dp">
+    <p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout android:id="@+id/panelTitleBar" android:layout_width="match_parent" android:layout_height="wrap_content" app:zm_leftButton="@+id/btnBack" app:zm_rightButton="@+id/btnOK" app:zm_title="@+id/txtTitle" style="@style/ZMTitleBar">
+        <Button android:id="@+id/btnBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_btn_back" style="@style/ZMBackButton"/>
+        <Button android:id="@+id/btnOK" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_btn_ok" style="@style/ZMButton.TitleBar"/>
+        <p021us.zoom.androidlib.widget.ZMDynTextSizeTextView android:gravity="center_horizontal" android:id="@+id/txtTitle" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_lbl_audio_option_127873" style="@style/ZMTextView.Title"/>
+    </p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recyclerView" android:background="@drawable/zm_window_bg" android:paddingBottom="@dimen/zm_setting_item_group_spacing" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

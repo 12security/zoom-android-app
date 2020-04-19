@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:background="@color/zm_ui_kit_color_blue_0E71EB" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="13sp" android:textColor="@color/zm_ui_kit_color_white_ffffff" android:gravity="center" android:id="@android:id/message" android:padding="@dimen/zm_ui_kit_page_left_padding" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

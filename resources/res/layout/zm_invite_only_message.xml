@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/panelTitleBar" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/ZMTitleBar">
+        <Button android:id="@+id/btnBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_btn_back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/ZMBackButton"/>
+        <TextView android:gravity="center_horizontal" android:id="@+id/txtTitle" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_title_invite" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/ZMTextView.Title"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="left" android:orientation="vertical" android:padding="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_msg_invite_indication_title" style="@style/ZMTextView.Medium.OnLight"/>
+        <TextView android:id="@+id/txtInviteIndication" android:paddingLeft="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_msg_invite_indication_message_1" style="@style/ZMTextView.Medium.OnLight"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:paddingLeft="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_msg_invite_indication_message_2" style="@style/ZMTextView.Medium.OnLight"/>
+            <TextView android:textColor="#ff0000" android:layout_gravity="bottom" android:id="@+id/txtMeetingNumber" android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="000-000-000" style="@style/ZMTextView.Medium.OnLight"/>
+        </LinearLayout>
+        <Button android:id="@+id/btnCopy" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/zm_btn_copy"/>
+    </LinearLayout>
+</LinearLayout>

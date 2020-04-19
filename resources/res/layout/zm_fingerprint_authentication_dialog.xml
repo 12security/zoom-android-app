@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingLeft="24dp" android:paddingTop="24dp" android:paddingRight="24dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/fingerprint_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_ic_fingerprint" android:contentDescription="@string/zm_title_fingerprint_login_22438"/>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="19dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="20sp" android:textStyle="bold" android:gravity="center_horizontal" android:id="@+id/txtTitle" android:paddingBottom="0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_title_fingerprint_login_22438" android:lineSpacingExtra="8sp" style="@style/ZMTextView.SettingsItem"/>
+            <TextView android:gravity="center_horizontal" android:id="@+id/txtDesc" android:paddingTop="11dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_desc_fingerprint_login_22438" android:lineSpacingExtra="8sp" style="@style/ZMTextView.SettingsItem.Small"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/ll_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="11dp" android:minHeight="@dimen/zm_setting_item_min_height">
+        <TextView android:textStyle="bold" android:textColor="@drawable/zm_button_text_color" android:gravity="center" android:id="@+id/btn_enter_passwd" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:minWidth="64dp" android:text="@string/zm_btn_enter_passwd_22438" style="@style/ZMMaterialDefaultButton.Normal"/>
+        <TextView android:textStyle="bold" android:textColor="@drawable/zm_button_text_color" android:gravity="center" android:id="@+id/btn_cancel" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="12dp" android:minWidth="64dp" android:text="@string/zm_btn_cancel" android:layout_alignParentRight="true" style="@style/ZMMaterialDefaultButton.Normal"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/verifyingMeetingId" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/zm_verifying_meetingid"/>
+    <com.zipow.videobox.view.WaitingJoinView android:id="@+id/waitingJoinView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <p021us.zoom.androidlib.widget.ZMIgnoreKeyboardLayout android:id="@+id/confViewContentLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@+id/confView" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/zm_confview"/>
+    </p021us.zoom.androidlib.widget.ZMIgnoreKeyboardLayout>
+    <com.zipow.videobox.view.CallConnectingView android:id="@+id/callconnectingView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.zipow.videobox.view.OnPresentRoomView android:id="@+id/presentRoom" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.zipow.videobox.view.OnSilentView android:id="@+id/onHoldView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/panelRejoinMsg" android:background="@drawable/zm_tip_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20dp">
+        <TextView android:gravity="center" android:id="@+id/txtRejoinMsgTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_webinar_msg_host_change_you_to_attendee" style="@style/ZMTextView.Large.OnDark"/>
+        <ProgressBar android:layout_gravity="center" android:layout_width="30dp" android:layout_height="30dp" android:layout_margin="15dp" style="@style/ZMProgressBar"/>
+        <TextView android:gravity="center" android:id="@+id/txtRejoinMsgMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_webinar_msg_connecting_as_attendee" style="@style/ZMTextView.Normal.OnDark"/>
+    </LinearLayout>
+    <p021us.zoom.androidlib.widget.ZMTipLayer android:id="@+id/tipLayer" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

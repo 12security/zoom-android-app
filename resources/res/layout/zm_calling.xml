@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/zm_audiocall_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/panelSurfaceHolder" android:background="#000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <SurfaceView android:id="@+id/svPreview" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/panelTopBar" android:background="@drawable/zm_calling_top_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/zm_calling_titlebar"/>
+    </LinearLayout>
+    <com.zipow.videobox.view.AvatarView android:id="@+id/avatarView" android:layout_width="180dp" android:layout_height="180dp" android:layout_centerInParent="true" app:zm_cornerRadiusRatio="0.32"/>
+    <TextView android:textSize="20sp" android:textColor="@color/zm_white" android:id="@+id/unlock_msg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:text="@string/zm_msg_calling_unlock_screen_7473" android:shadowColor="@color/zm_black" android:shadowDx="2" android:shadowDy="2" android:layout_below="@+id/avatarView" android:layout_centerHorizontal="true"/>
+    <include android:id="@+id/panelBottomBar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/zm_calling_bottom_bar"/>
+</RelativeLayout>

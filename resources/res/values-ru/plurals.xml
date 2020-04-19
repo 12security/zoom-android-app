@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="zm_accessibility_reacion_label_88133">
+        <item quantity="one">%s, %d пользователь, добавивший эту реакцию, кнопка</item>
+        <item quantity="few">%s, Пользователи, добавившие эту реакцию: %d, кнопка</item>
+        <item quantity="many">%s, Пользователи, добавившие эту реакцию: %d, кнопка</item>
+        <item quantity="other">%s, Пользователи, добавившие эту реакцию: %d, кнопка</item>
+    </plurals>
+    <plurals name="zm_accessibility_view_reply_88133">
+        <item quantity="one">Посмотреть %d ответ</item>
+        <item quantity="few">Посмотреть %d отв.</item>
+        <item quantity="many">Посмотреть %d отв.</item>
+        <item quantity="other">Посмотреть %d отв.</item>
+    </plurals>
+    <plurals name="zm_accessibility_view_reply_new_all_88133">
+        <item quantity="one">, %d новое упоминание @все</item>
+        <item quantity="few">, %d новых упоминаний @все</item>
+        <item quantity="many">, %d новых упоминаний @все</item>
+        <item quantity="other">, %d новых упоминаний @все</item>
+    </plurals>
+    <plurals name="zm_accessibility_view_reply_new_me_88133">
+        <item quantity="one">, %d новое упоминание @я</item>
+        <item quantity="few">, %d новых упоминаний @я</item>
+        <item quantity="many">, %d новых упоминаний @я</item>
+        <item quantity="other">, %d новых упоминаний @я</item>
+    </plurals>
+    <plurals name="zm_accessibility_view_reply_new_msg_88133">
+        <item quantity="one">, %d новое сообщение</item>
+        <item quantity="few">, %d нов. сообщ.</item>
+        <item quantity="many">, %d нов. сообщ.</item>
+        <item quantity="other">, %d нов. сообщ.</item>
+    </plurals>
+    <plurals name="zm_accessibility_waiting_room_unread_message_button_46304">
+        <item quantity="one">%s новое сообщение, кнопка</item>
+        <item quantity="few">%s нов. сообщ., кнопка</item>
+        <item quantity="many">%s нов. сообщ., кнопка</item>
+        <item quantity="other">%s нов. сообщ., кнопка</item>
+    </plurals>
+    <plurals name="zm_add_buddy_time_exceed_44781">
+        <item quantity="one">Слишком большое количество попыток ввода неверных данных. Повторите попытку через %d минуту.</item>
+        <item quantity="few">Слишком большое количество попыток ввода неверных данных. Повторите попытку через %d мин.</item>
+        <item quantity="many">Слишком большое количество попыток ввода неверных данных. Повторите попытку через %d мин.</item>
+        <item quantity="other">Слишком большое количество попыток ввода неверных данных. Повторите попытку через %d мин.</item>
+    </plurals>
+    <plurals name="zm_description_tab_chats_77383">
+        <item quantity="one">Конференции и чаты, непрочитанные сообщения: %s, вкладка</item>
+        <item quantity="few">Конференции и чаты, непрочитанные сообщения: %s, вкладка</item>
+        <item quantity="many">Конференции и чаты, непрочитанные сообщения: %s, вкладка</item>
+        <item quantity="other">Конференции и чаты, непрочитанные сообщения: %s, вкладка</item>
+    </plurals>
+    <plurals name="zm_description_tab_sip_4_117773">
+        <item quantity="one">%1$s, %2$s новое уведомление</item>
+        <item quantity="few">%1$s, новые уведомления: %2$s</item>
+        <item quantity="many">%1$s, новые уведомления: %2$s</item>
+        <item quantity="other">%1$s, новые уведомления: %2$s</item>
+    </plurals>
+    <plurals name="zm_lbl_comment_more_reply_88133">
+        <item quantity="one">%d ответ</item>
+        <item quantity="few">Ответы: %d</item>
+        <item quantity="many">Ответы: %d</item>
+        <item quantity="other">Ответы: %d</item>
+    </plurals>
+    <plurals name="zm_lbl_comment_reply_title_88133">
+        <item quantity="one">%d ответ</item>
+        <item quantity="few">%d ответы</item>
+        <item quantity="many">%d ответы</item>
+        <item quantity="other">%d ответы</item>
+    </plurals>
+    <plurals name="zm_lbl_folder_items">
+        <item quantity="one">%d элемент</item>
+        <item quantity="few">%d элемента</item>
+        <item quantity="many">%d элементов</item>
+        <item quantity="other">%d элемента</item>
+    </plurals>
+    <plurals name="zm_lbl_mark_unread_150170">
+        <item quantity="one">Помечено как непрочитанное: %d</item>
+        <item quantity="other">Помечено как непрочитанное: %d</item>
+    </plurals>
+    <plurals name="zm_lbl_message_at_all_150170">
+        <item quantity="one">%d ＠все</item>
+        <item quantity="other">%d ＠все</item>
+    </plurals>
+    <plurals name="zm_lbl_message_at_me_150170">
+        <item quantity="one">%d ＠я</item>
+        <item quantity="other">%d ＠я</item>
+    </plurals>
+    <plurals name="zm_lbl_new_unread_thread_88133">
+        <item quantity="one">%s новое сообщение</item>
+        <item quantity="few">%s нов. сообщ.</item>
+        <item quantity="many">%s нов. сообщ.</item>
+        <item quantity="other">%s нов. сообщ.</item>
+    </plurals>
+    <plurals name="zm_lbl_notification_snoozed_hour_19898">
+        <item quantity="one">%d час</item>
+        <item quantity="few">%d часа</item>
+        <item quantity="many">%d часов</item>
+        <item quantity="other">%d часа</item>
+    </plurals>
+    <plurals name="zm_lbl_notification_snoozed_min_19898">
+        <item quantity="one">%d мин</item>
+        <item quantity="few">%d мин</item>
+        <item quantity="many">%d мин</item>
+        <item quantity="other">%d мин</item>
+    </plurals>
+    <plurals name="zm_lbl_view_all_domain_120783">
+        <item quantity="one">Посмотреть/изменить все домены (%d)</item>
+        <item quantity="few">Посмотреть/изменить все домены (%d)</item>
+        <item quantity="many">Посмотреть/изменить все домены (%d)</item>
+        <item quantity="other">Посмотреть/изменить все домены (%d)</item>
+    </plurals>
+    <plurals name="zm_lbl_webinar_telephony_user_count">
+        <item quantity="one">Всего %d слушатель телефонного вызова</item>
+        <item quantity="few">Всего %d слушателя телефонного вызова</item>
+        <item quantity="many">Всего %d слушателей телефонного вызова</item>
+        <item quantity="other">Всего %d слушателя телефонного вызова</item>
+    </plurals>
+    <plurals name="zm_mm_lbl_new_message_count_14491">
+        <item quantity="one">↑%s новое сообщение</item>
+        <item quantity="few">↑%s новых сообщения</item>
+        <item quantity="many">↑%s новых сообщений</item>
+        <item quantity="other">↑%s новых сообщения</item>
+    </plurals>
+    <plurals name="zm_mm_msg_day_33479">
+        <item quantity="one">%d день</item>
+        <item quantity="few">%d дня</item>
+        <item quantity="many">%d дней</item>
+        <item quantity="other">%d дня</item>
+    </plurals>
+    <plurals name="zm_mm_msg_hour_33479">
+        <item quantity="one">%d час</item>
+        <item quantity="few">%d часа</item>
+        <item quantity="many">%d часов</item>
+        <item quantity="other">%d часа</item>
+    </plurals>
+    <plurals name="zm_mm_msg_month_33479">
+        <item quantity="one">%d месяц</item>
+        <item quantity="few">%d месяца</item>
+        <item quantity="many">%d месяцев</item>
+        <item quantity="other">%d месяца</item>
+    </plurals>
+    <plurals name="zm_mm_msg_year_33479">
+        <item quantity="one">%d год</item>
+        <item quantity="few">%d года</item>
+        <item quantity="many">%d лет</item>
+        <item quantity="other">%d года</item>
+    </plurals>
+    <plurals name="zm_mm_template_attachments_68416">
+        <item quantity="one">Вложение: %1$d</item>
+        <item quantity="few">Вложение: %1$d</item>
+        <item quantity="many">Вложения: %1$d</item>
+        <item quantity="other">Вложения: %1$d</item>
+    </plurals>
+    <plurals name="zm_msg_charactors_left">
+        <item quantity="one">Остался %d символ</item>
+        <item quantity="few">Осталось %d символа</item>
+        <item quantity="many">Осталось %d символов</item>
+        <item quantity="other">Осталось %d символа</item>
+    </plurals>
+    <plurals name="zm_msg_hint_add_contact_group_68451">
+        <item quantity="one">Контакт (%1$d) добавлен в %2$s</item>
+        <item quantity="few">Контакт (%1$d) добавлен в %2$s</item>
+        <item quantity="many">Контакт (%1$d) добавлен в %2$s</item>
+        <item quantity="other">Контакты (%1$d) добавлены в %2$s</item>
+    </plurals>
+    <plurals name="zm_msg_invitations_sent">
+        <item quantity="one">Отправлено %d приглашение</item>
+        <item quantity="few">Отправлено %d приглашения</item>
+        <item quantity="many">Отправлено %d приглашений</item>
+        <item quantity="other">Отправлено %d приглашений</item>
+    </plurals>
+    <plurals name="zm_msg_join_meeting_in_waiting_list">
+        <item quantity="one">В зал ожидания этой конференции вошел %d человек</item>
+        <item quantity="few">В зал ожидания этой конференции вошли %d человека</item>
+        <item quantity="many">В зал ожидания этой конференции вошли %d человек</item>
+        <item quantity="other">В зал ожидания этой конференции вошли %d человека</item>
+    </plurals>
+    <plurals name="zm_msg_notification_unread_num_8295">
+        <item quantity="one">%1$s(%2$d непрочитанное сообщение)</item>
+        <item quantity="few">%1$s(%2$d непрочитанных сообщения)</item>
+        <item quantity="many">%1$s(%2$d непрочитанных сообщений)</item>
+        <item quantity="other">%1$s(%2$d непрочитанных сообщения)</item>
+    </plurals>
+    <plurals name="zm_pbx_voicemail_filter_inboxes_100064">
+        <item quantity="one">Входящие пользователя %1$s</item>
+        <item quantity="few">%1$s (входящие)</item>
+        <item quantity="many">%1$s (входящие)</item>
+        <item quantity="other">%1$s (входящие)</item>
+    </plurals>
+    <plurals name="zm_sip_calls_text_111498">
+        <item quantity="one">%1$d вызов</item>
+        <item quantity="few">%1$d вызовов</item>
+        <item quantity="many">%1$d вызовов</item>
+        <item quantity="other">%1$d вызова (-ов)</item>
+    </plurals>
+    <plurals name="zm_sip_delete_x_items_61381">
+        <item quantity="one">Удалить %d элемент</item>
+        <item quantity="few">Удалить элементы: %d</item>
+        <item quantity="many">Удалить элементы: %d</item>
+        <item quantity="other">Удалить элементы: %d</item>
+    </plurals>
+    <plurals name="zm_sip_desc_session_new_message_117773">
+        <item quantity="one">%1$s новое сообщение</item>
+        <item quantity="few">%1$s нов. сообщ.</item>
+        <item quantity="many">%1$s нов. сообщ.</item>
+        <item quantity="other">%1$s нов. сообщ.</item>
+    </plurals>
+    <plurals name="zm_title_edit_emoji_selected">
+        <item quantity="one">Выбрано %d эмодзи</item>
+        <item quantity="few">Выбрано %d эмодзи</item>
+        <item quantity="many">Выбрано %d эмодзи</item>
+        <item quantity="other">Выбрано %d эмодзи</item>
+    </plurals>
+</resources>

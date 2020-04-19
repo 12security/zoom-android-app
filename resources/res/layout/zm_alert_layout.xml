@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p021us.zoom.androidlib.widget.ZMDialogRootLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/dialog_root_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:minWidth="270dp">
+    <LinearLayout android:orientation="vertical" android:id="@+id/topPanel" android:paddingTop="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:ellipsize="end" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/alertTitle" android:paddingLeft="15dp" android:paddingRight="15dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Title text " style="@style/ZMTextView.Large.DialogTitle"/>
+        <TextView android:gravity="bottom" android:id="@+id/alertOptionTitle" android:background="@color/zm_dialog_option_titlebg" android:paddingLeft="20dp" android:paddingTop="20dp" android:paddingRight="20dp" android:paddingBottom="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Test" android:singleLine="true" style="@style/ZMTextView.OptionTitle"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/customTopPanel" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/contentPanel" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+        <ScrollView android:id="@+id/scrollView" android:paddingLeft="20dp" android:paddingRight="20dp" android:paddingBottom="0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="40dp" android:overScrollMode="ifContentScrolls">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/alertIcon" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:gravity="center" android:id="@+id/alertdialogmsg" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="message text" style="@style/ZMTextView.Normal.DialogMsg"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/customPanel" android:paddingTop="3dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+        <FrameLayout android:id="@+id/customView" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <RelativeLayout android:id="@+id/buttonPanelHorizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/customPanelBottomGap" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="20dp"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/buttonPanel" android:background="@color/zm_split_bg" android:paddingTop="0.5dp" android:paddingBottom="0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/customPanelBottomGap">
+            <Button android:gravity="center" android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/button2" android:padding="15dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginRight="0.5dp" android:text="Cancel" android:maxLines="2" android:layout_weight="1" style="@style/ZMButton.Dialog"/>
+            <Button android:gravity="center" android:layout_gravity="center" android:id="@+id/button3" android:padding="15dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginRight="0.5dp" android:text="Neutral" android:maxLines="2" android:layout_weight="1" style="@style/ZMButton.Dialog"/>
+            <Button android:gravity="center" android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/button1" android:padding="15dp" android:layout_width="0dp" android:layout_height="match_parent" android:text="OK" android:maxLines="3" android:layout_weight="1" style="@style/ZMButton.Dialog.HappyPath"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/buttonPanelVertical" android:background="@color/zm_split_bg" android:paddingTop="0.5dp" android:paddingBottom="0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_below="@+id/customPanelBottomGap">
+        <Button android:gravity="center" android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/buttonV1" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="OK" android:maxLines="1" style="@style/ZMButton.Dialog"/>
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@+id/buttonV2" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0.5dp" android:text="Neutral" android:maxLines="1" style="@style/ZMButton.Dialog"/>
+        <Button android:gravity="center" android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/buttonV3" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0.5dp" android:text="Cancel" android:maxLines="1" style="@style/ZMButton.Dialog"/>
+    </LinearLayout>
+</p021us.zoom.androidlib.widget.ZMDialogRootLayout>

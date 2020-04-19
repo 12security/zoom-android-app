@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingLeft="16dp" android:paddingTop="4dp" android:paddingRight="10dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/imgClose" android:padding="4dp" android:layout_width="32dp" android:layout_height="32dp" android:src="@drawable/zm_dialog_close" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:contentDescription="@string/zm_btn_close"/>
+    <EditText android:gravity="top" android:id="@+id/edtQuestion" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:layout_marginRight="8dp" android:hint="@string/zm_qa_hint_ask_question_41047" android:lines="@integer/zm_qa_question_input_max_lines" android:maxLength="1000" android:layout_below="@+id/imgClose" android:inputType="textMultiLine" android:imeOptions="actionSend"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:layout_marginRight="8dp" android:layout_below="@+id/edtQuestion">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/optionAnonymously" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="0dp" android:layout_height="@dimen/zm_pt_titlebar_height" android:layout_weight="1">
+            <CheckBox android:id="@+id/chkAnonymously" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="15sp" android:id="@+id/txtAnonymously" android:paddingLeft="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_qa_msg_send_anonymousely_41047" style="@style/ZMTextView.OnLight.Normal"/>
+        </LinearLayout>
+        <p021us.zoom.androidlib.widget.ZMTextButton android:enabled="false" android:textSize="14sp" android:textColor="@drawable/zm_button_text_color" android:id="@+id/btnSend" android:background="@drawable/zm_btn_with_light_grey_frame" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_btn_send"/>
+    </LinearLayout>
+</RelativeLayout>

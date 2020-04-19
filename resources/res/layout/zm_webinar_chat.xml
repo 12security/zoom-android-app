@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout android:id="@+id/panelTitleBar" android:layout_width="match_parent" android:layout_height="wrap_content" app:zm_leftButton="@+id/btnBack" app:zm_rightButton="@+id/viewRight" app:zm_title="@+id/txtTitle" style="@style/ZMTitleBar">
+        <Button android:id="@+id/btnBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_btn_close" android:layout_centerVertical="true" style="@style/ZMButton.TitleBar"/>
+        <View android:id="@+id/viewRight" android:visibility="invisible" android:layout_width="50dp" android:layout_height="0dp"/>
+        <p021us.zoom.androidlib.widget.ZMDynTextSizeTextView android:ellipsize="end" android:gravity="center" android:id="@+id/txtTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/zm_title_webinar_chat" android:singleLine="true" style="@style/ZMTextView.Title"/>
+    </p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+    <com.zipow.videobox.view.ConfChatListView android:id="@+id/chatListView" android:layout_width="match_parent" android:layout_height="0dp" android:divider="@null" android:layout_weight="1" style="@style/MMChatListView"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/chatBuddyPanel" android:background="@color/zm_white" android:paddingTop="3dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:background="@drawable/zm_list_divider" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingRight="15dp" android:paddingBottom="10dp" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_webinar_txt_send_to" style="@style/ZMTextView.BuddyName.Medium.Dimmed"/>
+            <Button android:ellipsize="end" android:id="@+id/txtCurrentItem" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_mi_everyone_122046" android:singleLine="true" android:drawableRight="@drawable/zm_dropdown" style="@style/ZMButton.NoBackground"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/inputLayout" android:background="#f0f0f0" android:paddingLeft="4dp" android:paddingTop="5dp" android:paddingRight="4dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="1">
+        <EditText android:id="@+id/edtMessage" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="4" android:maxLength="1024" android:layout_weight="1" android:inputType="textMultiLine" android:imeOptions="actionSend" style="@style/ZMEditText.Small"/>
+        <Button android:enabled="false" android:layout_gravity="center_vertical" android:id="@+id/btnSend" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_btn_send" style="@style/ZMButton.NoBackground"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/llDisabledAlert" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:background="@drawable/zm_list_divider" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <TextView android:textColor="@color/zm_text_disable" android:gravity="center" android:id="@+id/txtDisabledAlert" android:background="@color/zm_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/zm_webinar_txt_chat_disabled_65892" style="@style/ZMTextView.Instructions"/>
+    </LinearLayout>
+</LinearLayout>

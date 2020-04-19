@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/zm_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:background="@color/zm_title_bar_dark_bg" android:layout_width="match_parent" android:layout_height="@dimen/zm_titlebar_height">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/zm_starred_title_back_btn" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:contentDescription="@string/zm_btn_back" style="@style/ZMBackButton"/>
+        <TextView android:textSize="17sp" android:textColor="@color/zm_white" android:layout_gravity="center" android:id="@+id/zm_starred_title_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_mm_starred_title_name_owp40"/>
+    </FrameLayout>
+    <RadioGroup android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:background="@drawable/zm_starred_radio_group" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RadioButton android:textStyle="bold" android:textColor="@color/zm_starred_radio_btn_text_color" android:gravity="center" android:id="@+id/zm_starred_radio_btn1" android:background="@drawable/zm_starred_radio_btn" android:padding="0px" android:layout_width="0px" android:layout_height="match_parent" android:checked="true" android:button="@null" android:text="@string/zm_mm_starred_radio_contact_owp40" android:layout_weight="1"/>
+        <RadioButton android:textStyle="bold" android:textColor="@color/zm_starred_radio_btn_text_color" android:gravity="center" android:id="@+id/zm_starred_radio_btn2" android:background="@drawable/zm_starred_radio_btn" android:layout_width="0px" android:layout_height="match_parent" android:button="@null" android:text="@string/zm_mm_starred_radio_message_owp40" android:layout_weight="1"/>
+    </RadioGroup>
+    <androidx.viewpager.widget.ViewPager android:id="@+id/zm_starred_viewPager" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/zm_starred_fragment_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/zm_window_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout android:id="@+id/panelTitle" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:zm_leftButton="@+id/panelTitleLeft" app:zm_rightButton="@+id/btnLeave" app:zm_title="@+id/txtTopic" style="@style/ZMTitleBar.Light">
+        <View android:id="@+id/panelTitleLeft" android:layout_width="0dp" android:layout_height="40dp"/>
+        <Button android:id="@+id/btnLeave" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="60dp" android:text="@string/zm_btn_leave_conf" style="@style/ZMButton.NoBackground"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtTopic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Reed Yang&apos;s Meeting" android:singleLine="true" style="@style/ZMTextView.Title.OnLight"/>
+    </p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="#76ad23" android:layout_width="match_parent" android:layout_height="40dp">
+        <ProgressBar android:layout_gravity="center_vertical" android:id="@+id/progressBar1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" style="@style/ZMProgressBar.Small"/>
+        <TextView android:textSize="14sp" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/txtWaiting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="@string/zm_msg_waiting_for_scheduler" style="@style/ZMTextView.Medium.OnDark"/>
+    </LinearLayout>
+    <p021us.zoom.androidlib.widget.ZMSettingsCategory android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="20dp">
+        <TableLayout android:paddingLeft="@dimen/zm_setting_item_padding_left" android:paddingTop="@dimen/zm_setting_item_padding_bottom" android:paddingRight="@dimen/zm_setting_item_padding_right" android:paddingBottom="@dimen/zm_setting_item_padding_top" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TableRow android:gravity="center_horizontal" android:id="@+id/tableRowMeetingId" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:layout_gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_lbl_meeting_id" style="@style/ZMTextView.Large.OnLight"/>
+                <TextView android:id="@+id/txtMeetingId" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="111-111-111" style="@style/ZMTextView.Medium.OnLight"/>
+            </TableRow>
+            <TableRow android:gravity="center_horizontal" android:id="@+id/tableRowDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+                <TextView android:layout_gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_lbl_date" style="@style/ZMTextView.Large.OnLight"/>
+                <TextView android:id="@+id/txtDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="Wes, Jun 14, 2012" style="@style/ZMTextView.Medium.OnLight"/>
+            </TableRow>
+            <TableRow android:gravity="center_horizontal" android:id="@+id/tableRowTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+                <TextView android:layout_gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_lbl_time" style="@style/ZMTextView.Large.OnLight"/>
+                <TextView android:id="@+id/txtTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:maxWidth="180dp" android:text="This is a recurring meeting" style="@style/ZMTextView.Medium.OnLight"/>
+            </TableRow>
+        </TableLayout>
+    </p021us.zoom.androidlib.widget.ZMSettingsCategory>
+    <LinearLayout android:gravity="bottom|center_vertical|center_horizontal|center" android:orientation="vertical" android:id="@+id/panelForScheduler" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="20dp">
+        <TextView android:gravity="center_horizontal" android:id="@+id/txtForScheduler" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_msg_notify_scheduler_login" style="@style/ZMTextView.Medium.OnLight"/>
+        <Button android:id="@+id/btnLogin" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:text="@string/zm_btn_login"/>
+    </LinearLayout>
+</LinearLayout>

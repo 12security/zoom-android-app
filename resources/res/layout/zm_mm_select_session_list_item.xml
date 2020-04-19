@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:paddingLeft="10dp" android:paddingTop="2dp" android:paddingRight="10dp" android:paddingBottom="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:weightSum="1">
+    <com.zipow.videobox.view.AvatarView android:id="@+id/avatarView" android:duplicateParentState="true" android:layout_width="51dp" android:layout_height="51dp" android:layout_centerVertical="true" app:zm_cornerRadiusRatio="0.32" app:zm_description_enable="false"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_weight="1">
+        <p021us.zoom.androidlib.widget.ZMEllipsisTextView android:ellipsize="end" android:id="@+id/txtTitle" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:layout_weight="1" style="@style/UIKitTextView.BuddyName.Normal"/>
+        <com.zipow.videobox.view.PresenceStateView android:id="@+id/imgPresence" android:paddingTop="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" app:zm_subpresence_type="0"/>
+    </LinearLayout>
+</LinearLayout>

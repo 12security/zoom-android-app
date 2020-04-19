@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:paddingRight="7dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="0px" android:layout_height="wrap_content" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:id="@+id/message_normal_linear" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.zipow.videobox.markdown.RoundedSpanBgTextView android:textSize="14sp" android:textColor="@color/zm_template_fields_txt_dark" android:ellipsize="end" android:id="@+id/message" android:paddingLeft="12dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="4"/>
+            <TextView android:textSize="14sp" android:textColor="@color/zm_template_link" android:id="@+id/showMore" android:paddingLeft="12dp" android:paddingRight="12dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/zm_mm_template_message_show_more_68416"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/message_expend_linear" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.zipow.videobox.markdown.RoundedSpanBgTextView android:textSize="14sp" android:textColor="@color/zm_template_fields_txt_dark" android:id="@+id/message_expend" android:paddingLeft="12dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="14sp" android:textColor="@color/zm_template_link" android:id="@+id/showLess" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/zm_mm_template_message_show_less_68416"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@+id/edit" android:padding="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_mm_message_template_fields_edit"/>
+</LinearLayout>

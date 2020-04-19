@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingLeft="10dp" android:paddingTop="5dp" android:paddingRight="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:gravity="left" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/zm_lbl_buddy_invite_email" style="@style/ZMTextView.Medium.OnLight"/>
+    <EditText android:id="@+id/edtEmail" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:hint="@string/zm_hint_buddy_invite_email">
+        <requestFocus/>
+    </EditText>
+    <Button android:id="@+id/btnSend" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/zm_btn_buddy_invite_send" style="@style/ZMButton.HappyPath"/>
+</LinearLayout>

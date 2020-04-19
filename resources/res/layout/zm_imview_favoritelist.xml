@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="5dp" android:weightSum="1">
+    <include android:id="@+id/toolbar" layout="@layout/zm_im_toolbar"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <EditText android:textColorHint="@color/zm_im_search_text_hint" android:id="@+id/edtSearch" android:background="@drawable/zm_search_bg_normal" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/zm_hint_search" android:singleLine="true" android:imeOptions="actionDone"/>
+        <Button android:id="@+id/btnClearSearchView" android:background="@drawable/zm_btn_clear_search_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/zm_description_mm_btn_clear_search_75317"/>
+    </RelativeLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <com.zipow.videobox.view.FavoriteListView android:id="@+id/favoriteListView" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/panelNoItemMsg" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include layout="@layout/zm_image_no_buddy"/>
+            <TextView android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_msg_no_favorite_contacts" style="@style/ZMTextView.Large.OnLight"/>
+            <TextView android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/zm_msg_no_favorite_contacts_sub_note" style="@style/ZMTextView.Small.Dimmed"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingLeft="16dp" android:paddingRight="16dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="32dp">
+    <p021us.zoom.androidlib.ZMMaterialActionButtonLayout android:id="@+id/zmMaterialActionButtonLayout" android:layout_width="match_parent" android:layout_height="wrap_content" app:zm_text_color_negative="@color/zm_text_blue" app:zm_text_color_positive="@color/zm_text_blue" app:zm_text_negative="@string/zm_qa_btn_answer_live_41047" app:zm_text_positive="@string/zm_qa_btn_type_answer_41047" app:zm_text_size="15sp" app:zm_visible_negative="true" app:zm_visible_neutral="false" app:zm_visible_positive="true"/>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.zipow.videobox.view.roundedview.RoundedImageView android:id="@+id/attachments_img" android:background="@color/zm_template_attachments_img_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="88dp" android:scaleType="centerCrop" app:riv_corner_radius_top_left="8dp" app:riv_corner_radius_top_right="8dp" app:riv_mutate_background="true" app:riv_tile_mode="0"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/attachments_img_content" android:background="@drawable/zm_msg_template_attachments_bg" android:paddingLeft="12dp" android:paddingRight="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/img" android:layout_width="30dp" android:layout_height="40dp" android:src="@drawable/zm_mm_template_attachment_img"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11dp">
+            <TextView android:ellipsize="middle" android:id="@+id/attachments_file_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/UIKitTextView.PrimaryText"/>
+            <TextView android:ellipsize="end" android:id="@+id/attachments_file_description" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/UIKitTextView.SecondaryText.Small.Dimmed"/>
+            <TextView android:ellipsize="end" android:id="@+id/attachments_file_sub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/UIKitTextView.SecondaryText.Small.Dimmed"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

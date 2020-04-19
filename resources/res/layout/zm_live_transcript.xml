@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/zm_list_bg_grey" android:layout_width="match_parent" android:layout_height="match_parent">
+    <p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout android:id="@+id/panelTitleBar" android:layout_width="match_parent" android:layout_height="@dimen/zm_pt_titlebar_height" app:zm_leftButton="@+id/btnBack" app:zm_rightButton="@+id/viewRight" app:zm_title="@+id/txtTitle" style="@style/ZMTitleBar">
+        <Button android:id="@+id/btnBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:contentDescription="@string/zm_btn_back" style="@style/ZMBackButton"/>
+        <View android:id="@+id/viewRight" android:layout_width="0dp" android:layout_height="0dp"/>
+        <TextView android:gravity="center_horizontal" android:id="@+id/txtTitle" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_title_live_transcript_82883" style="@style/ZMTextView.Title"/>
+    </p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@+id/swipeRefreshLayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <p021us.zoom.androidlib.util.ZMRecyclerView android:id="@+id/show_transcript" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@null" style="@style/MMChatListView"/>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        <TextView android:gravity="center" android:id="@+id/showEmptyTipView" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/zm_live_transcript_tip_empty_82883"/>
+    </FrameLayout>
+</LinearLayout>

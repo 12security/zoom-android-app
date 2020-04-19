@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:paddingLeft="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <CheckBox android:id="@+id/checkDeleteItem" android:background="@drawable/zm_sip_check_state" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginTop="22dp" android:layout_marginRight="16dp" android:button="@null"/>
+    <ImageView android:id="@+id/imgOutCall" android:layout_width="10dp" android:layout_height="10dp" android:layout_marginTop="20dp" android:layout_marginRight="10dp" android:src="@drawable/zm_ic_outgoing_call"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginBottom="12dp" android:layout_weight="1">
+                    <LinearLayout android:orientation="horizontal" android:paddingTop="12dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                            <TextView android:textSize="@dimen/zm_ui_kit_text_size_16sp" android:textStyle="bold" android:id="@+id/txtBuddyName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/UIKitTextView.BuddyName.Normal"/>
+                            <TextView android:textColor="@color/zm_ui_kit_color_gray_747487" android:id="@+id/txtCallNo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:singleLine="true" style="@style/UIKitTextView.SecondaryText.Medium.Dimmed"/>
+                        </LinearLayout>
+                        <LinearLayout android:gravity="right|center_vertical|center_horizontal|center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="@dimen/zm_ui_kit_text_size_12sp" android:textColor="@color/zm_ui_kit_color_gray_747487" android:id="@+id/txtDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:maxLines="1" style="@style/UIKitTextView.SecondaryText.Medium.Dimmed"/>
+                            <TextView android:textSize="@dimen/zm_ui_kit_text_size_12sp" android:ellipsize="end" android:id="@+id/txtTime" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:maxLines="1" android:singleLine="true" style="@style/UIKitTextView.SecondaryText.Medium.Dimmed"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingBottom="6dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-6dp">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/recordingPanel" android:paddingTop="6dp" android:paddingBottom="6dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="6dp">
+                        <ImageView android:layout_width="20dp" android:layout_height="20dp" android:layout_marginRight="2dp" android:src="@drawable/zm_ic_play_recording"/>
+                        <TextView android:textSize="@dimen/zm_ui_kit_text_size_12sp" android:textColor="@color/zm_ui_kit_color_gray_747487" android:id="@+id/txtRecording" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/UIKitTextView.SecondaryText.Medium.Dimmed"/>
+                    </LinearLayout>
+                    <TextView android:textSize="@dimen/zm_ui_kit_text_size_12sp" android:textColor="@color/zm_ui_kit_color_gray_747487" android:gravity="center_vertical" android:id="@+id/txtSlaInfo" android:paddingBottom="6dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" style="@style/UIKitTextView.SecondaryText.Medium.Dimmed"/>
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/showDialog" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginRight="6dp" android:src="@drawable/zm_sip_history_list_more_action" android:scaleType="centerInside" android:contentDescription="@string/zm_sip_accessbility_detail_61381"/>
+        </LinearLayout>
+        <View android:background="@color/zm_line_divider" android:layout_width="match_parent" android:layout_height="1dp"/>
+    </LinearLayout>
+</LinearLayout>

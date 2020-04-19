@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TabHost android:id="@android:id/tabhost" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout android:id="@+id/panelTitleBar" android:layout_width="match_parent" android:layout_height="@dimen/zm_pt_titlebar_height" app:zm_leftButton="@+id/btnClose" app:zm_rightButton="@+id/viewRight" app:zm_title="@android:id/tabs" style="@style/ZMTitleBar">
+                <Button android:id="@+id/btnClose" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_btn_close" style="@style/ZMButton.TitleBar"/>
+                <View android:id="@+id/viewRight" android:layout_width="0dp" android:layout_height="0dp"/>
+                <TabWidget android:gravity="center" android:id="@android:id/tabs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="5dp"/>
+            </p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+            <FrameLayout android:id="@android:id/tabcontent" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </LinearLayout>
+    </TabHost>
+</LinearLayout>

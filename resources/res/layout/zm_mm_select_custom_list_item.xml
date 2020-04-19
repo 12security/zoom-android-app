@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="10dp" android:paddingTop="5dp" android:paddingRight="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <p021us.zoom.androidlib.widget.ZMCheckedTextView android:gravity="center_vertical" android:id="@+id/check" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:checkMark="?android:attr/listChoiceIndicatorMultiple"/>
+    <com.zipow.videobox.view.AvatarView android:id="@+id/avatarView" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginLeft="0dp" android:layout_marginTop="0dp" android:layout_marginRight="15dp" android:layout_marginBottom="0dp" app:zm_description_enable="false"/>
+    <TextView android:ellipsize="end" android:id="@+id/select_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" style="@style/ZMTextView.Medium.OnLight"/>
+</LinearLayout>

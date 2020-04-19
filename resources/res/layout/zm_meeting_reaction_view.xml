@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <ImageView android:layout_gravity="center" android:id="@+id/btnClap" android:layout_width="32dp" android:layout_height="32dp" android:src="@drawable/reaction_1f44f" android:scaleType="fitCenter" android:contentDescription="@string/zm_accessibility_btn_meeting_reactions_clap_122373"/>
+    </FrameLayout>
+    <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <ImageView android:layout_gravity="center" android:id="@+id/btnThumbup" android:layout_width="32dp" android:layout_height="32dp" android:src="@drawable/reaction_1f44d" android:scaleType="fitCenter" android:contentDescription="@string/zm_accessibility_btn_meeting_reactions_thumbup_122373"/>
+    </FrameLayout>
+</LinearLayout>

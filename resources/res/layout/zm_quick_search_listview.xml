@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <p021us.zoom.androidlib.widget.PullDownRefreshListView android:id="@+id/listView" android:background="@drawable/zm_listview_bg" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <TextView android:textSize="13sp" android:textColor="@color/zm_black_2" android:layout_gravity="center" android:id="@+id/emptyView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="36dp" android:layout_marginRight="36dp"/>
+    <p021us.zoom.androidlib.widget.QuickSearchSideBar android:layout_gravity="right" android:id="@+id/quickSearchSideBar" android:layout_width="25dp" android:layout_height="match_parent"/>
+    <TextView android:textSize="48sp" android:textStyle="bold" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="center" android:id="@+id/txtQuickSearchChar" android:background="@drawable/zm_quick_search_char_bg" android:layout_width="70dp" android:layout_height="70dp" android:text="A"/>
+</merge>

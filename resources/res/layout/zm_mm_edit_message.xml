@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="@dimen/zm_pt_titlebar_height" style="@style/ZMTitleBar.Light">
+            <TextView android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/btn_cancel" android:paddingLeft="13dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_btn_cancel" style="@style/ZMButton.NoBackground"/>
+            <TextView android:textSize="17sp" android:textColor="@android:color/black" android:layout_gravity="center" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_mm_edit_message_19884"/>
+            <TextView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/btn_done" android:paddingRight="7dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_btn_done" style="@style/ZMButton.NoBackground"/>
+        </FrameLayout>
+        <View android:background="@color/zm_mm_edit_message_divider" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <com.zipow.videobox.view.CommandEditText android:gravity="top" android:id="@+id/ext_content" android:background="@android:color/white" android:padding="13dp" android:layout_width="match_parent" android:layout_height="0px" android:maxLength="4096" android:layout_weight="1" android:inputType="none|text|textCapSentences|textMultiLine"/>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="right" android:paddingRight="14dp" android:paddingBottom="8.5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageButton android:id="@+id/btnSetModeKeyboard" android:background="@null" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_mm_setmode_keyboard_btn" android:contentDescription="@string/zm_description_mm_btn_mode_keyboard"/>
+            <ImageButton android:id="@+id/btnEmoji" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_mm_emoji_btn" android:contentDescription="@string/zm_description_mm_btn_mode_voice"/>
+        </LinearLayout>
+        <com.zipow.videobox.view.p014mm.sticker.StickerInputView android:id="@+id/panelEmojis" android:background="@color/zm_white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</FrameLayout>

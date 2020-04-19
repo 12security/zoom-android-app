@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/panelMsgLayout" android:paddingLeft="8dp" android:paddingTop="3dp" android:paddingRight="8dp" android:paddingBottom="3dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:id="@+id/txtScreenName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="56dp" android:text="Reed Yang" style="@style/ZMTextView.ExSmall.Dimmed"/>
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="56dp" layout="@layout/zm_mm_starred_message_title_view"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.zipow.videobox.view.AvatarView android:layout_gravity="top" android:id="@+id/avatarView" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="8dp" app:zm_avatarBorderSize="0dp"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/panelAddon" android:layout_width="@dimen/zm_msg_addon_width" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/panelTitle" android:layout_width="match_parent" android:layout_height="30dp">
+                <ImageView android:id="@+id/imgIcon" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="9dp" android:layout_marginTop="2dp" android:layout_marginBottom="2dp" android:scaleType="fitCenter" android:minWidth="26dp"/>
+                <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@+id/zm_msg_addon_title_linear" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/zm_msg_addon_content_bg" android:paddingTop="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textColorLink="@color/zm_highlight" android:id="@+id/txtSummary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" style="@style/ZMTextView.Normal.OnLight"/>
+                <TextView android:textColorLink="@color/zm_highlight" android:id="@+id/txtBody" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="5dp" android:layout_marginRight="15dp" style="@style/ZMTextView.Normal.Dimmed"/>
+                <TextView android:id="@+id/txtFooter" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="5dp" android:layout_marginRight="15dp" android:layout_marginBottom="15dp" style="@style/ZMTextView.Small.OnLight"/>
+                <LinearLayout android:gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/addon_action_bar_linear" android:background="@drawable/zm_msg_addon_action_bar_bg" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="match_parent" android:layout_height="35dp">
+                    <TextView android:textSize="10sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/addon_action_btn1" android:background="@drawable/zm_msg_addon_action_btn_bg" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="20dp" android:layout_marginLeft="5dp" android:maxWidth="90dp" android:minWidth="50dp" android:singleLine="true"/>
+                    <TextView android:textSize="10sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/addon_action_btn2" android:background="@drawable/zm_msg_addon_action_btn_bg" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="20dp" android:layout_marginLeft="5dp" android:maxWidth="90dp" android:minWidth="50dp" android:singleLine="true"/>
+                    <TextView android:textSize="10sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/addon_action_btn_more" android:background="@drawable/zm_msg_addon_action_btn_bg" android:padding="0px" android:layout_width="25dp" android:layout_height="20dp" android:layout_marginLeft="8dp" android:text="..."/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@+id/zm_mm_starred" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:src="@drawable/zm_mm_starred_message_icon"/>
+    </LinearLayout>
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="48dp" layout="@layout/zm_message_reaction_labels_view_layout"/>
+    <TextView android:id="@+id/txtStarDes" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginStart="48dp" style="@style/UIKitTextView.SecondaryText.Small.Dimmed"/>
+</LinearLayout>

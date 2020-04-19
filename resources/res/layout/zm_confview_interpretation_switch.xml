@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zipow.videobox.view.ConfInterpretationSwitch xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/languageInterpretationPanel" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@+id/txtClosedCaption" android:layout_centerHorizontal="true">
+    <LinearLayout android:orientation="vertical" android:id="@+id/showSwitchTip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@+id/languageInterpretation" android:layout_centerHorizontal="true">
+        <TextView android:textColor="@color/zm_white" android:gravity="center" android:orientation="vertical" android:background="@drawable/zm_corner_bg_gray_9" android:padding="6dp" android:layout_width="186dp" android:layout_height="41dp" android:text="@string/zm_tip_switch_languages_88102"/>
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/show_arrow_down" android:background="@drawable/zm_shape_reverse_triangle" android:layout_width="12dp" android:layout_height="12dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/zm_corner_bg_gray_9" android:padding="6dp" android:layout_width="242dp" android:layout_height="56dp" android:layout_marginBottom="56dp">
+        <include android:id="@+id/showLan1" layout="@layout/zm_interpretation_switch_lan"/>
+        <Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <include android:id="@+id/showLan2" layout="@layout/zm_interpretation_switch_lan"/>
+    </LinearLayout>
+</com.zipow.videobox.view.ConfInterpretationSwitch>

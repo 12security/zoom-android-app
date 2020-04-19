@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:paddingTop="5dp" android:paddingBottom="5dp" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="1">
+    <RelativeLayout android:duplicateParentState="true" android:layout_width="57dp" android:layout_height="57dp" android:layout_marginLeft="10dp">
+        <com.zipow.videobox.view.AvatarView android:id="@+id/avatarView" android:duplicateParentState="true" android:layout_width="51dp" android:layout_height="51dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:zm_description_enable="false"/>
+        <com.zipow.videobox.view.PresenceStateView android:id="@+id/presenceStateView" android:paddingTop="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" app:zm_subpresence_type="0"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:paddingRight="5dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <p021us.zoom.androidlib.widget.ZMEllipsisTextView android:ellipsize="end" android:id="@+id/txtScreenName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:maxLines="1" android:singleLine="true" style="@style/UIKitTextView.CellTitle"/>
+            <p021us.zoom.androidlib.widget.ZMEllipsisTextView android:textSize="@dimen/zm_ui_kit_text_size_16sp" android:textColor="@color/zm_ui_kit_color_gray_747487" android:ellipsize="end" android:id="@+id/txtRole" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:maxLines="1" android:singleLine="true"/>
+        </LinearLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:ellipsize="end" android:id="@+id/txtCustomMessage" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:maxLines="1" android:singleLine="true" style="@style/UIKitTextView.PrimaryText.Normal.Dimmed"/>
+            <TextView android:textColor="@color/zm_ui_kit_color_gray_747487" android:id="@+id/waitApproval" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_mm_lbl_pending_68451" style="@style/ZMTextView.Small"/>
+            <ImageView android:id="@+id/imgBell" android:visibility="gone" android:layout_width="13dp" android:layout_height="13dp" android:layout_marginRight="5dp" android:src="@drawable/zm_bell" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView android:id="@+id/imageCall" android:padding="10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_sip_directory_call" android:contentDescription="@string/zm_accessibility_sip_call_dial"/>
+</LinearLayout>

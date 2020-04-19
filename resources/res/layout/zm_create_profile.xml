@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/zm_window_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:id="@+id/panelTitleBar" android:layout_width="match_parent" android:layout_height="@dimen/zm_pt_titlebar_height" style="@style/ZMTitleBar">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:id="@+id/btnBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_btn_cancel" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/ZMButton.TitleBar"/>
+            <TextView android:gravity="center_horizontal" android:id="@+id/txtTitle" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_title_create_profile" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/ZMTextView.Title"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="top|center_vertical|center_horizontal|center" android:orientation="vertical" android:paddingBottom="30dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/ZMTextView.Instructions">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_ic_tick"/>
+                <TextView android:id="@+id/txtMessage" android:background="@null" android:padding="0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/zm_msg_indication_email_verified" style="@style/ZMTextView.Instructions"/>
+            </LinearLayout>
+            <LinearLayout android:background="@drawable/zm_list_divider" android:layout_width="match_parent" android:layout_height="1px"/>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+                <EditText android:id="@+id/edtFirstName" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/zm_hint_first_name" style="@style/ZMSettingOptionEdit.First"/>
+                <EditText android:id="@+id/edtLastName" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/zm_hint_last_name" style="@style/ZMSettingOptionEdit.Center"/>
+                <EditText android:id="@+id/edtPassword" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/zm_hint_zoom_pwd" android:selectAllOnFocus="true" android:maxLength="32" android:inputType="textPassword" android:imeOptions="actionNext" android:contentDescription="@string/zm_hint_zoom_pwd" style="@style/ZMSettingOptionEdit.Center"/>
+                <EditText android:id="@+id/edtVerifyPassword" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/zm_hint_retype_pwd_67667" android:selectAllOnFocus="true" android:maxLength="32" android:inputType="textPassword" android:imeOptions="actionDone" android:contentDescription="@string/zm_hint_retype_pwd_67667" style="@style/ZMSettingOptionEdit.Last"/>
+            </LinearLayout>
+            <TextView android:textColor="#ff0000" android:gravity="center" android:id="@+id/txtError" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/zm_msg_confirm_password_not_match" style="@style/ZMTextView.Medium"/>
+            <Button android:id="@+id/btnOK" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="10dp" android:layout_marginRight="15dp" android:text="@string/zm_btn_get_started" style="@style/ZMButton.HappyPath"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

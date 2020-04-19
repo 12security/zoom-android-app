@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/viewContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <com.zipow.videobox.view.AvatarView android:id="@+id/imgAvatar" android:layout_width="56dp" android:layout_height="56dp" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:importantForAccessibility="no"/>
+        <TextView android:ellipsize="end" android:gravity="center" android:id="@+id/txtScreenName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_below="@+id/imgAvatar" android:layout_centerHorizontal="true" android:importantForAccessibility="no" style="@style/ZMTextView.ExSmall.OnLight"/>
+        <TextView android:ellipsize="end" android:gravity="center" android:id="@+id/txtRole" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_mm_lbl_group_owner" android:singleLine="true" android:layout_below="@+id/txtScreenName" android:layout_centerHorizontal="true" android:importantForAccessibility="no" style="@style/ZMTextView.GroupOwner"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:paddingRight="50dp" android:duplicateParentState="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <ImageView android:id="@+id/imgRemove" android:duplicateParentState="false" android:layout_width="22dp" android:layout_height="24dp" android:src="@drawable/zm_mm_buddy_remove_btn" android:contentDescription="@string/zm_description_mm_btn_remove_buddy"/>
+    </LinearLayout>
+</RelativeLayout>

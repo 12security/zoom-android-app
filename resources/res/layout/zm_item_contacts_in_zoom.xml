@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:padding="5dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_weight="1">
+        <TextView android:ellipsize="end" android:id="@+id/txtContactName" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:lines="1" style="@style/ZMTextView.Normal.OnLight"/>
+        <TextView android:textColor="@color/zm_ui_kit_color_gray_747487" android:ellipsize="end" android:id="@+id/txtContactNumber" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="" android:lines="1" style="@style/ZMTextView.Small.Dimmed"/>
+    </LinearLayout>
+    <Button android:id="@+id/btnAdd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="@string/zm_btn_add_33300" style="@style/ZMButton.Small"/>
+    <TextView android:id="@+id/txtAdded" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="@string/zm_lbl_added_33300" style="@style/ZMTextView.Normal.Dimmed"/>
+</LinearLayout>

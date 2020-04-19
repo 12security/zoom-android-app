@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <p021us.zoom.androidlib.widget.ZMIgnoreKeyboardLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/zm_invite"/>
+    </p021us.zoom.androidlib.widget.ZMIgnoreKeyboardLayout>
+    <p021us.zoom.androidlib.widget.ZMKeyboardDetector android:id="@+id/keyboardDetector" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:paddingLeft="10dp" android:paddingTop="5dp" android:paddingRight="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.zipow.videobox.view.AvatarView android:id="@+id/avatarView" android:layout_width="35dp" android:layout_height="35dp" android:layout_marginLeft="0dp" android:layout_marginTop="2dp" android:layout_marginRight="10dp" android:layout_marginBottom="0dp" app:zm_description_enable="false"/>
+    <LinearLayout android:gravity="top|left|center_vertical|center_horizontal|center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/linearLayout2" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="1">
+            <TextView android:id="@+id/txtScreenName" android:layout_width="0dp" android:layout_height="wrap_content" android:text="from Reed Yang (Privately)" android:layout_weight="1" style="@style/ZMTextView.ConfChatTitle.Private"/>
+            <TextView android:id="@+id/txtTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00 AM" style="@style/ZMTextView.ConfChatItemTime"/>
+        </LinearLayout>
+        <TextView android:id="@+id/txtMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Hi, Zoom. I like you!" android:inputType="textMultiLine" style="@style/ZMTextView.Medium.OnLight"/>
+    </LinearLayout>
+</LinearLayout>

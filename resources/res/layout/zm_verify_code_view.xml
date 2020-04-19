@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <Button android:ellipsize="end" android:id="@+id/btnSendCode" android:visibility="gone" android:duplicateParentState="false" android:maxWidth="140dp" android:minWidth="@dimen/zm_btn_width_48dp" android:minHeight="@dimen/zm_btn_height_24dp" android:text="@string/zm_btn_send_code_109213" android:maxLines="2" style="@style/ZMButton.BlueRect"/>
+    <TextView android:textSize="@dimen/zm_ui_kit_text_size_12sp" android:textColor="@color/zm_ui_kit_color_gray_BABACC" android:ellipsize="end" android:id="@+id/txtSending" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="140dp" android:text="@string/zm_btn_send_code_109213" android:maxLines="2" style="@style/ZMTextView.SettingsItem.Small"/>
+</FrameLayout>

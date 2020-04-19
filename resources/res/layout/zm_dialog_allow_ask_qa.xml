@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:paddingTop="10dp" android:paddingRight="@dimen/zm_setting_item_padding_right" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:gravity="left|center_vertical|center_horizontal|center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/zm_qa_msg_allow_anonymousely_question_41047" android:layout_weight="1" style="@style/ZMTextView.SettingsItem"/>
+        <p021us.zoom.androidlib.widget.ZMCheckedTextView android:id="@+id/chkAllowAskQA" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkMark="@drawable/zm_btn_toggle_default"/>
+    </LinearLayout>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_lbl_allow_ask_anonymous_question_34305" style="@style/ZMTextView.SettingsItemDesc.Small"/>
+</LinearLayout>

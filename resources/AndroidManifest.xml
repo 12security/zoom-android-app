@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="46013" android:versionName="4.6.20553.0413" android:installLocation="auto" android:compileSdkVersion="29" android:compileSdkVersionCodename="10" package="us.zoom.videomeetings" platformBuildVersionCode="46013" platformBuildVersionName="4.6.20553.0413">
+    <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="29"/>
+    <uses-feature android:glEsVersion="20000"/>
+    <permission-group android:label="@string/zm_permission_group" android:name="us.zoom.videomeetings.permission-group.ZOOM_TOOLS"/>
+    <permission android:label="@string/zm_permission_change_config_label" android:icon="@drawable/zm_launcher" android:name="us.zoom.videomeetings.permission.CHANGE_CONFIG" android:protectionLevel="signature" android:permissionGroup="us.zoom.videomeetings.permission-group.ZOOM_TOOLS" android:description="@string/zm_permission_change_config_desc"/>
+    <permission android:label="@string/zm_permission_read_config_label" android:icon="@drawable/zm_launcher" android:name="us.zoom.videomeetings.permission.READ_CONFIG" android:protectionLevel="signature" android:permissionGroup="us.zoom.videomeetings.permission-group.ZOOM_TOOLS" android:description="@string/zm_permission_read_config_desc"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <permission android:name="us.zoom.videomeetings.permission.KUBI_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="us.zoom.videomeetings.permission.KUBI_MESSAGE"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <uses-feature android:name="android.hardware.bluetooth" android:required="false"/>
+    <uses-feature android:name="android.hardware.microphone" android:required="false"/>
+    <uses-feature android:name="android.hardware.location" android:required="false"/>
+    <uses-feature android:name="android.hardware.location.network" android:required="false"/>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY"/>
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="com.sony.mobile.permission.SYSTEM_UI_VISIBILITY_EXTENSION"/>
+    <application android:label="@string/zm_app_name" android:icon="@drawable/zm_launcher" android:name="com.zipow.videobox.ZoomApplication" android:allowBackup="false" android:largeHeap="true" android:usesCleartextTraffic="false" android:resizeableActivity="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:hasFragileUserData="true">
+        <activity android:name="p021us.zoom.thirdparty.login.google.GoogleAuthActivity" android:launchMode="singleTask" android:configChanges="orientation|screenSize">
+            <intent-filter>
+                <data android:scheme="us.zoom.videomeetings"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/ZMTheme.Transparent" android:label="@string/zm_app_name" android:icon="@drawable/zm_launcher" android:name="com.zipow.videobox.LauncherActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/ZMTheme.Transparent" android:name="com.zipow.videobox.JoinByURLActivity" android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="http"/>
+                <data android:host="*.zoom.us"/>
+                <data android:pathPattern="/j/.*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="https"/>
+                <data android:host="*.zoom.us"/>
+                <data android:pathPattern="/j/.*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="http"/>
+                <data android:host="zoom.us"/>
+                <data android:pathPattern="/j/.*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="https"/>
+                <data android:host="zoom.us"/>
+                <data android:pathPattern="/j/.*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="http"/>
+                <data android:host="*.zoom.us"/>
+                <data android:pathPattern="/w/.*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="https"/>
+                <data android:host="*.zoom.us"/>
+                <data android:pathPattern="/w/.*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="http"/>
+                <data android:host="zoom.us"/>
+                <data android:pathPattern="/w/.*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="https"/>
+                <data android:host="zoom.us"/>
+                <data android:pathPattern="/w/.*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="zoomus"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="https"/>
+                <data android:host=" "/>
+                <data android:pathPattern="/saml/mobile_.*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="http"/>
+                <data android:host="*.zoomus.cn"/>
+                <data android:pathPattern="/j/.*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="https"/>
+                <data android:host="*.zoomus.cn"/>
+                <data android:pathPattern="/j/.*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="http"/>
+                <data android:host="zoomus.cn"/>
+                <data android:pathPattern="/j/.*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="https"/>
+                <data android:host="zoomus.cn"/>
+                <data android:pathPattern="/j/.*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="http"/>
+                <data android:host="*.zoomus.cn"/>
+                <data android:pathPattern="/w/.*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="https"/>
+                <data android:host="*.zoomus.cn"/>
+                <data android:pathPattern="/w/.*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="http"/>
+                <data android:host="zoomus.cn"/>
+                <data android:pathPattern="/w/.*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="https"/>
+                <data android:host="zoomus.cn"/>
+                <data android:pathPattern="/w/.*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="http"/>
+                <data android:host="*.zoom.com"/>
+                <data android:pathPattern="/j/.*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="https"/>
+                <data android:host="*.zoom.com"/>
+                <data android:pathPattern="/j/.*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="http"/>
+                <data android:host="zoom.com"/>
+                <data android:pathPattern="/j/.*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="https"/>
+                <data android:host="zoom.com"/>
+                <data android:pathPattern="/j/.*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="http"/>
+                <data android:host="*.zoom.com"/>
+                <data android:pathPattern="/w/.*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="https"/>
+                <data android:host="*.zoom.com"/>
+                <data android:pathPattern="/w/.*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="http"/>
+                <data android:host="zoom.com"/>
+                <data android:pathPattern="/w/.*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="https"/>
+                <data android:host="zoom.com"/>
+                <data android:pathPattern="/w/.*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="http"/>
+                <data android:host="*.zoom.com.cn"/>
+                <data android:pathPattern="/j/.*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="https"/>
+                <data android:host="*.zoom.com.cn"/>
+                <data android:pathPattern="/j/.*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="http"/>
+                <data android:host="zoom.com.cn"/>
+                <data android:pathPattern="/j/.*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="https"/>
+                <data android:host="zoom.com.cn"/>
+                <data android:pathPattern="/j/.*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="http"/>
+                <data android:host="*.zoom.com.cn"/>
+                <data android:pathPattern="/w/.*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="https"/>
+                <data android:host="*.zoom.com.cn"/>
+                <data android:pathPattern="/w/.*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="http"/>
+                <data android:host="zoom.com.cn"/>
+                <data android:pathPattern="/w/.*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="https"/>
+                <data android:host="zoom.com.cn"/>
+                <data android:pathPattern="/w/.*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="http"/>
+                <data android:host="*.meetzoom.net"/>
+                <data android:pathPattern="/j/.*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="https"/>
+                <data android:host="*.meetzoom.net"/>
+                <data android:pathPattern="/j/.*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="http"/>
+                <data android:host="meetzoom.net"/>
+                <data android:pathPattern="/j/.*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="https"/>
+                <data android:host="meetzoom.net"/>
+                <data android:pathPattern="/j/.*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="http"/>
+                <data android:host="*.meetzoom.net"/>
+                <data android:pathPattern="/w/.*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="https"/>
+                <data android:host="*.meetzoom.net"/>
+                <data android:pathPattern="/w/.*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="http"/>
+                <data android:host="meetzoom.net"/>
+                <data android:pathPattern="/w/.*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="https"/>
+                <data android:host="meetzoom.net"/>
+                <data android:pathPattern="/w/.*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="geo"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="zoomphonecall"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/ZMTheme.SubWindow" android:name="com.dropbox.core.android.AuthActivity" android:launchMode="singleTask" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection">
+            <intent-filter>
+                <data android:scheme="db-zecq6smsyshct83"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <provider android:name="androidx.core.content.FileProvider" android:exported="false" android:authorities="@string/zm_app_provider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_provider_paths"/>
+        </provider>
+        <provider android:name="p021us.zoom.videomeetings.ZMPreferencesProvider" android:exported="false" android:authorities="@string/zm_app_pref_provider"/>
+        <receiver android:name="com.zipow.videobox.config.ConfigWriter" android:permission="us.zoom.videomeetings.permission.CHANGE_CONFIG">
+            <intent-filter>
+                <action android:name="us.zoom.videomeetings.intent.action.CHANGE_CONFIG"/>
+                <action android:name="us.zoom.videomeetings.intent.action.RESET_CONFIG"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.zipow.videobox.config.ConfigReader" android:permission="us.zoom.videomeetings.permission.READ_CONFIG">
+            <intent-filter>
+                <action android:name="us.zoom.videomeetings.intent.action.READ_CONFIG"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver" android:exported="false"/>
+        <receiver android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND" android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+                <category android:name="us.zoom.videomeetings"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="android.content.APP_RESTRICTIONS" android:resource="@xml/zm_restrictions"/>
+        <activity android:theme="@style/ZMTheme.Transparent" android:name="com.zipow.videobox.MMShareActivity" android:exported="false" android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection"/>
+        <activity-alias android:label="@string/zm_mm_send_to_zoom_buddies" android:name="us.zoom.videomeetings.SendFileActivity" android:enabled="false" android:targetActivity="com.zipow.videobox.MMShareActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+                <data android:scheme="file"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="*/*"/>
+                <data android:scheme="file"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="application/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="application/*"/>
+                <data android:scheme="file"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="audio/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="audio/*"/>
+                <data android:scheme="file"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="video/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="video/*"/>
+                <data android:scheme="file"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/*"/>
+                <data android:scheme="file"/>
+            </intent-filter>
+        </activity-alias>
+        <activity android:theme="@style/ZMTheme.Transparent" android:name="com.zipow.videobox.IntegrationActivity" android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection"/>
+        <activity android:theme="@style/ZMDialog.Transparent" android:name="com.zipow.videobox.MeetingEndMessageActivity" android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection"/>
+        <activity android:theme="@style/ZMDialog.Transparent" android:name="com.zipow.videobox.MinVersionForceUpdateActivity" android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection"/>
+        <activity android:theme="@style/ZMDialog.Transparent" android:name="com.zipow.videobox.JoinMeetingFailActivity" android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection"/>
+        <activity android:theme="@style/ZMDialog.Transparent" android:name="com.zipow.videobox.FreeMeetingEndActivity" android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection"/>
+        <activity android:theme="@style/ZMTheme.MainWindow" android:label="@string/zm_app_name" android:name="com.zipow.videobox.LoginActivity" android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:theme="@style/ZMTheme.SubWindow" android:name="com.zipow.videobox.login.ZmSmsLoginActivity" android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize" android:hardwareAccelerated="false"/>
+        <activity android:theme="@style/ZMTheme.SubWindow" android:label="@string/zm_app_name" android:name="com.zipow.videobox.JoinConfActivity" android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection"/>
+        <activity android:theme="@style/ZMTheme.SubWindow" android:label="@string/zm_app_name" android:name="com.zipow.videobox.CallRoomActivity" android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:theme="@style/ZMTheme.MainWindow" android:name="com.zipow.videobox.IMActivity" android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize" android:hardwareAccelerated="false"/>
+        <activity android:theme="@style/ZMTheme.SubWindow" android:name="com.zipow.videobox.IMChatActivity"/>
+        <activity android:theme="@style/ZMTheme.SubWindow" android:name="com.zipow.videobox.InviteActivity" android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:theme="@style/ZMTheme.SubWindow" android:name="com.zipow.videobox.CallingActivity" android:taskAffinity=":Calling" android:excludeFromRecents="true" android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection"/>
+        <activity android:theme="@style/ZMTheme.SubWindow" android:name="com.zipow.videobox.SettingActivity"/>
+        <activity android:theme="@style/ZMTheme.SubWindow" android:name="com.zipow.videobox.FeedbackActivity"/>
+        <activity android:theme="@style/ZMTheme.SubWindow" android:name="com.zipow.videobox.BuddyInviteActivity" android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:theme="@style/ZMTheme.SubWindow" android:name="com.zipow.videobox.ScheduleActivity" android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:theme="@style/ZMTheme.SubWindow" android:name="com.zipow.videobox.AudioOptionActivity" android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:theme="@style/ZMTheme.SubWindow" android:name="com.zipow.videobox.SignupActivity" android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection"/>
+        <activity android:theme="@style/ZMTheme.SubWindow" android:name="com.zipow.videobox.ForgetPasswordActivity" android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection"/>
+        <activity android:theme="@style/ZMTheme.SubWindow" android:name="com.zipow.videobox.SetPasswordActivity" android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection"/>
+        <activity android:theme="@style/ZMTheme.SubWindow" android:name="com.zipow.videobox.MeetingInfoActivity" android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection"/>
+        <activity android:theme="@style/ZMTheme.SubWindow" android:name="com.zipow.videobox.AddFavoriteActivity" android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:theme="@style/ZMTheme.SubWindow" android:name="com.zipow.videobox.AddrBookSetNumberActivity" android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection"/>
+        <activity android:theme="@style/ZMTheme.SubWindow" android:name="com.zipow.videobox.AddrBookVerifyNumberActivity" android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection"/>
+        <activity android:theme="@style/ZMTheme.SubWindow" android:name="com.zipow.videobox.AddrBookItemDetailsActivity" android:configChanges="keyboardHidden|uiMode|screenSize|smallestScreenSize"/>
+        <activity android:theme="@style/ZMTheme.SubWindow" android:name="com.zipow.videobox.AddrBookSettingActivity" android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection"/>
+        <activity android:theme="@style/ZMTheme.SubWindow" android:name="com.zipow.videobox.PBXSMSActivity" android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize" android:hardwareAccelerated="false"/>
+        <activity android:theme="@style/ZMTheme.SubWindow" android:name="com.zipow.videobox.MMChatActivity" android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize" android:hardwareAccelerated="false"/>
+        <activity android:theme="@style/ZMTheme.SubWindow" android:name="com.zipow.videobox.MMCommentActivity" android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize" android:hardwareAccelerated="false"/>
+        <activity android:theme="@style/ZMTheme.SubWindow" android:name="com.zipow.videobox.MMChatInfoActivity" android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:theme="@style/ZMTheme.SubWindow" android:name="com.zipow.videobox.MMSelectContactsActivity" android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:theme="@style/ZMTheme.SubWindow" android:name="com.zipow.videobox.SimpleActivity" android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize"/>
+        <activity android:theme="@style/ZMTheme.SubWindow" android:name="com.zipow.videobox.SystemNotificationActivity" android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:theme="@style/ZMTheme.SubWindow" android:name="com.zipow.videobox.MyProfileActivity" android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:theme="@style/ZMTheme.MainWindow" android:label="@string/zm_app_name" android:name="com.zipow.videobox.WelcomeActivity" android:launchMode="singleTask" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:theme="@style/ZMTheme.MainWindow" android:name="com.zipow.videobox.view.sip.SipInCallActivity" android:excludeFromRecents="true" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:theme="@style/ZMDialog.Material.Transparent" android:name="com.zipow.videobox.view.sip.SipIncomePopActivity" android:excludeFromRecents="true" android:launchMode="singleInstance" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection"/>
+        <activity android:theme="@style/ZMTheme.MainWindow" android:name="com.zipow.videobox.view.sip.SipIncomeActivity" android:excludeFromRecents="true" android:launchMode="singleInstance" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection"/>
+        <activity android:theme="@style/ZMTheme.MainWindow" android:name="com.zipow.videobox.view.sip.SipTransferResultActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection"/>
+        <activity android:theme="@style/ZMTheme.SubWindow" android:name="com.zipow.videobox.view.sip.SipTransferSucActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection"/>
+        <activity android:theme="@style/ZMTheme.SubWindow" android:name="com.zipow.videobox.ConfActivityNormal" android:process=":conf" android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:hardwareAccelerated="false"/>
+        <activity android:theme="@style/ZMTheme.SubWindow" android:name="com.zipow.videobox.PListActivity" android:process=":conf" android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:hardwareAccelerated="false"/>
+        <activity android:theme="@style/ZMTheme.SubWindow" android:name="com.zipow.videobox.InMeetingSettingsActivity" android:process=":conf" android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:theme="@style/ZMTheme.SubWindow" android:name="com.zipow.videobox.ConfChatActivityOld" android:process=":conf" android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection"/>
+        <activity android:theme="@style/ZMTheme.SubWindow" android:name="com.zipow.videobox.MeetingRunningInfoActivity" android:process=":conf" android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection"/>
+        <activity android:theme="@style/ZMTheme.SubWindow" android:name="com.zipow.videobox.CallInActivity" android:process=":conf" android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection"/>
+        <activity android:theme="@style/ZMTheme.SubWindow" android:name="com.zipow.videobox.SimpleInMeetingActivity" android:process=":conf" android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:theme="@style/ZMTheme.SubWindow" android:name="com.zipow.videobox.poll.PollingActivity" android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection"/>
+        <activity android:theme="@style/ZMTheme.SubWindow" android:name="com.zipow.videobox.poll.WebinarPollingActivity" android:process=":conf" android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection"/>
+        <activity android:theme="@style/ZMTheme.SubWindow" android:name="com.zipow.videobox.poll.PollingResultActivity" android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection"/>
+        <activity android:theme="@style/ZMTheme.SubWindow" android:name="com.zipow.videobox.poll.WebinarPollingResultActivity" android:process=":conf" android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection"/>
+        <activity android:theme="@style/ZMTheme.SubWindow" android:name="p021us.zoom.androidlib.app.ZMFileListActivity" android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection"/>
+        <activity android:theme="@style/ZMTheme.SubWindow" android:name="com.zipow.videobox.MMImageListActivity" android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection"/>
+        <activity android:theme="@style/ZMTheme.SubWindow" android:name="com.zipow.videobox.photopicker.PhotoPickerActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize" android:hardwareAccelerated="false"/>
+        <activity android:theme="@style/ZMTheme.SubWindow" android:name="com.zipow.videobox.StarredActivity" android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection"/>
+        <activity android:theme="@style/ZMTheme.SubWindow" android:name="com.zipow.videobox.StarredMessageActivity" android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection"/>
+        <service android:label="@string/zm_app_name" android:name="com.zipow.videobox.PTService" android:exported="false"/>
+        <service android:label="@string/zm_app_name" android:name="com.zipow.videobox.ConfService" android:exported="false" android:process=":conf" android:foregroundServiceType="20"/>
+        <service android:label="@string/zm_app_name" android:name="com.zipow.videobox.stabilility.StabilityService" android:exported="false" android:process=":stb"/>
+        <service android:label="@string/zm_app_name" android:name="com.zipow.videobox.kubi.KubiService" android:exported="false"/>
+        <service android:name="com.zipow.videobox.ZMFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.zipow.videobox.PBXJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="p021us.zoom.videomeetings.wxapi.WXEntryActivity" android:exported="true" android:launchMode="singleTask" android:configChanges="orientation|screenSize"/>
+        <activity android:name="com.alipay.sdk.app.AlipayResultActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="@string/cn_login_alipay_scheme"/>
+            </intent-filter>
+        </activity>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <activity android:name="com.microsoft.aad.adal.AuthenticationActivity"/>
+        <service android:name="com.google.firebase.messaging.FirebaseMessagingService" android:exported="false">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.google.firebase.components.ComponentDiscoveryService" android:exported="false">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <service android:name="com.google.firebase.iid.FirebaseInstanceIdService" android:exported="true">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <provider android:name="com.google.firebase.provider.FirebaseInitProvider" android:exported="false" android:authorities="us.zoom.videomeetings.firebaseinitprovider" android:initOrder="100"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false"/>
+        <receiver android:name="com.google.android.gms.measurement.AppMeasurementReceiver" android:enabled="true" android:exported="false"/>
+        <receiver android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" android:permission="android.permission.INSTALL_PACKAGES" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.android.gms.measurement.AppMeasurementService" android:enabled="true" android:exported="false"/>
+        <service android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="true" android:exported="false"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <activity android:name="com.box.androidsdk.content.auth.OAuthActivity" android:exported="true" android:configChanges="orientation|screenSize"/>
+    </application>
+</manifest>

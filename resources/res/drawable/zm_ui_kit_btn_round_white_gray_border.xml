@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <corners android:radius="@dimen/zm_ui_kit_button_corners"/>
+    <stroke android:width="1px" android:color="@color/zm_ui_kit_color_gray_BABACC"/>
+    <solid android:color="@color/zm_ui_kit_color_white_ffffff"/>
+</shape>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="1">
+    <p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout android:id="@+id/panelTitleBar" android:layout_width="match_parent" android:layout_height="wrap_content" app:zm_leftButton="@+id/btnBack" app:zm_rightButton="@+id/btnStartConf" app:zm_title="@+id/panelTitleCenter" style="@style/ZMTitleBar">
+        <Button android:id="@+id/btnBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_btn_back" android:layout_centerVertical="true" style="@style/ZMBackButton"/>
+        <Button android:layout_gravity="center_vertical" android:id="@+id/btnStartConf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="80dp" android:text="@string/zm_btn_start_conf_short" style="@style/ZMButton.TitleBar"/>
+        <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/panelTitleCenter" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <p021us.zoom.androidlib.widget.ZMDynTextSizeTextView android:ellipsize="end" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/txtBuddyChatTo" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Reed Yang" android:singleLine="true" android:layout_weight="1" style="@style/ZMTextView.Title"/>
+            <ImageView android:id="@+id/imgPresence" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:src="@drawable/zm_status_available"/>
+        </LinearLayout>
+    </p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+    <com.zipow.videobox.view.IMMessageListView android:id="@+id/messageListView" android:layout_width="match_parent" android:layout_height="0dp" android:divider="@null" android:layout_weight="1" style="@style/MMChatListView"/>
+    <LinearLayout android:background="@color/zm_dim" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/linearLayout1" android:background="#f0f0f0" android:paddingLeft="4dp" android:paddingTop="5dp" android:paddingRight="4dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="1">
+        <EditText android:id="@+id/edtMessage" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="4" android:layout_weight="1" android:inputType="none|text|textCapSentences|textMultiLine" style="@style/ZMEditText.Small"/>
+        <Button android:layout_gravity="center_vertical" android:id="@+id/btnSend" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_btn_send" style="@style/ZMButton.TitleBar"/>
+    </LinearLayout>
+</LinearLayout>

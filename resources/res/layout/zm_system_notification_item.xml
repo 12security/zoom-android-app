@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.zipow.videobox.view.AvatarView android:id="@+id/avatarView" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginLeft="10dp" android:layout_marginTop="0dp" android:layout_marginRight="15dp" android:layout_marginBottom="0dp" app:zm_description_enable="false"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:ellipsize="end" android:id="@+id/txtScreenName" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" style="@style/UIKitTextView.BuddyName.Normal"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtEmail" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:maxLines="2" style="@style/ZMTextView.Normal.Dimmed747487"/>
+        <TextView android:id="@+id/txtDescription" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:maxLines="2" style="@style/ZMTextView.Normal"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:layout_width="100dp" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/btnDecline" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@drawable/zm_ic_decline" android:contentDescription="@string/zm_btn_decline"/>
+        <ImageView android:id="@+id/btnAccept" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_ic_accept" android:contentDescription="@string/zm_btn_accept"/>
+        <TextView android:id="@+id/txtDeclined" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_description_contact_request_decline" style="@style/ZMTextView.MMSystemNotification.txtState"/>
+        <TextView android:id="@+id/txtpending" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_description_contact_request_pending" style="@style/ZMTextView.MMSystemNotification.txtState"/>
+        <TextView android:id="@+id/txtChat" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_description_contact_request_chat" style="@style/ZMTextView.MMSystemNotification.btnState"/>
+    </LinearLayout>
+</LinearLayout>

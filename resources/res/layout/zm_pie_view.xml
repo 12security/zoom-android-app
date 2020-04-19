@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/zm_transparent" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/imgCircle" android:paddingTop="0.5dp" android:paddingRight="0.5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_pie_view_background" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+    <ImageView android:id="@+id/imgFocusRight" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_pie_view_right" android:layout_alignRight="@+id/imgCircle" android:layout_centerVertical="true"/>
+    <ImageView android:id="@+id/imgFocusLeft" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_pie_view_left" android:layout_alignLeft="@+id/imgCircle" android:layout_centerVertical="true"/>
+    <ImageView android:id="@+id/imgFocusUp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_pie_view_up" android:layout_alignTop="@+id/imgCircle" android:layout_centerHorizontal="true"/>
+    <ImageView android:id="@+id/imgFocusDown" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_pie_view_down" android:layout_alignBottom="@+id/imgCircle" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

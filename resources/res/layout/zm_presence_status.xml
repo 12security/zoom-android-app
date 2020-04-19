@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/zm_window_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout android:id="@+id/panelTitleBar" android:layout_width="match_parent" android:layout_height="@dimen/zm_pt_titlebar_height" app:zm_leftButton="@+id/btnBack" app:zm_rightButton="@+id/viewRight" app:zm_title="@+id/txtTitle" style="@style/ZMTitleBar">
+        <Button android:id="@+id/btnBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" style="@style/ZMBackButton"/>
+        <View android:id="@+id/viewRight" android:layout_width="40dp" android:layout_height="match_parent"/>
+        <p021us.zoom.androidlib.widget.ZMDynTextSizeTextView android:gravity="center_horizontal" android:id="@+id/txtTitle" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_lbl_presence_change_40739" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/ZMTextView.Title"/>
+    </p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+    <p021us.zoom.androidlib.widget.ZMSettingsCategory android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_setting_item_group_spacing">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/panelPsAvailable" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/zm_setting_item_padding_left" android:src="@drawable/zm_status_available" android:contentDescription="@string/zm_accessibility_icon_item_selected_19247"/>
+            <TextView android:gravity="left|center_vertical|center_horizontal|center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/zm_lbl_presence_status_available_40739" android:layout_weight="1" style="@style/ZMTextView.SettingsItem"/>
+            <ImageView android:id="@+id/imgPsAvailable" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/zm_setting_item_padding_right" android:src="@drawable/zm_group_type_select" android:contentDescription="@string/zm_accessibility_icon_item_selected_19247"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/panelPsDnd" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/zm_setting_item_padding_left" android:src="@drawable/zm_status_dnd" android:contentDescription="@string/zm_accessibility_icon_item_selected_19247"/>
+            <TextView android:gravity="left|center_vertical|center_horizontal|center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/zm_lbl_presence_status_dnd_40739" android:layout_weight="1" style="@style/ZMTextView.SettingsItem"/>
+            <LinearLayout android:gravity="right|center_vertical|center_horizontal|center" android:layout_gravity="center_vertical" android:orientation="horizontal" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:gravity="right" android:id="@+id/txtTimeInterval" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="" android:layout_weight="1" style="@style/ZMTextView.Normal.Dimmed"/>
+                <ImageView android:id="@+id/imgPsDnd" android:focusable="false" android:visibility="invisible" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/zm_setting_item_padding_right" android:src="@drawable/zm_group_type_select"/>
+            </LinearLayout>
+        </LinearLayout>
+    </p021us.zoom.androidlib.widget.ZMSettingsCategory>
+</LinearLayout>

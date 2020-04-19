@@ -1,0 +1,86 @@
+html, body {
+ width:100%;
+ height: 100%;
+ margin: 0px;
+ padding: 0px;
+ background-color:#EEEEEE;
+}
+
+table.hljs-ln
+{
+   border-collapse:collapse;
+}
+
+/* for block of numbers */
+td.hljs-ln-numbers {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+	position:relative;
+	text-align: center;
+	color: #ccc;
+	border-right: 1px solid #CCC;
+	vertical-align: top;
+	padding-right: 5px;
+    left:expression(this.parentElement.parentElement.parentElement.scrollLeft);
+    /*left:0px;*/
+    z-index:1;
+	/* your custom style here */
+}
+
+/* for block of code */
+td.hljs-ln-code {
+	padding-left: 10px;
+	white-space:nowrap;
+}
+
+.hljs-ln-n:before{
+    content:attr(data-line-number)
+}
+html, body {
+ width:100%;
+ height: 100%;
+ margin: 0px;
+ padding: 0px;
+ background-color:#EEEEEE;
+}
+
+table.hljs-ln
+{
+   border-collapse:collapse;
+}
+
+/* for block of numbers */
+td.hljs-ln-numbers {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+	position:relative;
+	text-align: center;
+	color: #ccc;
+	border-right: 1px solid #CCC;
+	vertical-align: top;
+	padding-right: 5px;
+    left:expression(this.parentElement.parentElement.parentElement.scrollLeft);
+    /*left:0px;*/
+    z-index:1;
+	/* your custom style here */
+}
+
+/* for block of code */
+td.hljs-ln-code {
+	padding-left: 10px;
+	white-space:nowrap;
+}
+
+.hljs-ln-n:before{
+    content:attr(data-line-number)
+}

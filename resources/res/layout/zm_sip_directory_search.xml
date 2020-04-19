@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/zm_im_search_bar_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/zm_pt_titlebar_height">
+        <p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout android:id="@+id/panelTitleBar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/zm_pt_titlebar_height" app:zm_leftButton="@+id/panelTitleLeft" app:zm_rightButton="@+id/btnCancel" app:zm_title="@+id/txtTitle" style="@style/ZMTitleBar.Dark">
+            <Button android:id="@+id/btnCancel" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/zm_btn_cancel" style="@style/ZMButton.TitleBar"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/panelTitleLeft" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <p021us.zoom.androidlib.widget.ZMDynTextSizeTextView android:ellipsize="end" android:gravity="center" android:id="@+id/txtTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_title_addrbook" android:singleLine="true" android:layout_centerInParent="true" style="@style/ZMTextView.Title.OnDark"/>
+        </p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+        <com.zipow.videobox.view.ZMSearchBar android:id="@+id/panelSearch" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:editTextHint="@string/zm_hint_search_im_18680" app:imeOptions="actionDone" app:noMargin="true" style="@style/ZMTitleBar"/>
+    </RelativeLayout>
+    <com.zipow.videobox.view.ZMSearchBar android:id="@+id/panelSearchBar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" app:cursorVisible="false" app:editTextHint="@string/zm_hint_search_im_18680" app:imeOptions="actionDone"/>
+    <View android:id="@+id/searchBarDivideLine" android:background="@color/zm_im_search_shadow" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <FrameLayout android:id="@+id/mListContainer" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.zipow.videobox.view.sip.PBXDirectorySearchListView android:id="@+id/directoryListView" android:background="@color/zm_white" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@android:color/transparent"/>
+        <TextView android:gravity="top|center_vertical|center_horizontal|center" android:layout_gravity="center_horizontal" android:id="@+id/txtEmptyView" android:background="@color/zm_white" android:paddingTop="30dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/zm_lbl_search_result_empty" style="@style/ZMTextView.SettingsItem"/>
+    </FrameLayout>
+</LinearLayout>

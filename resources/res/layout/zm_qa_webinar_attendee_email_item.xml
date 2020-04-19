@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="10dp" android:paddingTop="5dp" android:paddingRight="10dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="46dp">
+    <ImageView android:id="@+id/imgAttention" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:src="@drawable/zm_ic_distract"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <com.zipow.videobox.view.PListNameRoleLayout android:orientation="horizontal" android:paddingRight="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:ellipsize="end" android:id="@+id/txtName" android:paddingRight="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Name" android:singleLine="true" style="@style/ZMTextView.Medium.OnLight"/>
+            <TextView android:id="@+id/txtRole" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/ZMTextView.Small.Dimmed"/>
+        </com.zipow.videobox.view.PListNameRoleLayout>
+        <TextView android:ellipsize="end" android:id="@+id/txtEmail" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Email" android:singleLine="true" style="@style/ZMTextView.Normal.Dimmed"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/imgRaiseHand" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_ic_raise_hand"/>
+    <ImageView android:id="@+id/imgAudio" android:padding="1dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_audio_on"/>
+</LinearLayout>

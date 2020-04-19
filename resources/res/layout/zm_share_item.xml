@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/zm_setting_item_padding_left" android:paddingTop="@dimen/zm_setting_item_padding_top" android:paddingRight="@dimen/zm_setting_item_padding_right" android:paddingBottom="@dimen/zm_setting_item_padding_bottom" android:layout_width="match_parent" android:layout_height="match_parent">
+    <p021us.zoom.androidlib.widget.ZMEllipsisTextView android:ellipsize="end" android:id="@+id/txtContactName" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="Public" android:singleLine="true" android:layout_weight="1" style="@style/ZMTextView.BuddyName.Medium"/>
+    <com.zipow.videobox.view.PresenceStateView android:id="@+id/imgPresence" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <TextView android:ellipsize="end" android:id="@+id/txtGroupType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Public" android:singleLine="true" style="@style/ZMTextView.Medium.Dimmed"/>
+</LinearLayout>

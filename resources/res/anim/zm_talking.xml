@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="false">
+    <item android:duration="400" android:drawable="@drawable/zm_anim_talking_1"/>
+    <item android:duration="400" android:drawable="@drawable/zm_anim_talking_2"/>
+    <item android:duration="400" android:drawable="@drawable/zm_anim_talking_3"/>
+    <item android:duration="400" android:drawable="@drawable/zm_anim_talking_1"/>
+    <item android:duration="400" android:drawable="@drawable/zm_anim_talking_2"/>
+    <item android:duration="400" android:drawable="@drawable/zm_anim_talking_3"/>
+</animation-list>

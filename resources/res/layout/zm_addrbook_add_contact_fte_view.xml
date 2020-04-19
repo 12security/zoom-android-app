@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/layoutFTE" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:gravity="center" android:id="@+id/addContactFTE" android:background="@drawable/zm_addrbook_add_contact_fte_bg" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_marginRight="7dp" android:text="@string/zm_lbl_add_contact_here_79032" android:layout_alignParentRight="true" style="@style/ZMTextView.Normal.OnDark"/>
+    </RelativeLayout>
+</FrameLayout>

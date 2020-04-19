@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:id="@+id/panelBottomBar" android:paddingLeft="20dp" android:paddingRight="0dp" android:paddingBottom="30dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <Button android:textSize="20sp" android:textColor="#ffffff" android:id="@+id/btnEndCall" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:text="@string/zm_btn_end_call" android:layout_weight="1" style="@style/ZMButton.Red"/>
+    <ImageView android:id="@+id/speakerDivider" android:background="#7f151515" android:layout_width="1dp" android:layout_height="match_parent"/>
+    <Button android:textSize="12sp" android:gravity="center" android:id="@+id/btnSpeaker" android:background="@drawable/zm_btn_speaker" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_lbl_speaker" style="@style/ZMButton.Small.OnDark"/>
+</LinearLayout>

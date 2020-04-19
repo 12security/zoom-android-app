@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/zm_window_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout android:id="@+id/panelTitleBar" android:layout_width="match_parent" android:layout_height="@dimen/zm_pt_titlebar_height" app:zm_leftButton="@+id/btnBack" app:zm_rightButton="@+id/viewRight" app:zm_title="@+id/txtTitle" style="@style/ZMTitleBar">
+        <Button android:id="@+id/btnBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" style="@style/ZMBackButton"/>
+        <View android:id="@+id/viewRight" android:layout_width="40dp" android:layout_height="match_parent"/>
+        <p021us.zoom.androidlib.widget.ZMDynTextSizeTextView android:gravity="center_horizontal" android:id="@+id/txtTitle" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_title_setting_meeting" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/ZMTextView.Title"/>
+    </p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+    <ScrollView android:id="@+id/panelOptions" android:background="@drawable/zm_window_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+        <p021us.zoom.androidlib.widget.ZMSettingsLayout android:orientation="vertical" android:paddingLeft="0dp" android:paddingTop="@dimen/zm_setting_item_group_spacing" android:paddingRight="0dp" android:paddingBottom="@dimen/zm_setting_item_group_spacing" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <p021us.zoom.androidlib.widget.ZMSettingsCategory android:orientation="vertical" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/optionEnableDrivingMode" android:paddingRight="@dimen/zm_setting_item_padding_right" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:gravity="left|center_vertical|center_horizontal|center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/zm_lbl_enable_driving_mode" android:layout_weight="1" style="@style/ZMTextView.SettingsItem"/>
+                    <p021us.zoom.androidlib.widget.ZMCheckedTextView android:id="@+id/chkEnableDrivingMode" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkMark="@drawable/zm_btn_toggle_default"/>
+                </LinearLayout>
+            </p021us.zoom.androidlib.widget.ZMSettingsCategory>
+            <TextView android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/zm_lbl_enable_driving_mode_instructions" style="@style/ZMTextView.SettingsItemDesc"/>
+            <p021us.zoom.androidlib.widget.ZMSettingsCategory android:orientation="vertical" android:id="@+id/category_auto_connect_audio" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/optionAutoConnectAudio" android:paddingRight="@dimen/zm_setting_item_padding_right" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:layout_gravity="left|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_lbl_auto_connect_audio_92027" style="@style/ZMTextView.SettingsItem"/>
+                    <TextView android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/txtAutoConnectAudioSelection" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginRight="@dimen/zm_setting_item_padding_right" android:text="Off" android:layout_weight="1" style="@style/ZMTextView.Normal.Dimmed"/>
+                    <ImageView android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_next_arrow"/>
+                </LinearLayout>
+            </p021us.zoom.androidlib.widget.ZMSettingsCategory>
+            <p021us.zoom.androidlib.widget.ZMSettingsCategory android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/optionAutoMuteMic" android:paddingRight="@dimen/zm_setting_item_padding_right" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <p021us.zoom.androidlib.widget.ZMDynTextSizeTextView android:gravity="left|center_vertical|center_horizontal|center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/zm_lbl_auto_mute_mic_on_join_meeting" android:layout_weight="1" style="@style/ZMTextView.SettingsItem"/>
+                    <p021us.zoom.androidlib.widget.ZMCheckedTextView android:id="@+id/chkAutoMuteMic" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkMark="@drawable/zm_btn_toggle_default"/>
+                </LinearLayout>
+            </p021us.zoom.androidlib.widget.ZMSettingsCategory>
+            <TextView android:focusable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/zm_lbl_auto_mute_mic_on_join_meeting_instructions" style="@style/ZMTextView.SettingsItemDesc"/>
+            <p021us.zoom.androidlib.widget.ZMSettingsCategory android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/optionNotOpenCamera" android:paddingRight="@dimen/zm_setting_item_padding_right" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <p021us.zoom.androidlib.widget.ZMDynTextSizeTextView android:gravity="left|center_vertical|center_horizontal|center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/zm_lbl_not_open_camera_on_join_meeting" android:layout_weight="1" style="@style/ZMTextView.SettingsItem"/>
+                    <p021us.zoom.androidlib.widget.ZMCheckedTextView android:id="@+id/chkNotOpenCamera" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkMark="@drawable/zm_btn_toggle_default"/>
+                </LinearLayout>
+            </p021us.zoom.androidlib.widget.ZMSettingsCategory>
+            <TextView android:focusable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/zm_lbl_not_open_camera_on_join_meeting_instructions" style="@style/ZMTextView.SettingsItemDesc"/>
+            <p021us.zoom.androidlib.widget.ZMSettingsCategory android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/optionTurnOnVideoWithoutPreview" android:paddingRight="@dimen/zm_setting_item_padding_right" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <p021us.zoom.androidlib.widget.ZMDynTextSizeTextView android:gravity="left|center_vertical|center_horizontal|center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/zm_lbl_turn_on_video_without_preview_title_95788" android:layout_weight="1" style="@style/ZMTextView.SettingsItem"/>
+                    <p021us.zoom.androidlib.widget.ZMCheckedTextView android:id="@+id/chkTurnOnVideoWithoutPreview" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkMark="@drawable/zm_btn_toggle_default"/>
+                </LinearLayout>
+            </p021us.zoom.androidlib.widget.ZMSettingsCategory>
+            <TextView android:focusable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/zm_lbl_turn_on_video_without_preview_95788" style="@style/ZMTextView.SettingsItemDesc"/>
+            <p021us.zoom.androidlib.widget.ZMSettingsCategory android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/optionShowNoVideo" android:paddingRight="@dimen/zm_setting_item_padding_right" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <p021us.zoom.androidlib.widget.ZMDynTextSizeTextView android:gravity="left|center_vertical|center_horizontal|center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/zm_mi_show_no_video_participants_101131" android:layout_weight="1" style="@style/ZMTextView.SettingsItem"/>
+                    <p021us.zoom.androidlib.widget.ZMCheckedTextView android:id="@+id/chkShowNoVideo" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkMark="@drawable/zm_btn_toggle_default"/>
+                </LinearLayout>
+            </p021us.zoom.androidlib.widget.ZMSettingsCategory>
+            <TextView android:focusable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/zm_lbl_show_no_video_participants_101131" style="@style/ZMTextView.SettingsItemDesc"/>
+            <p021us.zoom.androidlib.widget.ZMSettingsCategory android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/optionShowJoinLeaveTip" android:paddingRight="@dimen/zm_setting_item_padding_right" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <p021us.zoom.androidlib.widget.ZMDynTextSizeTextView android:gravity="left|center_vertical|center_horizontal|center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/zm_mi_show_join_leave_tip_117565" android:layout_weight="1" style="@style/ZMTextView.SettingsItem"/>
+                    <p021us.zoom.androidlib.widget.ZMCheckedTextView android:id="@+id/chkShowJoinLeaveTip" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkMark="@drawable/zm_btn_toggle_default"/>
+                </LinearLayout>
+            </p021us.zoom.androidlib.widget.ZMSettingsCategory>
+            <TextView android:focusable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/zm_lbl_show_join_leave_tip_117565" style="@style/ZMTextView.SettingsItemDesc"/>
+            <p021us.zoom.androidlib.widget.ZMSettingsCategory android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/optionTurnOnAutoCopyMeetingLink" android:paddingRight="@dimen/zm_setting_item_padding_right" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <p021us.zoom.androidlib.widget.ZMDynTextSizeTextView android:gravity="left|center_vertical|center_horizontal|center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/zm_lbl_turn_on_auto_copy_meeting_link_title_64735" android:layout_weight="1" style="@style/ZMTextView.SettingsItem"/>
+                    <p021us.zoom.androidlib.widget.ZMCheckedTextView android:id="@+id/chkTurnOnAutoCopyMeetingLink" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkMark="@drawable/zm_btn_toggle_default"/>
+                </LinearLayout>
+            </p021us.zoom.androidlib.widget.ZMSettingsCategory>
+            <TextView android:focusable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/zm_lbl_turn_on_auto_copy_meeting_link_64735" style="@style/ZMTextView.SettingsItemDesc"/>
+            <p021us.zoom.androidlib.widget.ZMSettingsCategory android:orientation="vertical" android:id="@+id/panelEnableKubiRobot" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/optionEnableKubiRobot" android:paddingRight="@dimen/zm_setting_item_padding_right" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <p021us.zoom.androidlib.widget.ZMDynTextSizeTextView android:gravity="left|center_vertical|center_horizontal|center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/zm_lbl_enable_kubi_robot_device" android:layout_weight="1" style="@style/ZMTextView.SettingsItem"/>
+                    <p021us.zoom.androidlib.widget.ZMCheckedTextView android:id="@+id/chkEnableKubiRobot" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkMark="@drawable/zm_btn_toggle_default"/>
+                </LinearLayout>
+            </p021us.zoom.androidlib.widget.ZMSettingsCategory>
+            <TextView android:id="@+id/txtEnableKubiRobotInstructions" android:focusable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/zm_lbl_enable_kubi_robot_device_instructions" style="@style/ZMTextView.SettingsItemDesc"/>
+            <p021us.zoom.androidlib.widget.ZMSettingsLayout android:orientation="vertical" android:id="@+id/panelAvailableKubis" android:paddingLeft="0dp" android:paddingTop="10dp" android:paddingRight="0dp" android:paddingBottom="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@+id/txtAvailableKubis" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="@string/zm_lbl_available_kubis" style="@style/ZMTextView.SettingsItemDesc"/>
+                    <ProgressBar android:layout_gravity="center_vertical" android:id="@+id/progressScanKubi" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ZMProgressBar.Small"/>
+                </LinearLayout>
+                <p021us.zoom.androidlib.widget.ZMSettingsCategory android:orientation="vertical" android:id="@+id/panelKubisContainer" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.zipow.videobox.kubi.SettingMeetingKubiItem android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                </p021us.zoom.androidlib.widget.ZMSettingsCategory>
+            </p021us.zoom.androidlib.widget.ZMSettingsLayout>
+            <p021us.zoom.androidlib.widget.ZMSettingsCategory android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/optionCloseCaption" android:paddingRight="@dimen/zm_setting_item_padding_right" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <p021us.zoom.androidlib.widget.ZMDynTextSizeTextView android:gravity="left|center_vertical|center_horizontal|center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/zm_lbl_closedCaption" android:layout_weight="1" style="@style/ZMTextView.SettingsItem"/>
+                    <p021us.zoom.androidlib.widget.ZMCheckedTextView android:id="@+id/chkClosedCaption" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkMark="@drawable/zm_btn_toggle_default"/>
+                </LinearLayout>
+            </p021us.zoom.androidlib.widget.ZMSettingsCategory>
+            <TextView android:focusable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/zm_lbl_closedCaption_description" style="@style/ZMTextView.SettingsItemDesc"/>
+            <p021us.zoom.androidlib.widget.ZMSettingsCategory android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/optionEnableOriginalAudio" android:paddingRight="@dimen/zm_setting_item_padding_right" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <p021us.zoom.androidlib.widget.ZMDynTextSizeTextView android:gravity="left|center_vertical|center_horizontal|center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/zm_lbl_original_audio_in_meeting_145354" android:layout_weight="1" style="@style/ZMTextView.SettingsItem"/>
+                    <p021us.zoom.androidlib.widget.ZMCheckedTextView android:id="@+id/chkOriginalAudio" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkMark="@drawable/zm_btn_toggle_default"/>
+                </LinearLayout>
+            </p021us.zoom.androidlib.widget.ZMSettingsCategory>
+            <TextView android:focusable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/zm_lbl_original_audio_meeting_instructions_150295" style="@style/ZMTextView.SettingsItemDesc"/>
+            <p021us.zoom.androidlib.widget.ZMSettingsCategory android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/optionShowTimer" android:paddingRight="@dimen/zm_setting_item_padding_right" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <p021us.zoom.androidlib.widget.ZMDynTextSizeTextView android:gravity="left|center_vertical|center_horizontal|center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/zm_lbl_showTimer_539" android:layout_weight="1" style="@style/ZMTextView.SettingsItem"/>
+                    <p021us.zoom.androidlib.widget.ZMCheckedTextView android:id="@+id/chkShowTimer" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkMark="@drawable/zm_btn_toggle_default"/>
+                </LinearLayout>
+            </p021us.zoom.androidlib.widget.ZMSettingsCategory>
+            <TextView android:focusable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/zm_lbl_showTimer_description_539" style="@style/ZMTextView.SettingsItemDesc"/>
+            <p021us.zoom.androidlib.widget.ZMSettingsCategory android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/optionDriveMode" android:paddingRight="@dimen/zm_setting_item_padding_right" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <p021us.zoom.androidlib.widget.ZMDynTextSizeTextView android:gravity="left|center_vertical|center_horizontal|center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/zm_msg_driving_mode_title_86526" android:layout_weight="1" style="@style/ZMTextView.SettingsItem"/>
+                    <p021us.zoom.androidlib.widget.ZMCheckedTextView android:id="@+id/chkDriveMode" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkMark="@drawable/zm_btn_toggle_default"/>
+                </LinearLayout>
+            </p021us.zoom.androidlib.widget.ZMSettingsCategory>
+            <TextView android:focusable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/zm_lbl_drive_mode_description_40060" style="@style/ZMTextView.SettingsItemDesc"/>
+            <p021us.zoom.androidlib.widget.ZMSettingsCategory android:orientation="vertical" android:id="@+id/category_reaction_skin_tone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/optionReactionSkinTone" android:paddingRight="@dimen/zm_setting_item_padding_right" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:layout_gravity="left|center_vertical|center_horizontal|center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/zm_lbl_meeting_reaction_skin_tone_122373" android:layout_weight="1" style="@style/ZMTextView.SettingsItem"/>
+                    <ImageView android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_next_arrow"/>
+                </LinearLayout>
+            </p021us.zoom.androidlib.widget.ZMSettingsCategory>
+        </p021us.zoom.androidlib.widget.ZMSettingsLayout>
+    </ScrollView>
+</LinearLayout>

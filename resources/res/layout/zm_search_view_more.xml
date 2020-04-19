@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="horizontal" android:background="@color/zm_white" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <Button android:id="@+id/btnSearchMore" android:focusable="false" android:clickable="false" android:layout_width="match_parent" android:layout_height="40dp" android:text="@string/zm_btn_view_more" style="@style/ZMButton.NoBackground.Medium"/>
+</LinearLayout>

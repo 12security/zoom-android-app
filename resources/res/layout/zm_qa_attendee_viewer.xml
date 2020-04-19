@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout android:id="@+id/panelTitleBar" android:layout_width="match_parent" android:layout_height="@dimen/zm_pt_titlebar_height" android:weightSum="1" android:layout_alignParentTop="true" app:zm_leftButton="@+id/btnBack" app:zm_rightButton="@+id/btnAsk" app:zm_title="@+id/txtTitle" style="@style/ZMTitleBar">
+        <Button android:id="@+id/btnBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_btn_close" android:contentDescription="@string/zm_btn_close" style="@style/ZMButton.TitleBar"/>
+        <Button android:id="@+id/btnAsk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_qa_btn_ask_question_41047" style="@style/ZMButton.TitleBar"/>
+        <TextView android:gravity="center_horizontal" android:id="@+id/txtTitle" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_qa_title_qa" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/ZMTextView.Title"/>
+    </p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/llContent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/panelTitleBar">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/zm_titlebar_dark_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <p021us.zoom.androidlib.widget.segement.ZMSegmentTabLayout android:layout_gravity="center_horizontal" android:id="@+id/zmSegmentTabLayout" android:layout_width="wrap_content" android:layout_height="36dp" app:zm_bar_color="@color/zm_transparent" app:zm_indicator_color="@color/zm_white" app:zm_indicator_corner_radius="4dp" app:zm_tab_padding="4dp" app:zm_tab_width="@dimen/zm_qa_tab_width" app:zm_textBold="2" app:zm_textSelectColor="@color/zm_text_on_light" app:zm_textUnselectColor="@color/zm_white" app:zm_textsize="16sp"/>
+        </LinearLayout>
+        <p021us.zoom.androidlib.widget.ZMViewPager android:id="@+id/viewPager" android:background="@color/zm_white" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/panelNoItemMsg" android:paddingLeft="30dp" android:paddingRight="30dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:gravity="center" android:id="@+id/txtNoMessageTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/zm_qa_msg_no_question_title_41047" style="@style/ZMTextView.Title.OnLight"/>
+        <TextView android:gravity="center" android:id="@+id/txtNoItemMsg" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/zm_qa_msg_no_question_41047" style="@style/ZMTextView.Medium.Dimmed"/>
+    </LinearLayout>
+</RelativeLayout>

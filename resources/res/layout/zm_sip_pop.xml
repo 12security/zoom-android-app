@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/zm_pop_dropdown" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/zm_sip_pop_width">
+    <TextView android:gravity="left" android:id="@+id/tvMsg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Popfdjafjdjafoeohafiehdf djfaljfdl fasfohasodhfavdasnfdsfah  fdhsaohf" style="@style/UIKitTextView.SecondaryText"/>
+</LinearLayout>

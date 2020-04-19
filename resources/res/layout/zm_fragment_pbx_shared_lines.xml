@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/layout_filter" android:visibility="visible" android:layout_width="match_parent" android:layout_height="56dp">
+        <ImageView android:id="@+id/ivKeyboard" android:layout_width="48dp" android:layout_height="match_parent" android:src="@drawable/zm_sip_ic_keyboard" android:scaleType="centerInside" android:contentDescription="@string/zm_sip_keypad_desc_117773"/>
+    </LinearLayout>
+    <View android:background="@color/zm_line_divider" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <com.zipow.videobox.view.sip.PhonePBXSharedLineRecyclerView android:id="@+id/sharedLineRecyclerView" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

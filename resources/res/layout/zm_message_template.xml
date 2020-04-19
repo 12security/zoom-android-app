@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/panelMsgLayout" android:paddingLeft="8dp" android:paddingTop="6dp" android:paddingRight="8dp" android:paddingBottom="6dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.zipow.videobox.view.AvatarView android:layout_gravity="top" android:id="@+id/avatarView" android:layout_width="35dp" android:layout_height="35dp" android:layout_marginRight="5dp"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="false" android:layout_width="@dimen/zm_msg_template_width" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/screenNameLinear" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6dp">
+                <TextView android:id="@+id/txtScreenName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/zm_msg_template_screen_name_max_width" android:text="Reed Yang" android:singleLine="true" style="@style/ZMTextView.ExSmall.Dimmed"/>
+                <ImageView android:id="@+id/appImg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:src="@drawable/zm_mm_template_app_icon" android:contentDescription="@string/zm_accessbility_template_app_19328" android:layout_marginStart="5dp"/>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/visibleToYouLinear" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:src="@drawable/zm_mm_template_eye_icon"/>
+                    <TextView android:textColor="@color/zm_template_attachments_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/zm_mm_template_message_only_visible_to_you_81761" style="@style/ZMTextView.ExSmall"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <include layout="@layout/zm_mm_starred_message_title_view"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@+id/panelTemplate" android:layout_width="@dimen/zm_msg_template_width" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@+id/templateTitle" android:background="@drawable/zm_msg_template_title_bg" android:paddingTop="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.zipow.videobox.markdown.RoundedSpanBgTextView android:id="@+id/titleTxt" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/UIKitTextView.PrimaryText.Normal"/>
+                    <com.zipow.videobox.markdown.RoundedSpanBgTextView android:textColor="@color/zm_gray_6C6C7F" android:id="@+id/subTitleTxt" android:paddingLeft="12dp" android:paddingRight="12dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/UIKitTextView.SecondaryText.Small"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:background="@drawable/zm_msg_template_content_bg" android:paddingTop="5dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/zm_mm_sidebar" android:background="@drawable/zm_mm_template_side_bar" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="12dp" android:layout_marginStart="12dp"/>
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <com.zipow.videobox.view.p014mm.MMMessageTemplateSectionGroupView android:orientation="vertical" android:id="@+id/zm_mm_section_group" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        <TextView android:textSize="11sp" android:textColor="@color/zm_mm_edit_message_time_19884" android:layout_gravity="start" android:id="@+id/zm_mm_section_edit_time" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="8dp" android:layout_marginRight="12dp" android:text="@string/zm_mm_update_message_time_104206" android:singleLine="true" android:layout_marginStart="12dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView android:id="@+id/zm_mm_starred" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:src="@drawable/zm_mm_starred_message_icon"/>
+        </LinearLayout>
+        <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="48dp" layout="@layout/zm_message_reaction_labels_view_layout"/>
+        <TextView android:id="@+id/txtStarDes" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginStart="48dp" style="@style/UIKitTextView.SecondaryText.Small.Dimmed"/>
+    </LinearLayout>
+</LinearLayout>

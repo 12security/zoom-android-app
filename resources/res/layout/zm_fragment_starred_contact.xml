@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ListView android:id="@+id/zm_fragment_starred_contact_listView" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/zm_fragment_starred_contact_emptyView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="16sp" android:textColor="@color/zm_text_light_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_mm_starred_channel_empty_title_owp40" android:singleLine="true"/>
+        <TextView android:textColor="@color/zm_starred_empty_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_mm_starred_channel_empty_owp40" android:singleLine="true"/>
+    </LinearLayout>
+</LinearLayout>

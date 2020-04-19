@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="1">
+    <com.zipow.videobox.view.AvatarView android:id="@+id/avatar" android:layout_width="36dp" android:layout_height="36dp" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" app:zm_description_enable="false"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:ellipsize="end" android:id="@+id/txtScreenName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/ZMTextView"/>
+        <TextView android:textColor="@color/zm_ui_kit_color_gray_747487" android:ellipsize="end" android:id="@+id/txtEmail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:maxLines="1" style="@style/ZMTextView.Small.Dimmed"/>
+    </LinearLayout>
+    <TextView android:textColor="@color/zm_mm_presence_offline" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/waitApproval" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:text="@string/zm_lbl_wait_approval" style="@style/ZMTextView.Small"/>
+    <TextView android:textColor="@color/zm_btn_background_blue" android:ellipsize="end" android:id="@+id/btnAdd" android:background="@drawable/zm_btn_stroke_rounded_rect_blue" android:paddingLeft="10dp" android:paddingTop="5dp" android:paddingRight="10dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:text="@string/zm_btn_invite_buddy_favorite" android:maxLines="1" style="@style/ZMTextView"/>
+</LinearLayout>

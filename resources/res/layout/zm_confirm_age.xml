@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/zm_window_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/zm_ui_kit_text_size_16sp" android:gravity="bottom" android:id="@+id/btnCancel" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_marginLeft="8dp" android:text="@string/zm_btn_cancel" android:layout_weight="1" style="@style/ZMButton.TitleBar.Search"/>
+    <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="3.6"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="10.3">
+        <TextView android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/zm_dialog_margin_12dp" android:text="@string/zm_txt_confirm_age_msg_148333" style="@style/ZMTextView.ExtremLargeNormal"/>
+        <TextView android:textColor="@color/zm_v2_txt_primary" android:id="@+id/txtBirth" android:background="@color/zm_white" android:layout_width="match_parent" android:layout_height="47dp" android:layout_marginTop="24dp" android:hint="@string/zm_txt_input_age_148333" style="@style/ZMButton.NoBackground.Medium"/>
+        <TextView android:textColor="@color/zm_ui_kit_color_gray_747487" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_dialog_margin_12dp" android:text="@string/zm_txt_no_store_msg_148333" style="@style/ZMButton.NoBackground.Medium"/>
+    </LinearLayout>
+</LinearLayout>

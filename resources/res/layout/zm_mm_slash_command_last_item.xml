@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="80dp">
+        <TextView android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="@string/zm_mm_slash_command_last_used_82215" android:singleLine="true" android:paddingStart="16dp" android:paddingEnd="16dp" style="@style/UIKitTextView.SecondaryText.Small.Dimmed"/>
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/zm_slash_popup_item_bg" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="16dp" android:paddingEnd="16dp">
+            <TextView android:textStyle="bold" android:id="@+id/slash_command_item_last_used_profix" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9dp" android:text="/post" android:singleLine="true" style="@style/UIKitTextView.CellTitle"/>
+            <TextView android:id="@+id/slash_command_item_last_used" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="9dp" android:text="post a random gif" android:singleLine="true" style="@style/UIKitTextView.CellTitle"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

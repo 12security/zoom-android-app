@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/zm_window_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout android:id="@+id/panelTitleBar" android:layout_width="match_parent" android:layout_height="wrap_content" app:zm_leftButton="@+id/btnCancel" app:zm_rightButton="@+id/btnNext" app:zm_title="@+id/txtTitle" style="@style/ZMTitleBar">
+        <Button android:id="@+id/btnCancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_btn_cancel" style="@style/ZMButton.TitleBar"/>
+        <Button android:enabled="false" android:id="@+id/btnNext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_btn_done" style="@style/ZMButton.TitleBar"/>
+        <p021us.zoom.androidlib.widget.ZMDynTextSizeTextView android:ellipsize="end" android:gravity="center" android:id="@+id/txtTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_mm_lbl_rename_contact_group_68451" android:singleLine="true" style="@style/ZMTextView.Title"/>
+    </p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+    <EditText android:id="@+id/edtName" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:hint="@string/zm_hint_name_contact_group_68451" android:lines="1" android:imeOptions="actionNext" style="@style/ZMEditText"/>
+</LinearLayout>

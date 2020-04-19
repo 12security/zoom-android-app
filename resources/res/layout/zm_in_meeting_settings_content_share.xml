@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/nonHostContentShare" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:id="@+id/txtContentShare" android:text="@string/zm_lbl_in_meeting_settings_content_share_147675" style="@style/ZMTextView.SettingsItemDesc.MeetingSetting"/>
+    <p021us.zoom.androidlib.widget.ZMSettingsCategory android:orientation="vertical" android:id="@+id/optionAllowAnnotation" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0dp" app:zm_dividerHeight="1px" app:zm_showTopDivider="false">
+        <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:paddingRight="@dimen/zm_setting_item_padding_right" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="left|center_vertical|center_horizontal|center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/zm_lbl_in_meeting_settings_annotate_147675" android:layout_weight="1" style="@style/ZMTextView.SettingsItem"/>
+            <p021us.zoom.androidlib.widget.ZMCheckedTextView android:id="@+id/chkAllowAnnotation" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkMark="@drawable/zm_btn_toggle_default"/>
+        </LinearLayout>
+    </p021us.zoom.androidlib.widget.ZMSettingsCategory>
+    <p021us.zoom.androidlib.widget.ZMSettingsCategory android:orientation="vertical" android:id="@+id/optionShowAnnotatorName" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0dp" app:zm_dividerHeight="1px" app:zm_showTopDivider="false">
+        <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:paddingRight="@dimen/zm_setting_item_padding_right" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="left|center_vertical|center_horizontal|center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/zm_btn_show_annotator_name_43619" android:layout_weight="1" style="@style/ZMTextView.SettingsItem"/>
+            <p021us.zoom.androidlib.widget.ZMCheckedTextView android:id="@+id/chkShowAnnotatorName" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkMark="@drawable/zm_btn_toggle_default"/>
+        </LinearLayout>
+    </p021us.zoom.androidlib.widget.ZMSettingsCategory>
+</LinearLayout>

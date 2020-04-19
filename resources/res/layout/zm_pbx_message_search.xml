@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="56dp">
+        <RelativeLayout android:id="@+id/layout_search" android:background="@drawable/zm_sip_gray_search_corner_bg" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:layout_weight="1" android:layout_marginStart="16dp">
+            <ImageView android:id="@+id/imgSearch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_sip_ic_search_message" android:layout_centerVertical="true" android:layout_marginStart="9dp" android:layout_marginEnd="7dp"/>
+            <EditText android:textSize="@dimen/zm_ui_kit_text_size_16sp" android:textColor="#909096" android:id="@+id/et_search" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/zm_sip_hint_search_message_117773" android:layout_centerVertical="true" android:imeOptions="actionSearch" android:paddingEnd="30dp" android:layout_toEndOf="@+id/imgSearch" style="@style/ZMEditText.GlobalSearch"/>
+            <Button android:id="@+id/btnClearSearchView" android:background="@drawable/zm_btn_clear_search_view" android:visibility="gone" android:layout_width="24dp" android:layout_height="24dp" android:layout_centerVertical="true" android:contentDescription="@string/zm_description_mm_btn_clear_search_75317" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+        <Button android:textSize="16sp" android:layout_gravity="center_vertical" android:id="@+id/btnBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_btn_cancel" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" style="@style/ZMButton.TitleBar.Search"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout android:id="@+id/panelTitleBar" android:layout_width="match_parent" android:layout_height="@dimen/zm_pt_titlebar_height" app:zm_leftButton="@+id/btnBack" app:zm_rightButton="@+id/btnDone" app:zm_title="@+id/txtTitle" style="@style/ZMTitleBar">
+        <Button android:id="@+id/btnBack" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/zm_btn_back" style="@style/ZMBackButton"/>
+        <Button android:id="@+id/btnDone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="55dp" android:text="@string/zm_btn_done" style="@style/ZMButton.TitleBar"/>
+        <p021us.zoom.androidlib.widget.ZMDynTextSizeTextView android:ellipsize="end" android:gravity="center" android:id="@+id/txtTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_title_channel_information_59554" android:singleLine="true" style="@style/ZMTextView.Title"/>
+    </p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+    <p021us.zoom.androidlib.widget.ZMSettingsLayout android:orientation="vertical" android:paddingLeft="0dp" android:paddingTop="@dimen/zm_setting_item_group_spacing" android:paddingRight="0dp" android:paddingBottom="@dimen/zm_setting_item_group_spacing" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <p021us.zoom.androidlib.widget.ZMSettingsCategory android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" app:zm_showTopDivider="false">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="@dimen/zm_setting_item_padding_left" android:paddingRight="@dimen/zm_setting_item_padding_right" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <EditText android:textColorHint="@color/zm_text_deep_grey" android:id="@+id/edtTopic" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:hint="@string/zm_hintl_not_set" android:maxLength="256" android:inputType="none|text|textCapSentences|textMultiLine" style="@style/ZMEditText.SettingsItem">
+                    <requestFocus/>
+                </EditText>
+            </LinearLayout>
+        </p021us.zoom.androidlib.widget.ZMSettingsCategory>
+        <TextView android:textSize="13sp" android:textColor="@color/zm_mm_set_muc_info_txt_color" android:id="@+id/note" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="8dp" android:layout_marginRight="16dp" android:layout_marginBottom="8dp"/>
+    </p021us.zoom.androidlib.widget.ZMSettingsLayout>
+    <p021us.zoom.androidlib.widget.ZMSettingsLayout android:orientation="vertical" android:id="@+id/panelConvertPrivateGroup" android:paddingLeft="0dp" android:paddingTop="0dp" android:paddingRight="0dp" android:paddingBottom="@dimen/zm_setting_item_group_spacing" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+        <p021us.zoom.androidlib.widget.ZMSettingsCategory android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" app:zm_showTopDivider="false">
+            <Button android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/btnConvertPrivateGroup" android:paddingLeft="@dimen/zm_setting_item_padding_left" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/zm_btn_convert_private_group_59554" style="@style/ZMButton.Dialog"/>
+        </p021us.zoom.androidlib.widget.ZMSettingsCategory>
+        <TextView android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/zm_setting_item_padding_left" android:layout_marginTop="@dimen/zm_setting_item_padding_top" android:layout_marginRight="@dimen/zm_setting_item_padding_right" android:layout_marginBottom="@dimen/zm_setting_item_padding_bottom" android:text="@string/zm_mm_lbl_private_group_des_59554" style="@style/ZMTextView.Small"/>
+    </p021us.zoom.androidlib.widget.ZMSettingsLayout>
+</LinearLayout>

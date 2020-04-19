@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="10dp" android:paddingTop="5dp" android:paddingRight="10dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="1">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:id="@+id/txtJid" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ZMTextView.Medium.OnLight"/>
+        <TextView android:id="@+id/txtMsg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_lbl_buddy_invite_invitation_msg" style="@style/ZMTextView.Small.Dimmed"/>
+    </LinearLayout>
+    <Button android:id="@+id/btnAccept" android:background="@drawable/zm_btn_accept" android:layout_width="40dp" android:layout_height="40dp"/>
+    <Button android:id="@+id/btnDecline" android:background="@drawable/zm_btn_decline" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="5dp"/>
+</LinearLayout>

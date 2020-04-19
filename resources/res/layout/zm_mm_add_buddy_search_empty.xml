@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:gravity="center" android:id="@+id/text_message" android:paddingLeft="35dp" android:paddingRight="35dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/zm_mm_lbl_could_not_match_on_zoom_48295" style="@style/ZMTextView.OnLight.Medium.DeepGrey"/>
+    <TextView android:gravity="center" android:id="@+id/btn_invite" android:background="@drawable/zm_btn_add_buddy_invite" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="32dp" android:layout_marginTop="20dp" android:text="@string/zm_mm_msg_search_contact_invite_to_zoom" style="@style/ZMTextView.Normal.OnDark"/>
+</LinearLayout>

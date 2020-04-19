@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:background="@drawable/zm_list_selector_background" android:paddingLeft="10dp" android:paddingTop="2dp" android:paddingRight="10dp" android:paddingBottom="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:weightSum="1">
+    <RelativeLayout android:duplicateParentState="true" android:layout_width="57dp" android:layout_height="57dp">
+        <com.zipow.videobox.view.AvatarView android:id="@+id/avatarView" android:duplicateParentState="true" android:layout_width="51dp" android:layout_height="51dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:zm_cornerRadiusRatio="0.32" app:zm_description_enable="false"/>
+        <com.zipow.videobox.view.PresenceStateView android:id="@+id/imgPresence" android:paddingTop="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" app:zm_subpresence_type="0"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="3dp">
+        <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:layout_weight="1">
+                <ImageView android:id="@+id/imgE2EFlag" android:paddingTop="3dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_e2e_flag"/>
+                <p021us.zoom.androidlib.widget.ZMEllipsisTextView android:ellipsize="end" android:id="@+id/txtTitle" android:paddingRight="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:maxLines="1" android:singleLine="true" android:drawablePadding="5dp" style="@style/UIKitTextView.CellTitle"/>
+            </LinearLayout>
+            <TextView android:ellipsize="end" android:id="@+id/txtTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:maxLines="1" style="@style/UIKitTextView.SecondaryText.Small.Dimmed"/>
+        </LinearLayout>
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.zipow.videobox.view.EmojiTextView android:ellipsize="end" android:id="@+id/txtMessage" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:singleLine="true" android:layout_toLeftOf="@+id/hint_layout" style="@style/UIKitTextView.SecondaryText.Small.Dimmed"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/hint_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                <View android:gravity="center" android:id="@+id/unreadBubble" android:background="@drawable/zm_ic_red_dot" android:visibility="gone" android:duplicateParentState="true" android:layout_width="10dp" android:layout_height="10dp" android:layout_marginRight="5dp" android:text="" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+                <ImageView android:id="@+id/imgBell" android:visibility="gone" android:layout_width="13dp" android:layout_height="13dp" android:layout_marginRight="5dp" android:src="@drawable/zm_bell"/>
+                <TextView android:gravity="center" android:id="@+id/txtNoteBubble" android:visibility="visible" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" style="@style/ZMTextView.UnreadMessageCount.Small"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

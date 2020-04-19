@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zipow.annotate.annoMultiPage.RectangleItemLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/zm_transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="16dp">
+        <ImageView android:layout_gravity="center" android:id="@+id/show_whiteboard" android:background="@drawable/zm_bg_wb_item" android:padding="5dp" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:adjustViewBounds="true"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/btn_del_whiteboard" android:clickable="true" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginTop="5dp" android:layout_marginRight="5dp" android:src="@drawable/zm_btn_del_whiteboard" android:scaleType="centerInside" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+    <ImageView android:id="@+id/btn_check_whiteboard" android:visibility="gone" android:clickable="true" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginTop="5dp" android:layout_marginRight="5dp" android:src="@drawable/zm_anno_wb_check" android:scaleType="centerInside" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+</com.zipow.annotate.annoMultiPage.RectangleItemLayout>

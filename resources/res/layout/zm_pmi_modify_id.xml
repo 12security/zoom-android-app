@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:minWidth="600dp">
+    <p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout android:gravity="center_vertical" android:id="@+id/panelTitleBar" android:layout_width="match_parent" android:layout_height="@dimen/zm_pt_titlebar_height" app:zm_leftButton="@+id/btnBack" app:zm_rightButton="@+id/btnApply" app:zm_title="@+id/txtTitle" style="@style/ZMTitleBar">
+        <Button android:id="@+id/btnBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" style="@style/ZMBackButton"/>
+        <Button android:id="@+id/btnApply" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="55dp" android:text="@string/zm_btn_save" style="@style/ZMButton.TitleBar"/>
+        <p021us.zoom.androidlib.widget.ZMDynTextSizeTextView android:gravity="center_horizontal" android:id="@+id/txtTitle" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_lbl_personal_meeting_id" style="@style/ZMTextView.Title"/>
+    </p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="0dp" android:paddingTop="0dp" android:paddingRight="0dp" android:paddingBottom="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:id="@+id/txtInstructions" android:paddingLeft="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="10dp" android:text="@string/zm_lbl_personal_meeting_id_modify_instruction_10" style="@style/ZMTextView.Medium"/>
+            <p021us.zoom.androidlib.widget.ZMSettingsCategory android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/zm_setting_item_padding_left" android:paddingTop="0dp" android:paddingRight="@dimen/zm_setting_item_padding_right" android:paddingBottom="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.zipow.videobox.view.ConfNumberEditText android:textSize="26sp" android:gravity="center" android:id="@+id/edtConfNumber" android:layout_width="0dp" android:layout_height="wrap_content" android:text="111-111-1111" android:singleLine="true" android:maxLength="12" android:layout_weight="1" style="@style/ZMEditText.NoBorder">
+                        <requestFocus/>
+                    </com.zipow.videobox.view.ConfNumberEditText>
+                </LinearLayout>
+            </p021us.zoom.androidlib.widget.ZMSettingsCategory>
+            <TextView android:textColor="@color/zm_red" android:id="@+id/txtMessage" android:paddingLeft="15dp" android:paddingRight="15dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="5dp" android:text="@string/zm_lbl_personal_meeting_id_change_fail_invalid" style="@style/ZMTextView.Medium"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

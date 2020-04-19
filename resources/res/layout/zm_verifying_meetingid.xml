@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="top|center_vertical|center_horizontal|center" android:orientation="vertical" android:background="@color/zm_black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/panelConnecting" android:background="@drawable/zm_top_toolbar_bg" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ProgressBar android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" style="@style/ZMProgressBar.Small"/>
+        <TextView android:layout_gravity="center_vertical" android:id="@+id/txtConnecting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_msg_verifying_meetingid" style="@style/ZMTextView.Medium.OnDark"/>
+    </LinearLayout>
+</LinearLayout>

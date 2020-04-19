@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/zm_transparent" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/imgIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_ic_tick"/>
+    <LinearLayout android:orientation="vertical" android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:id="@+id/txtTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_msg_conf_waiting_to_invite_title" style="@style/ZMTextView.TipMessage.Title.OnDark"/>
+        <TextView android:gravity="center" android:id="@+id/txtMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_msg_conf_waiting_to_invite" style="@style/ZMTextView.TipMessage.OnDark"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/zm_window_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout android:id="@+id/panelTitleBar" android:layout_width="match_parent" android:layout_height="@dimen/zm_pt_titlebar_height" app:zm_leftButton="@+id/btnBack" app:zm_title="@+id/txtTitle" style="@style/ZMTitleBar">
+        <Button android:id="@+id/btnBack" android:layout_width="wrap_content" android:layout_height="match_parent" style="@style/ZMBackButton"/>
+        <p021us.zoom.androidlib.widget.ZMDynTextSizeTextView android:ellipsize="end" android:gravity="center" android:id="@+id/txtTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_mm_lbl_more_options_text_108993" android:singleLine="true" style="@style/ZMTextView.Title"/>
+    </p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+    <p021us.zoom.androidlib.widget.ZMSettingsLayout android:orientation="vertical" android:paddingLeft="0dp" android:paddingTop="0dp" android:paddingRight="0dp" android:paddingBottom="@dimen/zm_setting_item_group_spacing" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+        <p021us.zoom.androidlib.widget.ZMSettingsCategory android:orientation="vertical" android:id="@+id/panelAccessHistory" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/optionAccessHistory" android:paddingRight="@dimen/zm_setting_item_padding_right" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_setting_item_group_spacing" android:weightSum="1">
+                <TextView android:gravity="left" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/zm_lbl_allow_new_member_see_chat_history" android:layout_weight="1" style="@style/ZMTextView.SettingsItem"/>
+                <p021us.zoom.androidlib.widget.ZMCheckedTextView android:id="@+id/chkAccessHistory" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkMark="@drawable/zm_btn_toggle_default"/>
+            </LinearLayout>
+        </p021us.zoom.androidlib.widget.ZMSettingsCategory>
+        <p021us.zoom.androidlib.widget.ZMSettingsCategory android:orientation="vertical" android:id="@+id/panelTransferAdmin" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:id="@+id/btnTransferAdmin" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:contentDescription="@string/zm_mm_lbl_transfer_admin_131024">
+                <TextView android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/zm_mm_lbl_transfer_admin_131024" style="@style/ZMTextView.SettingsItem"/>
+            </LinearLayout>
+        </p021us.zoom.androidlib.widget.ZMSettingsCategory>
+        <p021us.zoom.androidlib.widget.ZMSettingsCategory android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:id="@+id/btnClearHistory" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:contentDescription="@string/zm_mm_btn_clear_chat_history">
+                <TextView android:id="@+id/txtClearHistory" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/zm_mm_btn_clear_chat_history" style="@style/ZMTextView.SettingsItem"/>
+            </LinearLayout>
+        </p021us.zoom.androidlib.widget.ZMSettingsCategory>
+        <p021us.zoom.androidlib.widget.ZMSettingsCategory android:orientation="vertical" android:id="@+id/panelQuitGroup" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:id="@+id/btnQuitGroup" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:contentDescription="@string/zm_mm_btn_delete_and_quit_group_chat_59554">
+                <TextView android:id="@+id/txtQuitGroup" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/zm_mm_btn_delete_and_quit_group_chat_59554" style="@style/ZMTextView.SettingsItem"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@+id/btnDeleteGroup" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:contentDescription="@string/zm_mm_btn_delete_group_chat_59554">
+                <TextView android:textColor="@color/zm_ui_kit_color_red_E02828" android:id="@+id/txtDeleteGroup" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/zm_mm_btn_delete_group_chat_59554" style="@style/ZMTextView.SettingsItem"/>
+            </LinearLayout>
+        </p021us.zoom.androidlib.widget.ZMSettingsCategory>
+    </p021us.zoom.androidlib.widget.ZMSettingsLayout>
+</LinearLayout>

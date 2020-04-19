@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/zm_window_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout android:id="@+id/panelTitleBar" android:layout_width="match_parent" android:layout_height="wrap_content" app:zm_leftButton="@+id/btnCancel" app:zm_rightButton="@+id/btnAgree" app:zm_title="@+id/txtTitle" style="@style/ZMTitleBar">
+        <Button android:id="@+id/btnCancel" android:layout_width="wrap_content" android:layout_height="44dp" android:text="@string/zm_btn_cancel" android:layout_centerVertical="true" style="@style/ZMButton.TitleBar"/>
+        <Button android:id="@+id/btnAgree" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_btn_agree_132493" android:layout_centerVertical="true" style="@style/ZMButton.TitleBar"/>
+        <p021us.zoom.androidlib.widget.ZMDynTextSizeTextView android:ellipsize="end" android:gravity="center" android:id="@+id/txtTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/zm_title_privacy_policy" android:singleLine="true" style="@style/ZMTextView.Title"/>
+    </p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+    <ProgressBar android:id="@+id/webLoadingProgress" android:layout_width="match_parent" android:layout_height="3dp" android:max="100" android:progress="50" style="?android:attr/progressBarStyleHorizontal"/>
+    <WebView android:id="@+id/webviewPage" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/zm_window_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout android:id="@+id/panelTitleBar" android:layout_width="match_parent" android:layout_height="@dimen/zm_pt_titlebar_height" app:zm_leftButton="@+id/btnBack" app:zm_title="@+id/txtTitle" style="@style/ZMTitleBar">
+        <Button android:id="@+id/btnBack" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ZMBackButton"/>
+        <View android:id="@+id/viewRight" android:layout_width="0dp" android:layout_height="0dp"/>
+        <TextView android:gravity="center_horizontal" android:id="@+id/txtTitle" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_qa_title_settings_91405" style="@style/ZMTextView.Title"/>
+    </p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+    <LinearLayout android:orientation="vertical" android:paddingTop="22dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <p021us.zoom.androidlib.widget.ZMSettingsCategory android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/optionChkAllowAskQA" android:background="@drawable/zm_window_bg" android:paddingLeft="16dp" android:paddingRight="16dp" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="17sp" android:textColor="@color/zm_text_light_dark" android:gravity="left|center_vertical|center_horizontal|center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/zm_qa_msg_allow_anonymousely_question_41047" android:layout_weight="1" style="@style/ZMTextView.OnLight.Normal"/>
+                <p021us.zoom.androidlib.widget.ZMCheckedTextView android:id="@+id/chkAllowAskQA" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkMark="@drawable/zm_btn_toggle_default"/>
+            </LinearLayout>
+        </p021us.zoom.androidlib.widget.ZMSettingsCategory>
+        <View android:background="@color/zm_line_divider" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="16dp" android:layout_marginTop="12dp" android:layout_marginBottom="12dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:text="@string/zm_qa_msg_allow_attendee_to_view_41047" style="@style/ZMTextView.OnLight.Small.Dimmed"/>
+        <p021us.zoom.androidlib.widget.ZMSettingsCategory android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/llAnswerQaOnly" android:background="@drawable/zm_window_bg" android:paddingLeft="16dp" android:paddingTop="8dp" android:paddingRight="16dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="17sp" android:textColor="@color/zm_text_light_dark" android:ellipsize="end" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/txtAnswerQaOnly" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/zm_lbl_answered_question_only_41047" android:maxLines="1" android:layout_weight="1" style="@style/ZMTextView.OnLight.Normal"/>
+                <ImageView android:id="@+id/imgSelectedAnswerQaOnly" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:src="@drawable/zm_group_type_select" android:contentDescription="@string/zm_accessibility_icon_item_selected_19247"/>
+            </LinearLayout>
+        </p021us.zoom.androidlib.widget.ZMSettingsCategory>
+        <p021us.zoom.androidlib.widget.ZMSettingsCategory android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/llAllQuestions" android:background="@drawable/zm_window_bg" android:paddingLeft="16dp" android:paddingTop="8dp" android:paddingRight="16dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="17sp" android:textColor="@color/zm_text_light_dark" android:ellipsize="end" android:id="@+id/txtAllQuestions" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/zm_lbl_all_questions_41047" android:maxLines="1" android:layout_weight="1" style="@style/ZMTextView.OnLight.Normal"/>
+                <ImageView android:id="@+id/imgSelectedAllQuestions" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:src="@drawable/zm_group_type_select" android:contentDescription="@string/zm_accessibility_icon_item_selected_19247"/>
+            </LinearLayout>
+        </p021us.zoom.androidlib.widget.ZMSettingsCategory>
+        <View android:id="@+id/viewDivider" android:background="@color/zm_line_divider" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="16dp" android:layout_marginTop="10dp" android:layout_marginBottom="10dp"/>
+        <p021us.zoom.androidlib.widget.ZMSettingsCategory android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/optionChkCanUpVote" android:background="@drawable/zm_window_bg" android:paddingLeft="16dp" android:paddingTop="8dp" android:paddingRight="16dp" android:paddingBottom="8dp" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="17sp" android:textColor="@color/zm_text_light_dark" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/txtCanUpVote" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/zm_lbl_attendees_can_upvote_41047" android:layout_weight="1" style="@style/ZMTextView.OnLight.Normal"/>
+                <p021us.zoom.androidlib.widget.ZMCheckedTextView android:id="@+id/chkCanUpVote" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkMark="@drawable/zm_btn_toggle_default"/>
+            </LinearLayout>
+        </p021us.zoom.androidlib.widget.ZMSettingsCategory>
+        <p021us.zoom.androidlib.widget.ZMSettingsCategory android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/optionChkCanComment" android:background="@drawable/zm_window_bg" android:paddingLeft="16dp" android:paddingTop="8dp" android:paddingRight="16dp" android:paddingBottom="8dp" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="17sp" android:textColor="@color/zm_text_light_dark" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/txtCanComment" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/zm_lbl_attendees_can_comment_41047" android:layout_weight="1" style="@style/ZMTextView.OnLight.Normal"/>
+                <p021us.zoom.androidlib.widget.ZMCheckedTextView android:id="@+id/chkCanComment" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkMark="@drawable/zm_btn_toggle_default"/>
+            </LinearLayout>
+        </p021us.zoom.androidlib.widget.ZMSettingsCategory>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="1">
+    <RelativeLayout android:id="@+id/panelTitleBar" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/ZMTitleBar">
+        <Button android:id="@+id/btnBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_btn_cancel" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/ZMButton.TitleBar"/>
+        <TextView android:gravity="center_horizontal" android:id="@+id/txtTitle" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_title_buddy_invite" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/ZMTextView.Title"/>
+    </RelativeLayout>
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/zm_buddy_invite_send"/>
+    <com.zipow.videobox.view.BuddyInviteListView android:id="@+id/buddyInviteListView" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+</LinearLayout>

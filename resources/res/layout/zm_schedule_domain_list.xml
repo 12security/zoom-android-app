@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:minWidth="600dp">
+    <p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout android:gravity="center_vertical" android:id="@+id/panelTitleBar" android:layout_width="match_parent" android:layout_height="@dimen/zm_pt_titlebar_height" app:zm_leftButton="@+id/btnBack" app:zm_rightButton="@+id/btnSave" app:zm_title="@+id/txtTitle" style="@style/ZMTitleBar">
+        <Button android:id="@+id/btnBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_btn_cancel" style="@style/ZMButton.TitleBar"/>
+        <Button android:id="@+id/btnSave" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="55dp" android:text="@string/zm_btn_save" style="@style/ZMButton.TitleBar"/>
+        <p021us.zoom.androidlib.widget.ZMDynTextSizeTextView android:gravity="center_horizontal" android:id="@+id/txtTitle" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_lbl_domain_list_120783" style="@style/ZMTextView.Title"/>
+    </p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/panelTitleBar">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:paddingLeft="@dimen/zm_padding_normal" android:paddingRight="@dimen/zm_padding_normal" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="5dp" android:text="@string/zm_msg_domains_edit_120783" style="@style/ZMTextView.SettingsItemDesc"/>
+            <p021us.zoom.androidlib.widget.ZMChildListView android:id="@+id/lvDomains" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/llAdd" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <View android:background="#c7c7c9" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                <Button android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/btnAddNewDomain" android:background="@color/zm_white" android:paddingLeft="@dimen/zm_padding_normal" android:paddingTop="@dimen/zm_padding_medium" android:paddingRight="@dimen/zm_padding_normal" android:paddingBottom="@dimen/zm_padding_medium" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/zm_btn_allow_join_add_domain" style="@style/ZMButton.NoBackground.Medium"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

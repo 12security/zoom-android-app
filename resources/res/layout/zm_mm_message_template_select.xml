@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="12sp" android:textColor="@color/zm_gray_6C6C7F" android:id="@+id/select_message" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="14sp" android:textColor="@color/zm_ui_kit_color_gray_747487" android:id="@+id/value" android:layout_width="0px" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <ImageView android:id="@+id/arrow" android:background="@drawable/zm_mm_template_select_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <ProgressBar android:id="@+id/progressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" style="@style/ZMProgressBar.Small"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingLeft="8dp" android:paddingTop="3dp" android:paddingRight="8dp" android:paddingBottom="3dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.zipow.videobox.view.AvatarView android:id="@+id/code_snippet_avatar" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="15dp" app:zm_avatarBorderSize="0dp"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:id="@+id/code_snippet_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="giphy" style="@style/ZMTextView.ExSmall.Dimmed"/>
+                <include layout="@layout/zm_mm_starred_message_title_view"/>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/code_snippet_title_linear" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp">
+                    <TextView android:textSize="15sp" android:textColor="@color/zm_gray_3" android:id="@+id/code_snippet_title_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+                    <TextView android:textSize="15sp" android:textStyle="bold" android:textColor="@color/zm_gray_3" android:id="@+id/code_snippet_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:background="@drawable/zm_mm_code_snippet_bg" android:layout_width="@dimen/zm_mm_bubble_file_width" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                        <LinearLayout android:orientation="vertical" android:id="@+id/code_snippet_list" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:orientation="horizontal" android:id="@+id/code_snippet_item_one" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <LinearLayout android:gravity="center_horizontal" android:background="@drawable/zm_mm_code_snippet_number_top_bg" android:paddingTop="9dp" android:layout_width="24dp" android:layout_height="match_parent">
+                                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1"/>
+                                </LinearLayout>
+                                <LinearLayout android:paddingLeft="15dp" android:paddingTop="9dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                    <TextView android:id="@+id/code_snippet_item_one_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:id="@+id/code_snippet_item_two" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <LinearLayout android:gravity="center_horizontal" android:background="@color/zm_code_snippet_number" android:layout_width="24dp" android:layout_height="match_parent">
+                                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2"/>
+                                </LinearLayout>
+                                <LinearLayout android:paddingLeft="15dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                    <TextView android:id="@+id/code_snippet_item_two_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:id="@+id/code_snippet_item_three" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <LinearLayout android:gravity="center_horizontal" android:background="@color/zm_code_snippet_number" android:layout_width="24dp" android:layout_height="match_parent">
+                                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3"/>
+                                </LinearLayout>
+                                <LinearLayout android:paddingLeft="15dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                    <TextView android:id="@+id/code_snippet_item_three_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:id="@+id/code_snippet_item_four" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <LinearLayout android:gravity="center_horizontal" android:background="@color/zm_code_snippet_number" android:layout_width="24dp" android:layout_height="match_parent">
+                                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4"/>
+                                </LinearLayout>
+                                <LinearLayout android:paddingLeft="15dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                    <TextView android:id="@+id/code_snippet_item_four_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:id="@+id/code_snippet_item_five" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <LinearLayout android:gravity="center_horizontal" android:background="@color/zm_code_snippet_number" android:layout_width="24dp" android:layout_height="match_parent">
+                                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5"/>
+                                </LinearLayout>
+                                <LinearLayout android:paddingLeft="15dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                    <TextView android:id="@+id/code_snippet_item_five_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <LinearLayout android:gravity="center_horizontal" android:background="@drawable/zm_mm_code_snippet_number_bottom_bg" android:paddingBottom="11dp" android:layout_width="24dp" android:layout_height="match_parent"/>
+                                <LinearLayout android:paddingLeft="15dp" android:paddingBottom="11dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                    <TextView android:textSize="16sp" android:textColor="@color/zm_code_snippet_more_lines" android:id="@+id/code_snippet_item_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="View 27 more lines"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:id="@+id/code_snippet_holder_progress" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                            <ProgressBar android:padding="30dp" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ZMProgressBar.Small"/>
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:id="@+id/code_snippet_holder_failed" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_image_download_error"/>
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+                <ImageView android:id="@+id/zm_mm_starred" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:src="@drawable/zm_mm_starred_message_icon"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="48dp" layout="@layout/zm_message_reaction_labels_view_layout"/>
+    <TextView android:id="@+id/txtStarDes" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginStart="48dp" style="@style/UIKitTextView.SecondaryText.Small.Dimmed"/>
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:minWidth="600dp">
+    <p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout android:gravity="center_vertical" android:id="@+id/panelTitleBar" android:layout_width="match_parent" android:layout_height="@dimen/zm_pt_titlebar_height" app:zm_leftButton="@+id/btnBack" app:zm_rightButton="@+id/btnSave" app:zm_title="@+id/txtTitle" style="@style/ZMTitleBar">
+        <Button android:id="@+id/btnBack" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ZMBackButton"/>
+        <Button android:id="@+id/btnSave" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="55dp" android:text="@string/zm_btn_save" style="@style/ZMButton.TitleBar"/>
+        <p021us.zoom.androidlib.widget.ZMDynTextSizeTextView android:gravity="center_horizontal" android:id="@+id/txtTitle" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_title_choose_user_type" style="@style/ZMTextView.Title"/>
+    </p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <p021us.zoom.androidlib.widget.ZMSettingsLayout android:orientation="vertical" android:paddingLeft="0dp" android:paddingTop="0dp" android:paddingRight="0dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="left" android:id="@+id/txtEnableAddrBookInstructions" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="5dp" android:text="@string/zm_lbl_ch_user_type_120783" style="@style/ZMTextView.SettingsItemDesc"/>
+            <p021us.zoom.androidlib.widget.ZMSettingsCategory android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" app:zm_showTopDivider="false">
+                <LinearLayout android:id="@+id/optEveryone" style="@style/ZMTickMenuItemLayout">
+                    <TextView android:text="@string/zm_lbl_allow_join_everyone" style="@style/ZMTickMenuItemTextView"/>
+                    <ImageView android:id="@+id/imgEveryone" style="@style/ZMTickMenuItemImageView"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/optSpecifiedDomains" style="@style/ZMTickMenuItemLayout">
+                    <TextView android:text="@string/zm_lbl_only_auth_join_120783" style="@style/ZMTickMenuItemTextView"/>
+                    <ImageView android:id="@+id/imgSpecifiedDomains" style="@style/ZMTickMenuItemImageView"/>
+                </LinearLayout>
+            </p021us.zoom.androidlib.widget.ZMSettingsCategory>
+            <TextView android:gravity="left" android:id="@+id/txtDomainsLabel" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="5dp" android:text="@string/zm_lbl_ch_mthd_120783" style="@style/ZMTextView.SettingsItemDesc"/>
+            <p021us.zoom.androidlib.widget.ZMChildListView android:id="@+id/lvAuths" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <p021us.zoom.androidlib.widget.ZMSettingsCategory android:orientation="vertical" android:id="@+id/panelEditDomains" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_margin_largest">
+                <LinearLayout style="@style/ZMTickMenuItemLayout">
+                    <TextView android:id="@+id/txtEditDomainsLabel" android:text="View/Edit all %d domains" style="@style/ZMTickMenuItemTextView"/>
+                    <ImageView android:src="@drawable/zm_next_arrow" style="@style/ZMTickMenuItemImageView"/>
+                </LinearLayout>
+            </p021us.zoom.androidlib.widget.ZMSettingsCategory>
+        </p021us.zoom.androidlib.widget.ZMSettingsLayout>
+    </ScrollView>
+</LinearLayout>

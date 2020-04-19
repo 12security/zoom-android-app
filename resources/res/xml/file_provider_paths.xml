@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <external-files-path name="external_files" path="../data/"/>
+    <files-path name="files" path="../data/"/>
+    <external-path name="storage" path=""/>
+    <external-path name="storageG" path="../../"/>
+    <external-path name="root" path="../../../"/>
+    <external-path name="Download" path="./Download"/>
+    <external-path name="download" path="./Download"/>
+</paths>

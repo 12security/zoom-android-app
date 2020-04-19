@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/panelMsgLayout" android:paddingTop="8dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="16dp" android:paddingEnd="32dp">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/zm_message_list_item_title_linear" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8dp">
+        <TextView android:id="@+id/txtScreenName" android:layout_width="0dp" android:layout_height="wrap_content" android:text="" android:layout_weight="1" style="@style/ZMTextView.ExSmall.Dimmed"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+        <LinearLayout android:orientation="vertical" android:id="@+id/panel_textMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0dp">
+            <com.zipow.videobox.view.EmojiTextView android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/txtMessage" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/zm_mm_bubble_width" app:showLink="true" style="@style/ZMTextView.MMMessage"/>
+        </LinearLayout>
+        <ProgressBar android:layout_gravity="center_vertical" android:id="@+id/progressBar1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="5dp" style="@style/ZMProgressBar.Small"/>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/imgStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_mm_msg_state_fail" android:contentDescription="@string/zm_sip_sms_send_fail_desc_137657" android:layout_marginStart="5dp"/>
+    </LinearLayout>
+</LinearLayout>

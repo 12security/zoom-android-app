@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="zm_accessibility_reacion_label_88133">
+        <item quantity="other">%s、%d名のユーザーがこの反応を追加しました。ボタン</item>
+    </plurals>
+    <plurals name="zm_accessibility_view_reply_88133">
+        <item quantity="other">%d件の返信を表示</item>
+    </plurals>
+    <plurals name="zm_accessibility_view_reply_new_all_88133">
+        <item quantity="other">、%d件の新しい@全員メンション</item>
+    </plurals>
+    <plurals name="zm_accessibility_view_reply_new_me_88133">
+        <item quantity="other">、%d件の新しい@自分メンション</item>
+    </plurals>
+    <plurals name="zm_accessibility_view_reply_new_msg_88133">
+        <item quantity="other">、%d件の新規メッセージ</item>
+    </plurals>
+    <plurals name="zm_accessibility_waiting_room_unread_message_button_46304">
+        <item quantity="other">%s件の新規メッセージ、ボタン</item>
+    </plurals>
+    <plurals name="zm_add_buddy_time_exceed_44781">
+        <item quantity="other">誤った試みが一定回数を超えて行われました。%d分経ってからもう一度試みてください。</item>
+    </plurals>
+    <plurals name="zm_description_tab_chats_77383">
+        <item quantity="other">[ミーティングやチャットの時の%sの未読メッセージ] タブ</item>
+    </plurals>
+    <plurals name="zm_description_tab_sip_4_117773">
+        <item quantity="other">%1$s，%2$s件の新しい通知</item>
+    </plurals>
+    <plurals name="zm_lbl_comment_more_reply_88133">
+        <item quantity="other">%d件の応答</item>
+    </plurals>
+    <plurals name="zm_lbl_comment_reply_title_88133">
+        <item quantity="other">%d件の応答</item>
+    </plurals>
+    <plurals name="zm_lbl_folder_items">
+        <item quantity="other">%d アイテム</item>
+    </plurals>
+    <plurals name="zm_lbl_mark_unread_150170">
+        <item quantity="one">%d未読としてマーク</item>
+        <item quantity="other">%d未読としてマーク</item>
+    </plurals>
+    <plurals name="zm_lbl_message_at_all_150170">
+        <item quantity="one">%d＠全員</item>
+        <item quantity="other">%d＠全員</item>
+    </plurals>
+    <plurals name="zm_lbl_message_at_me_150170">
+        <item quantity="one">%d＠自分</item>
+        <item quantity="other">%d＠自分</item>
+    </plurals>
+    <plurals name="zm_lbl_new_unread_thread_88133">
+        <item quantity="other">%s件の新規メッセージ</item>
+    </plurals>
+    <plurals name="zm_lbl_notification_snoozed_hour_19898">
+        <item quantity="other">%d時間</item>
+    </plurals>
+    <plurals name="zm_lbl_notification_snoozed_min_19898">
+        <item quantity="other">%d分</item>
+    </plurals>
+    <plurals name="zm_lbl_view_all_domain_120783">
+        <item quantity="other">%dつのドメインすべてを表示/編集</item>
+    </plurals>
+    <plurals name="zm_lbl_webinar_telephony_user_count">
+        <item quantity="other">合計 %d 人の電話によるリスナー</item>
+    </plurals>
+    <plurals name="zm_mm_lbl_new_message_count_14491">
+        <item quantity="other">↑%s件の新しいメッセージ</item>
+    </plurals>
+    <plurals name="zm_mm_msg_day_33479">
+        <item quantity="other">%d日</item>
+    </plurals>
+    <plurals name="zm_mm_msg_hour_33479">
+        <item quantity="other">%d時間</item>
+    </plurals>
+    <plurals name="zm_mm_msg_month_33479">
+        <item quantity="other">%dか月</item>
+    </plurals>
+    <plurals name="zm_mm_msg_year_33479">
+        <item quantity="other">%d年</item>
+    </plurals>
+    <plurals name="zm_mm_template_attachments_68416">
+        <item quantity="other">%1$d件の添付</item>
+    </plurals>
+    <plurals name="zm_msg_charactors_left">
+        <item quantity="other">残り %d 文字</item>
+    </plurals>
+    <plurals name="zm_msg_hint_add_contact_group_68451">
+        <item quantity="other">%1$dの連絡先が%2$sに追加されました</item>
+    </plurals>
+    <plurals name="zm_msg_invitations_sent">
+        <item quantity="other">%d 件の招待が送信されました</item>
+    </plurals>
+    <plurals name="zm_msg_join_meeting_in_waiting_list">
+        <item quantity="other">%d人が本ミーティングの待機室に参加しました</item>
+    </plurals>
+    <plurals name="zm_msg_notification_unread_num_8295">
+        <item quantity="other">%1$s（%2$d件の未読メッセージ）</item>
+    </plurals>
+    <plurals name="zm_pbx_voicemail_filter_inboxes_100064">
+        <item quantity="other">%1$s受信トレイ</item>
+    </plurals>
+    <plurals name="zm_sip_calls_text_111498">
+        <item quantity="other">%1$d件の通話</item>
+    </plurals>
+    <plurals name="zm_sip_delete_x_items_61381">
+        <item quantity="other">%dの項目を削除</item>
+    </plurals>
+    <plurals name="zm_sip_desc_session_new_message_117773">
+        <item quantity="other">%1$s件の新規メッセージ</item>
+    </plurals>
+    <plurals name="zm_title_edit_emoji_selected">
+        <item quantity="other">%d絵文字が選択されました</item>
+    </plurals>
+</resources>

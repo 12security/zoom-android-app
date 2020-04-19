@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:paddingLeft="5dp" android:paddingTop="8dp" android:paddingRight="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="12sp" android:textColor="#bfbfbf" android:gravity="center" android:id="@+id/txtMessage" android:background="@drawable/zm_chatsystem_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:maxLines="2" android:layout_centerInParent="true"/>
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/timeChatPop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/question" android:layout_toRightOf="@+id/txtMessage" android:layout_centerVertical="true"/>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:minWidth="500dp">
+    <TextView android:gravity="center_vertical" android:id="@+id/txtInstructions" android:paddingLeft="10dp" android:paddingTop="8dp" android:paddingRight="10dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_lbl_sso_url_instructions" style="@style/ZMTextView.Medium.OnLight"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/panelUrl" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp">
+        <EditText android:id="@+id/edtUrl" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:hint="@string/zm_hint_sso_url" android:maxLength="50" android:inputType="textUri" android:imeOptions="actionUnspecified|actionGo|flagNoExtractUi"/>
+    </LinearLayout>
+</LinearLayout>

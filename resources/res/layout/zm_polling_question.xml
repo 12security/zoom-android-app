@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/zm_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout android:id="@+id/panelTitleBar" android:layout_width="match_parent" android:layout_height="@dimen/zm_pt_titlebar_height" app:zm_leftButton="@+id/btnBack" app:zm_rightButton="@+id/viewRight" app:zm_title="@+id/txtTitle" style="@style/ZMTitleBar">
+        <Button android:id="@+id/btnBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_polling_btn_poll_later" style="@style/ZMButton.TitleBar"/>
+        <View android:id="@+id/viewRight" android:layout_width="0dp" android:layout_height="0dp"/>
+        <TextView android:gravity="center_horizontal" android:id="@+id/txtTitle" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Quick Poll" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/ZMTextView.Title"/>
+    </p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:paddingTop="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:id="@+id/txtQuestion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_marginBottom="20dp" android:text="Question" style="@style/ZMTextView.Medium.OnLight"/>
+            <RadioGroup android:id="@+id/panelAnswersContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="0dp" android:layout_marginRight="0dp">
+                <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:layout_marginBottom="1dp" layout="@layout/zm_polling_single_choice"/>
+                <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:layout_marginBottom="1dp" layout="@layout/zm_polling_single_choice"/>
+                <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:layout_marginBottom="1dp" layout="@layout/zm_polling_single_choice"/>
+            </RadioGroup>
+            <p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout android:id="@+id/panelButtons" android:paddingTop="20dp" android:paddingBottom="0dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:zm_leftButton="@+id/btnPrev" app:zm_rightButton="@+id/btnNext" app:zm_title="@+id/txtQuestionIndex">
+                <Button android:id="@+id/btnPrev" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_polling_btn_prev" style="@style/PollButton.Prev"/>
+                <Button android:id="@+id/btnNext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_polling_btn_next" style="@style/PollButton.Next"/>
+                <TextView android:gravity="center" android:id="@+id/txtQuestionIndex" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1/3" style="@style/ZMTextView.Medium.OnLight"/>
+            </p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+            <Button android:layout_gravity="center_horizontal" android:id="@+id/btnSubmitCenter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/zm_polling_btn_submit" style="@style/PollButton"/>
+        </LinearLayout>
+    </ScrollView>
+    <TextView android:textColor="#ff1e5a" android:gravity="center" android:id="@+id/txtReadOnlyMessage" android:background="@drawable/zm_tab_bg" android:layout_width="match_parent" android:layout_height="@dimen/zm_pt_titlebar_height" android:text="@string/zm_polling_msg_host_and_panelist_cannot_vote" style="@style/ZMTextView.Medium"/>
+</LinearLayout>

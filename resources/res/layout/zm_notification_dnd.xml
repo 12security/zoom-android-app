@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout android:id="@+id/panelTitleBar" android:layout_width="match_parent" android:layout_height="@dimen/zm_pt_titlebar_height" app:zm_leftButton="@+id/btnBack" app:zm_rightButton="@+id/viewRight" app:zm_title="@+id/txtTitle" style="@style/ZMTitleBar">
+        <Button android:id="@+id/btnBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" style="@style/ZMBackButton"/>
+        <View android:id="@+id/viewRight" android:layout_width="40dp" android:layout_height="match_parent"/>
+        <p021us.zoom.androidlib.widget.ZMDynTextSizeTextView android:gravity="center_horizontal" android:id="@+id/txtTitle" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_title_notifications_dnd_19898" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/ZMTextView.Title"/>
+    </p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+    <p021us.zoom.androidlib.widget.ZMSettingsLayout android:orientation="vertical" android:id="@+id/panelTurnOnNotification" android:paddingLeft="0dp" android:paddingTop="@dimen/zm_setting_item_group_spacing" android:paddingRight="0dp" android:paddingBottom="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <p021us.zoom.androidlib.widget.ZMSettingsCategory android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/panelSnoozed" android:paddingRight="@dimen/zm_setting_item_padding_right" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:layout_gravity="left|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_lbl_notification_snoozed_19898" style="@style/ZMTextView.SettingsItem.Small"/>
+                <TextView android:textColor="@color/zm_highlight" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/txtSnoozed" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginRight="@dimen/zm_setting_item_padding_right" android:text="" android:layout_weight="1" style="@style/ZMTextView.Normal.Dimmed"/>
+            </LinearLayout>
+        </p021us.zoom.androidlib.widget.ZMSettingsCategory>
+        <p021us.zoom.androidlib.widget.ZMSettingsCategory android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <p021us.zoom.androidlib.widget.ZMCheckedTextView android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/chkDndScheduled" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:checkMark="@drawable/zm_btn_toggle_default" android:text="@string/zm_lbl_notification_scheduled_19898" style="@style/ZMTextView.SettingsItem"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/panelDndFrom" android:paddingRight="@dimen/zm_setting_item_padding_right" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:layout_gravity="left|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_lbl_from_19898" style="@style/ZMTextView.SettingsItem.Small"/>
+                <TextView android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/txtTimeFrom" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginRight="@dimen/zm_setting_item_padding_right" android:text="" android:layout_weight="1" style="@style/ZMTextView.Normal.Dimmed"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/panelDndTo" android:paddingRight="@dimen/zm_setting_item_padding_right" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:layout_gravity="left|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_lbl_to_19898" style="@style/ZMTextView.SettingsItem.Small"/>
+                <TextView android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/txtTimeTo" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginRight="@dimen/zm_setting_item_padding_right" android:text="" android:layout_weight="1" style="@style/ZMTextView.Normal.Dimmed"/>
+            </LinearLayout>
+        </p021us.zoom.androidlib.widget.ZMSettingsCategory>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/zm_lbl_notification_dnd_des_19898" style="@style/ZMTextView.SettingsItemDesc"/>
+    </p021us.zoom.androidlib.widget.ZMSettingsLayout>
+</LinearLayout>

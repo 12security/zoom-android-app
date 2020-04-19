@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/zm_ui_kit_color_gray_F7F7FA" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="@dimen/zm_titlebar_height">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/zm_btn_close_whiteboards" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:src="@drawable/zm_btn_close_multi_pages_for_whiteboard" android:contentDescription="@string/zm_btn_back"/>
+        <TextView android:textSize="17sp" android:textStyle="bold" android:textColor="@color/zm_text_light_dark" android:layout_gravity="center" android:id="@+id/id_wb_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_title_whiteboards_43757"/>
+        <TextView android:textSize="17sp" android:textColor="@color/zm_ui_kit_color_blue_0E71EB" android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/zm_btn_edit_whiteboards" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:text="@string/zm_btn_edit_43757" android:layout_marginEnd="16dp"/>
+    </FrameLayout>
+    <androidx.recyclerview.widget.RecyclerView android:gravity="center" android:id="@+id/zm_show_whiteboards" android:padding="32dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:listDivider="@color/zm_transparent"/>
+    <FrameLayout android:background="@color/zm_transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="24dp">
+        <TextView android:textSize="15sp" android:textColor="@color/zm_gray_8" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_tips_whiteboards_43757"/>
+    </FrameLayout>
+</LinearLayout>

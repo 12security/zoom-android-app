@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout android:gravity="center_vertical" android:id="@+id/panelTitleBar" android:layout_width="match_parent" android:layout_height="@dimen/zm_pt_titlebar_height" app:zm_leftButton="@+id/btnBack" app:zm_rightButton="@+id/viewRight" app:zm_title="@+id/txtTitle" style="@style/ZMTitleBar">
+        <Button android:id="@+id/btnBack" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ZMBackButton"/>
+        <View android:id="@+id/viewRight" android:layout_width="40dp" android:layout_height="match_parent"/>
+        <p021us.zoom.androidlib.widget.ZMDynTextSizeTextView android:gravity="center_horizontal" android:id="@+id/txtTitle" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_lbl_phone_number_19993" style="@style/ZMTextView.Title"/>
+    </p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+    <ScrollView android:id="@+id/panelOptions" android:background="@drawable/zm_window_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+        <p021us.zoom.androidlib.widget.ZMSettingsLayout android:orientation="vertical" android:paddingLeft="0dp" android:paddingTop="0dp" android:paddingRight="0dp" android:paddingBottom="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <p021us.zoom.androidlib.widget.ZMSettingsCategory android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_setting_item_group_spacing">
+                <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/btnSelectCountryCode" android:paddingRight="@dimen/zm_setting_item_padding_right" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="1">
+                    <TextView android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/txtCountryCode" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="0dp" android:layout_height="wrap_content" android:text="United States(+1)" android:layout_weight="1" style="@style/ZMTextView.SettingsItem"/>
+                    <ImageView android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_next_arrow"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:paddingLeft="@dimen/zm_setting_item_padding_left" android:paddingRight="@dimen/zm_setting_item_padding_right" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <EditText android:id="@+id/edtNumber" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/zm_hint_your_phone_number_41171" android:ems="10" android:singleLine="true" android:maxLength="32" android:inputType="phone" style="@style/ZMEditText.SettingsItem">
+                        <requestFocus/>
+                    </EditText>
+                </LinearLayout>
+            </p021us.zoom.androidlib.widget.ZMSettingsCategory>
+            <Button android:id="@+id/btnSave" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="@dimen/zm_setting_item_group_spacing" android:layout_marginRight="30dp" android:text="@string/zm_btn_save" style="@style/ZMButton.HappyPath"/>
+        </p021us.zoom.androidlib.widget.ZMSettingsLayout>
+    </ScrollView>
+</LinearLayout>

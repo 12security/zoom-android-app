@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/zm_device_list_item_selector" android:paddingLeft="@dimen/zm_padding_normal" android:paddingTop="@dimen/zm_padding_medium" android:paddingRight="@dimen/zm_padding_normal" android:paddingBottom="@dimen/zm_padding_medium" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textColor="@color/zm_ui_kit_color_black_232333" android:ellipsize="end" android:id="@+id/txtTopic" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Blue Jeans Parrot Demo" android:singleLine="true" style="@style/ZMTextView.Medium"/>
+</RelativeLayout>

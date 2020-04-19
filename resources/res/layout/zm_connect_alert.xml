@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:background="@drawable/zm_notification_background" android:paddingLeft="10dp" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_mm_ic_network_unavailable"/>
+        <TextView android:id="@+id/txtNetworkAlert" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="" android:layout_weight="1" style="@style/ZMTextView.Medium.OnLight"/>
+        <ImageView android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_next_arrow_on_notification"/>
+    </LinearLayout>
+    <ImageView android:background="@drawable/zm_list_divider" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

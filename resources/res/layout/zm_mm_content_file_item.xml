@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:padding="10dp" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.zipow.videobox.view.ZMGifView android:id="@+id/imgFileLogo" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginTop="5dp" android:src="@drawable/zm_ic_filetype_image" android:scaleType="centerCrop"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_weight="1">
+        <TextView android:id="@+id/txtFileName" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="File Name" android:singleLine="true" style="@style/UIKitTextView.CellTitle"/>
+        <TextView android:id="@+id/txtFileOwner" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="File owner" android:singleLine="true" style="@style/UIKitTextView.SecondaryText.Small.Dimmed"/>
+        <TextView android:id="@+id/txtFileGroups" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="shared in Test Group" style="@style/UIKitTextView.SecondaryText.Small.Dimmed"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/panelTranslate" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/imgPendingType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_mm_content_upload"/>
+            <TextView android:id="@+id/txtTranslateSpeed" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" style="@style/UIKitTextView.SecondaryText.Small.Dimmed"/>
+        </LinearLayout>
+        <ProgressBar android:id="@+id/progressBarPending" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="100" style="@style/PollingPercentBar"/>
+    </LinearLayout>
+    <Button android:id="@+id/btnCancel" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/zm_btn_cancel" style="@style/ZMButton.NoBackground"/>
+    <ImageView android:id="@+id/imgShare" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_ic_share_to" android:contentDescription="@string/zm_description_share"/>
+</LinearLayout>

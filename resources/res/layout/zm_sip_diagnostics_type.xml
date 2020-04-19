@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/zm_window_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout android:id="@+id/panelTitleBar" android:layout_width="match_parent" android:layout_height="@dimen/zm_pt_titlebar_height" app:zm_leftButton="@+id/btnBack" app:zm_rightButton="@+id/btnDiagnoistic" app:zm_title="@+id/txtTitle" style="@style/ZMTitleBar">
+        <Button android:id="@+id/btnBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_btn_cancel" style="@style/ZMButton.TitleBar"/>
+        <Button android:enabled="false" android:id="@+id/btnDiagnoistic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_btn_next" style="@style/ZMButton.TitleBar"/>
+        <p021us.zoom.androidlib.widget.ZMDynTextSizeTextView android:gravity="center_horizontal" android:id="@+id/txtTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_sip_send_log_title_150295" style="@style/ZMTextView.Title"/>
+    </p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+    <ScrollView android:id="@+id/sv_content" android:background="@drawable/zm_window_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="@string/zm_sip_send_log_problem_type_150295" style="@style/ZMTextView.SettingsItemDesc"/>
+            <p021us.zoom.androidlib.widget.ZMSettingsLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <p021us.zoom.androidlib.widget.ZMSettingsCategory android:orientation="vertical" android:id="@+id/panelReason" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/optMeeting" android:paddingTop="2dp" android:paddingBottom="2dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/tvMeeting" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/zm_sip_send_log_feature_meeting_114606" android:layout_weight="1" style="@style/UIKitTextView.SettingsItem"/>
+                        <ImageView android:id="@+id/imgMeeting" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/zm_setting_item_padding_right" android:src="@drawable/zm_group_type_select" android:contentDescription="@string/zm_accessibility_icon_item_selected_19247"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/optPhone" android:paddingTop="2dp" android:paddingBottom="2dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/tvPhone" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/zm_sip_send_log_feature_phone_114606" android:layout_weight="1" style="@style/UIKitTextView.SettingsItem"/>
+                        <ImageView android:id="@+id/imgPhone" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/zm_setting_item_padding_right" android:src="@drawable/zm_group_type_select" android:contentDescription="@string/zm_accessibility_icon_item_selected_19247"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/optChat" android:paddingTop="2dp" android:paddingBottom="2dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/tvChat" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/zm_sip_send_log_feature_chat_114606" android:layout_weight="1" style="@style/UIKitTextView.SettingsItem"/>
+                        <ImageView android:id="@+id/imgChat" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/zm_setting_item_padding_right" android:src="@drawable/zm_group_type_select" android:contentDescription="@string/zm_accessibility_icon_item_selected_19247"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/optWebinar" android:paddingTop="2dp" android:paddingBottom="2dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/tvWebinar" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/zm_sip_send_log_feature_webinar_114606" android:layout_weight="1" style="@style/UIKitTextView.SettingsItem"/>
+                        <ImageView android:id="@+id/imgWebinar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/zm_setting_item_padding_right" android:src="@drawable/zm_group_type_select" android:contentDescription="@string/zm_accessibility_icon_item_selected_19247"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/optOthers" android:paddingTop="2dp" android:paddingBottom="2dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/tvOthers" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/zm_sip_send_log_opt_others_101987" android:layout_weight="1" style="@style/UIKitTextView.SettingsItem"/>
+                        <ImageView android:id="@+id/imgOthers" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/zm_setting_item_padding_right" android:src="@drawable/zm_group_type_select" android:contentDescription="@string/zm_accessibility_icon_item_selected_19247"/>
+                    </LinearLayout>
+                </p021us.zoom.androidlib.widget.ZMSettingsCategory>
+            </p021us.zoom.androidlib.widget.ZMSettingsLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

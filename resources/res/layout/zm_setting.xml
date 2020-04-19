@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/zm_window_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/panelTitleBar" android:layout_width="match_parent" android:layout_height="@dimen/zm_pt_titlebar_height" style="@style/ZMTitleBar.Dark">
+        <Button android:id="@+id/btnBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_btn_back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/ZMBackButton"/>
+        <TextView android:gravity="center_horizontal" android:id="@+id/txtTitle" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_title_setting" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/ZMTextView.Title.OnDark"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <ScrollView android:id="@+id/panelOptions" android:background="@drawable/zm_window_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+            <p021us.zoom.androidlib.widget.ZMSettingsLayout android:orientation="vertical" android:paddingLeft="0dp" android:paddingTop="@dimen/zm_setting_item_group_spacing" android:paddingRight="0dp" android:paddingBottom="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <p021us.zoom.androidlib.widget.ZMSettingsCategory android:orientation="vertical" android:id="@+id/panelProfile" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/optionMMProfile" android:paddingLeft="@dimen/zm_setting_item_padding_left" android:paddingTop="@dimen/zm_setting_item_padding_top" android:paddingRight="@dimen/zm_setting_item_padding_right" android:paddingBottom="@dimen/zm_setting_item_padding_bottom" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="46dp">
+                        <com.zipow.videobox.view.AvatarView android:id="@+id/avatarView" android:duplicateParentState="true" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginRight="10dp" app:zm_cornerRadiusRatio="0.32"/>
+                        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                            <com.zipow.videobox.view.PListNameRoleLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <TextView android:ellipsize="end" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/txtDisplayName" android:background="@null" android:paddingRight="8dp" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/UIKitTextView.LargeTitle"/>
+                                <TextView android:textSize="@dimen/zm_ui_kit_text_size_13sp" android:textStyle="bold" android:layout_gravity="center_vertical" android:id="@+id/txtUserType" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                            </com.zipow.videobox.view.PListNameRoleLayout>
+                            <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/optionAccountEmail" android:focusable="false" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <ImageView android:id="@+id/imgAccountType" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/zm_ic_setting_zoom"/>
+                                <TextView android:ellipsize="end" android:id="@+id/txtEmail" android:background="@null" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="" android:singleLine="true" android:layout_weight="1" style="@style/UIKitTextView.PrimaryText.Normal.Dimmed"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <ImageView android:id="@+id/imgIndicatorSetProfile" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_ic_indicator_new"/>
+                        <ImageView android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_next_arrow"/>
+                    </LinearLayout>
+                </p021us.zoom.androidlib.widget.ZMSettingsCategory>
+                <p021us.zoom.androidlib.widget.ZMSettingsCategory android:orientation="vertical" android:id="@+id/panelPhoneNumber" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/optionPhoneNumber" android:paddingRight="@dimen/zm_setting_item_padding_right" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="1">
+                        <TextView android:gravity="left" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/zm_lbl_share_category_contact" android:layout_weight="1" style="@style/UIKitTextView.SettingsItem"/>
+                        <ImageView android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_next_arrow"/>
+                    </LinearLayout>
+                </p021us.zoom.androidlib.widget.ZMSettingsCategory>
+                <p021us.zoom.androidlib.widget.ZMSettingsCategory android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/btnMeeting" android:paddingRight="@dimen/zm_setting_item_padding_right" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="1">
+                        <TextView android:gravity="left" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/zm_mm_setting_meeting" android:layout_weight="1" style="@style/UIKitTextView.SettingsItem"/>
+                        <ImageView android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_next_arrow"/>
+                    </LinearLayout>
+                </p021us.zoom.androidlib.widget.ZMSettingsCategory>
+                <p021us.zoom.androidlib.widget.ZMSettingsCategory android:orientation="vertical" android:id="@+id/panelChats" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/btnChats" android:paddingRight="@dimen/zm_setting_item_padding_right" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="1">
+                        <TextView android:gravity="left" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/zm_mm_setting_messenger_59554" android:layout_weight="1" style="@style/UIKitTextView.SettingsItem"/>
+                        <ImageView android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_next_arrow"/>
+                    </LinearLayout>
+                </p021us.zoom.androidlib.widget.ZMSettingsCategory>
+                <p021us.zoom.androidlib.widget.ZMSettingsCategory android:orientation="vertical" android:id="@+id/panelIntergreatedPhone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/optionIntergreatedPhone" android:paddingRight="@dimen/zm_setting_item_padding_right" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="1">
+                        <TextView android:gravity="left" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/zm_title_intergreated_phone_67420" android:layout_weight="1" style="@style/UIKitTextView.SettingsItem"/>
+                        <ImageView android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_next_arrow"/>
+                    </LinearLayout>
+                </p021us.zoom.androidlib.widget.ZMSettingsCategory>
+                <p021us.zoom.androidlib.widget.ZMSettingsCategory android:orientation="vertical" android:id="@+id/panelAbout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/btnAbout" android:paddingRight="@dimen/zm_setting_item_padding_right" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="1">
+                        <TextView android:gravity="left" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/zm_title_setting_about_86526" android:layout_weight="1" style="@style/UIKitTextView.SettingsItem"/>
+                        <ImageView android:id="@+id/imgIndicatorAbout" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="0dp" android:src="@drawable/zm_ic_indicator_new"/>
+                        <ImageView android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_next_arrow"/>
+                    </LinearLayout>
+                </p021us.zoom.androidlib.widget.ZMSettingsCategory>
+                <LinearLayout android:orientation="vertical" android:id="@+id/panelFragmentContent" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/panelCopyright" android:paddingLeft="20dp" android:paddingTop="@dimen/zm_setting_item_group_spacing" android:paddingRight="20dp" android:paddingBottom="10dp" android:focusable="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/txtCopyright" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_lbl_copyright" style="@style/UIKitTextView.SecondaryText.Small.Dimmed"/>
+                </LinearLayout>
+            </p021us.zoom.androidlib.widget.ZMSettingsLayout>
+        </ScrollView>
+        <ImageView android:background="@drawable/zm_ic_titlebar_shadow" android:layout_width="match_parent" android:layout_height="10dp"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/zm_pop_menu_bg" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="200dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/panelAddContact" android:background="@drawable/zm_settings_item_selector" android:paddingTop="@dimen/zm_setting_item_padding_top" android:paddingBottom="@dimen/zm_setting_item_padding_top" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/zm_lbl_add_contact" android:layout_weight="1" style="@style/ZMTextView.Medium"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/panelAddContactGroup" android:background="@drawable/zm_settings_item_selector" android:paddingTop="@dimen/zm_setting_item_padding_top" android:paddingBottom="@dimen/zm_setting_item_padding_top" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/zm_mm_lbl_create_contact_group_68451" android:layout_weight="1" style="@style/ZMTextView.Medium"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/panelAddPhoneContact" android:background="@drawable/zm_settings_item_selector" android:paddingTop="@dimen/zm_setting_item_padding_top" android:paddingBottom="@dimen/zm_setting_item_padding_top" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/zm_lbl_add_phone_contact_33300" android:layout_weight="1" style="@style/ZMTextView.Medium"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/panelNewGroup" android:background="@drawable/zm_settings_item_selector" android:paddingTop="@dimen/zm_setting_item_padding_top" android:paddingBottom="@dimen/zm_setting_item_padding_top" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/zm_mm_title_new_group_59554" android:layout_weight="1" style="@style/ZMTextView.Medium"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/panelJoinPublicGroup" android:background="@drawable/zm_settings_item_selector" android:paddingTop="@dimen/zm_setting_item_padding_top" android:paddingBottom="@dimen/zm_setting_item_padding_top" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/zm_btn_join_public_group_59554" android:layout_weight="1" style="@style/ZMTextView.Medium"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/panelAddApp" android:background="@drawable/zm_settings_item_selector" android:paddingTop="@dimen/zm_setting_item_padding_top" android:paddingBottom="@dimen/zm_setting_item_padding_top" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/zm_lbl_add_app_63798" android:layout_weight="1" style="@style/ZMTextView.Medium"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="@dimen/zm_addrbook_item_details_action_item_height">
+    <ImageView android:id="@+id/actionImg" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <TextView android:textSize="12sp" android:textColor="@color/zm_addrbook_item_details_action_text_color" android:id="@+id/actionTxt" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="@string/zm_btn_meet_109011" style="@style/ZMTextView.SettingsItem.NoPadding"/>
+</LinearLayout>

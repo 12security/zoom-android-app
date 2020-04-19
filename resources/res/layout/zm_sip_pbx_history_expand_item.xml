@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/sip_expand_cover_content" android:background="@color/zm_white" android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginRight="16dp">
+        <ImageView android:id="@+id/imgOutCall" android:visibility="invisible" android:layout_width="10dp" android:layout_height="10dp" android:layout_marginTop="8dp" android:src="@drawable/zm_unread_voicemail"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_weight="1">
+            <TextView android:textSize="@dimen/zm_ui_kit_text_size_16sp" android:textStyle="bold" android:id="@+id/txtBuddyName" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Jing" android:singleLine="true" style="@style/UIKitTextView.BuddyName.Normal"/>
+            <TextView android:textColor="@color/zm_ui_kit_color_gray_747487" android:id="@+id/txtCallNo" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="12343124" android:singleLine="true" style="@style/UIKitTextView.SecondaryText.Medium.Dimmed"/>
+            <TextView android:textColor="@color/zm_ui_kit_color_gray_747487" android:id="@+id/txtRecordStartTime" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="Records start at 8:09 AM" android:singleLine="true" style="@style/UIKitTextView.SecondaryText.Medium.Dimmed"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RelativeLayout android:gravity="center" android:id="@+id/txtCallback" android:background="@drawable/zm_sip_ellipse" android:layout_width="40dp" android:layout_height="40dp" android:contentDescription="@string/zm_sip_accessbility_callback_67408">
+                <ImageView android:duplicateParentState="true" android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/zm_sip_call_back_button"/>
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:id="@+id/btnAudioShare" android:background="@drawable/zm_sip_ellipse" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="16dp" android:contentDescription="@string/zm_sip_accessbility_share_voicemail_67408">
+                <ImageView android:layout_width="16dp" android:layout_height="wrap_content" android:src="@drawable/zm_sip_btn_audio_share"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/panelScript" android:focusable="true" android:focusableInTouchMode="false" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="11dp">
+        <LinearLayout android:orientation="vertical" android:id="@+id/panelScriptContent" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:background="@color/zm_line_divider" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15sp" android:textColor="#747487" android:id="@+id/transcript" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="32dp" android:layout_marginTop="12dp" android:layout_marginRight="24dp" android:text="transcript" android:lineSpacingExtra="2sp" android:textIsSelectable="true"/>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/seeMore" android:background="#ffffff" android:layout_width="wrap_content" android:layout_height="20dp" android:layout_marginRight="24dp" android:layout_alignBottom="@+id/transcript" android:layout_alignParentRight="true" android:layout_alignParentEnd="true">
+                    <TextView android:textSize="15sp" android:textColor="@color/zm_ui_kit_color_gray_747487" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="..."/>
+                    <TextView android:textSize="15sp" android:textColor="#0072eb" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/zm_sip_see_more_61381"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:background="#ededf4" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="18dp"/>
+        </LinearLayout>
+        <RelativeLayout android:id="@+id/panelTranscriptLoading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="130dp">
+            <View android:background="#ededf4" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <TextView android:textSize="16sp" android:textColor="@color/zm_ui_kit_color_gray_8E8E93" android:id="@+id/tvTranscriptLoading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_sip_transcribe_processing_61402" android:layout_centerInParent="true" android:lineSpacingExtra="2sp"/>
+            <ProgressBar android:id="@+id/pbTranscriptLoadingProgress" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="5dp" android:indeterminateDrawable="@drawable/zm_sip_transcript_loading" android:layout_toRightOf="@+id/tvTranscriptLoading" android:layout_centerVertical="true"/>
+            <View android:background="@color/zm_line_divider" android:layout_width="match_parent" android:layout_height="1dp" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+    </FrameLayout>
+    <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="32dp" android:layout_marginTop="16dp" android:layout_marginRight="16dp">
+        <com.zipow.videobox.view.sip.ZMSeekBar android:id="@+id/seekAudioPlayer2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp"/>
+        <SeekBar android:id="@+id/seekAudioPlayer" android:paddingLeft="7dp" android:paddingRight="7dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:maxHeight="2dp" android:max="100" android:progress="0" android:progressDrawable="@drawable/zm_sip_audio_player_seekbar" android:minHeight="2dp" android:thumb="@drawable/zm_sip_audio_player_seekbar_thumbsmall_normal" android:layout_below="@+id/seekAudioPlayer2" style="?android:attr/seekBarStyle"/>
+        <TextView android:textColor="@color/zm_ui_kit_color_gray_747487" android:id="@+id/txtAudioPlayerCurrent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="00:30" android:layout_below="@+id/seekAudioPlayer" android:layout_alignLeft="@+id/seekAudioPlayer" style="@style/ZMTextView.Small.OnLight"/>
+        <TextView android:textColor="@color/zm_ui_kit_color_gray_747487" android:id="@+id/txtAudioPlayerTotal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="00:30" android:layout_below="@+id/seekAudioPlayer" android:layout_alignParentRight="true" style="@style/ZMTextView.Small.OnLight"/>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="32dp" android:layout_marginTop="11dp" android:layout_marginRight="16dp">
+        <com.zipow.videobox.view.sip.AudioPlayerControllerButton android:id="@+id/btnAudioPlayer" android:padding="3dp" android:layout_width="20dp" android:layout_height="20dp" android:layout_centerVertical="true"/>
+        <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="#0e71eb" android:gravity="center" android:id="@+id/txtSpeakerStatus" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="20dp" android:text="@string/zm_lbl_speaker" android:layout_centerInParent="true"/>
+        <ImageView android:id="@+id/txtDelete" android:layout_width="wrap_content" android:layout_height="18dp" android:src="@drawable/zm_sip_delete" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/zm_accessibility_sip_call_delete_item"/>
+    </RelativeLayout>
+    <ImageView android:id="@+id/imgDeleteCall" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

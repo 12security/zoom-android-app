@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/scrollView1" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="top|left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/content" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.zipow.videobox.view.AvatarView android:id="@+id/avatarView" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="0dp" android:layout_marginTop="0dp" android:layout_marginRight="5dp" android:layout_marginBottom="5dp"/>
+        <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:orientation="vertical" android:id="@+id/linearLayout1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:id="@+id/txtScreenName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Reed Yang" style="@style/ZMTextView.Large.OnDark"/>
+            <TextView android:id="@+id/txtMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Hello Zoom! Hello Zoom! Hello Zoom! Hello Zoom! Hello Zoom! Hello Zoom! Hello Zoom! " style="@style/ZMTextView.Medium.OnDark"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="bottom|center_vertical|center_horizontal|center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <p021us.zoom.androidlib.widget.ZMLinearLayoutButton android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/linkGoogleLogin" android:paddingLeft="@dimen/zm_padding_btn" android:paddingRight="@dimen/zm_padding_btn" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/zm_margin_login_btn">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_login_google" android:contentDescription=""/>
+            <TextView android:padding="0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="@string/zm_login_with_google" style="@style/ZMTextView.OnLight.Small.DeepGrey"/>
+        </p021us.zoom.androidlib.widget.ZMLinearLayoutButton>
+        <p021us.zoom.androidlib.widget.ZMLinearLayoutButton android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/linkFacebookLogin" android:paddingLeft="@dimen/zm_padding_btn" android:paddingRight="@dimen/zm_padding_btn" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_login_facebook" android:contentDescription=""/>
+            <TextView android:padding="0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="@string/zm_login_with_facebook" style="@style/ZMTextView.OnLight.Small.DeepGrey"/>
+        </p021us.zoom.androidlib.widget.ZMLinearLayoutButton>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/zm_black" android:paddingLeft="1dp" android:paddingRight="1dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <p021us.zoom.androidlib.widget.TouchImageView android:id="@+id/imageview" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.zipow.videobox.view.ZMGifView android:id="@+id/gifview" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/viewPlaceHolder" android:background="@color/zm_dimmed_forground" android:focusable="false" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_image_download_error"/>
+        <TextView android:gravity="center" android:id="@+id/txtMessage" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/zm_mm_msg_download_image_failed" style="@style/ZMTextView.Normal.Dimmed"/>
+    </LinearLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@+id/progressBar1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ZMProgressBar"/>
+</FrameLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:paddingLeft="16dp" android:paddingTop="15dp" android:paddingRight="16dp" android:paddingBottom="15dp" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.zipow.videobox.view.AvatarView android:id="@+id/avatarView" android:duplicateParentState="false" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginRight="15dp" app:zm_cornerRadiusRatio="0.5"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <com.zipow.videobox.view.PListNameRoleLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textStyle="bold" android:textColor="@color/zm_status_text_light_dark" android:ellipsize="end" android:id="@+id/txtAnswerName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Beatruce Walters" android:maxLines="1" style="@style/ZMTextView.OnLight.Medium.DeepGrey"/>
+            <TextView android:textSize="11sp" android:id="@+id/txtAnswerTime" android:paddingLeft="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10:20 AM" style="@style/ZMTextView.OnLight.Small.Dimmed"/>
+        </com.zipow.videobox.view.PListNameRoleLayout>
+        <TextView android:textColor="@color/zm_status_text_light_orange" android:id="@+id/txtPrivateAnswer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_qa_msg_private_answer_41047" style="@style/ZMTextView.OnLight.Small"/>
+        <TextView android:textSize="17sp" android:id="@+id/txtAnswer" android:paddingTop="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="If you have a business or premier your customers  online using major  cards (Visa, MasterCard, and American Express) or via PayPal. " style="@style/ZMTextView.OnLight.Normal"/>
+    </LinearLayout>
+</LinearLayout>

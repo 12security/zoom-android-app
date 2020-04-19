@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:background="@drawable/zm_msg_template_action_btn_normal_bg" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:maxWidth="100dp" android:minWidth="50dp" android:singleLine="true" style="@style/UIKitButton.Small"/>

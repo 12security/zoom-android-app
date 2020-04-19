@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/zm_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/vTitleBar" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/zm_titlebar_height" app:zm_leftButton="@+id/btnSignIn" app:zm_rightButton="@+id/btnLeave" app:zm_title="@+id/txtMeetingNumber" style="@style/ZMTitleBar.Light">
+        <Button android:textColor="@color/zm_ui_kit_normal_blue_btn_text_color" android:id="@+id/btnSignIn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_btn_login" style="@style/ZMButton.TitleBar"/>
+        <Button android:id="@+id/btnLeave" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_btn_leave_meeting" style="@style/ZMButton.TitleBar.Warning"/>
+        <TextView android:layout_gravity="center_vertical" android:id="@+id/txtMeetingNumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="111-111-1111" style="@style/ZMTextView.Medium.OnLight"/>
+    </p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+    <ImageView android:background="@drawable/zm_list_divider" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/panelDescriptionView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp">
+            <TextView android:gravity="center" android:id="@+id/txtTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="Please wait, The host will let you in soon" style="@style/ZMTextView.ExtremLarge.OnLight"/>
+            <ImageView android:id="@+id/imgTitleIcon" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:src="@drawable/zm_ic_setting_zoom"/>
+            <TextView android:textSize="24sp" android:textColor="@color/zm_text_dim" android:gravity="center" android:id="@+id/meetingTopic" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/zm_msg_you_are_in_silent_mode" style="@style/ZMTextView"/>
+            <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="50dp">
+                <TextView android:gravity="left" android:id="@+id/txtDescription" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/ZMTextView.Normal.Dimmed"/>
+            </ScrollView>
+        </LinearLayout>
+        <FrameLayout android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/buttonChat" android:background="@drawable/icon_bg_waiting_room_chat" android:layout_width="75dp" android:layout_height="75dp" android:layout_marginBottom="58dp">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_waiting_room_chat" android:contentDescription="@string/zm_accessibility_waiting_room_chat_button_46304"/>
+            <TextView android:gravity="center" android:layout_gravity="top|right|center_vertical|center_horizontal|center|end" android:id="@+id/txtBubble" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:text="9" style="@style/ZMTextView.UnreadMessageCount.Small"/>
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

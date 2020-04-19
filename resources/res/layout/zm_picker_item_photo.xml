@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zipow.videobox.view.photopicker.SquareItemLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_gravity="center" android:id="@+id/iv_photo" android:background="@drawable/zm_picker_photo_bg" android:padding="1dp" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:adjustViewBounds="true"/>
+    <ImageView android:id="@+id/v_selected" android:paddingLeft="8dp" android:paddingTop="5dp" android:paddingRight="5dp" android:paddingBottom="8dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_picker_checkbox_bg" android:scaleType="centerInside" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:scaleX="0.75" android:scaleY="0.75"/>
+    <View android:id="@+id/cover" android:background="@color/zm_half_translucent_white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</com.zipow.videobox.view.photopicker.SquareItemLayout>

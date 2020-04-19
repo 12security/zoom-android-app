@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.tabs.TabLayout android:id="@+id/tablayout" android:background="@drawable/zm_top_radius_dialog_background" android:layout_width="match_parent" android:layout_height="wrap_content" app:tabIndicatorColor="@color/zm_ui_kit_color_blue_2D8CFF" app:tabMode="0" app:tabTextAppearance="@style/MyCustomTabTextAppearance" app:tabTextColor="@color/zm_ui_kit_color_black_232333"/>
+    <View android:background="@color/zm_ui_kit_color_gray_BABACC" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <p021us.zoom.androidlib.widget.ZMViewPager android:id="@+id/viewpager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

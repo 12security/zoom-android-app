@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="right" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="65dp" android:layout_marginRight="16dp">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/layoutMsgHead" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="4dp">
+            <TextView android:ellipsize="end" android:id="@+id/txtMsgLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:text="From Andy Y to Everyone" android:singleLine="true" android:layout_weight="1" style="@style/ZMTextView.ExSmall.ForInMeetingChat"/>
+            <TextView android:id="@+id/txtPrivateStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/zm_webinar_txt_private_label" style="@style/ZMTextView.Small.Warn"/>
+        </LinearLayout>
+        <TextView android:layout_gravity="right" android:id="@+id/txtMsgValue" android:background="@drawable/zm_webinar_message_out" android:duplicateParentState="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="Thisdsafdsafjoidsfdsfdsf\10fjefejdsfjeioejwoifjewoijgiojregjreoijgieoirjg " style="@style/ZMTextView.MMMessage.OnDark"/>
+    </LinearLayout>
+</LinearLayout>

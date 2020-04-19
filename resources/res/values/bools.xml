@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="abc_action_bar_embed_tabs">true</bool>
+    <bool name="abc_allow_stacked_button_bar">false</bool>
+    <bool name="abc_config_actionMenuItemAllCaps">true</bool>
+    <bool name="mtrl_btn_textappearance_all_caps">true</bool>
+    <bool name="zm_config_enable_facebook_login">true</bool>
+    <bool name="zm_config_enable_google_login">true</bool>
+    <bool name="zm_config_enable_self_ugrade">true</bool>
+    <bool name="zm_config_enable_sso_login">true</bool>
+    <bool name="zm_config_invite_by_only_action_meeting_invite">false</bool>
+    <bool name="zm_config_no_arrow_accelerator">false</bool>
+    <bool name="zm_config_no_auto_dial_in">false</bool>
+    <bool name="zm_config_no_copy_url">false</bool>
+    <bool name="zm_config_no_copyright">false</bool>
+    <bool name="zm_config_no_global_callin_link">true</bool>
+    <bool name="zm_config_no_global_callin_numbers">false</bool>
+    <bool name="zm_config_no_share_webview">false</bool>
+    <bool name="zm_config_no_uvc_camera">false</bool>
+    <bool name="zm_config_pmi_enabled">true</bool>
+    <bool name="zm_config_show_forgot_password">true</bool>
+    <bool name="zm_config_show_forgot_password_as_web_url">false</bool>
+    <bool name="zm_config_show_large_icon_in_notification_on_api21_above">false</bool>
+    <bool name="zm_config_show_signup_as_web_url">false</bool>
+    <bool name="zm_config_show_signup_on_login_screen">false</bool>
+    <bool name="zm_config_show_water_mark_on_video">false</bool>
+    <bool name="zm_config_use_4_pies_meeting_tab">false</bool>
+    <bool name="zm_config_use_zoom_login">true</bool>
+    <bool name="zm_is_large_mode">false</bool>
+    <bool name="zm_vendor_config_is_china">false</bool>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingLeft="15dp" android:paddingTop="5dp" android:paddingRight="10dp" android:paddingBottom="5dp" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/btnStart" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <TextView android:textColor="@color/zm_meetinglistitem_time_today" android:id="@+id/txtTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Today 10am" style="@style/ZMTextView.Large.OnLight"/>
+        <TextView android:textStyle="bold" android:textColor="@color/zm_meetinglistitem_topic" android:id="@+id/txtTopic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Topic: My Meeting" style="@style/ZMTextView.Normal.OnLight"/>
+        <TextView android:textSize="13sp" android:textColor="@color/zm_meetinglistitem_host" android:id="@+id/txtHost" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Host: Reed Yang"/>
+        <TextView android:textSize="13sp" android:textColor="@color/zm_meetinglistitem_id" android:id="@+id/txtMeetingNo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Meeting ID: 111-111-111"/>
+    </LinearLayout>
+    <Button android:id="@+id/btnStart" android:duplicateParentState="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="80dp" android:text="@string/zm_btn_start" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/ZMButton.Small"/>
+</RelativeLayout>

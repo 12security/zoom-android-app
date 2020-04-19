@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/zm_im_search_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/panelTitleBar" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/ZMTitleBar.Search">
+        <RelativeLayout android:id="@+id/btnBack" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignTop="@+id/panelSearchBar" android:layout_alignBottom="@+id/panelSearchBar" android:layout_alignParentLeft="true">
+            <ImageView android:duplicateParentState="true" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/zm_ic_back_blue_normal" android:layout_centerInParent="true" android:contentDescription="@string/zm_btn_back"/>
+        </RelativeLayout>
+        <com.zipow.videobox.view.ZMSearchBar android:id="@+id/panelSearchBar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:layout_toRightOf="@+id/btnBack" android:layout_centerVertical="true" app:editTextHint="@string/zm_hint_search_contacts_18680" app:imeOptions="actionDone"/>
+    </RelativeLayout>
+    <View android:background="@color/zm_im_search_shadow" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <TextView android:textSize="13sp" android:textColor="@color/zm_black_2" android:id="@+id/txtIBTips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17dp" android:layout_marginTop="12dp" android:layout_marginRight="17dp" android:layout_marginBottom="12dp" android:text="@string/zm_mm_information_barries_search_contact_115072"/>
+    <com.zipow.videobox.view.IMSearchView android:id="@+id/searchResultListView" android:background="@drawable/zm_listview_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@android:color/transparent"/>
+    <TextView android:gravity="top|center_vertical|center_horizontal|center" android:layout_gravity="center_horizontal" android:id="@+id/txtEmptyView" android:paddingTop="30dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/zm_lbl_search_result_empty" style="@style/ZMTextView.SettingsItem"/>
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#004e85" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="10dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_rc_using_fingers_for_remote_control" style="@style/ZMTextView.Large.OnDark"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="5dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <LinearLayout android:orientation="horizontal" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <ImageView android:layout_gravity="center_vertical" android:paddingRight="5dp" android:paddingBottom="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_rc_one_finger_tap"/>
+                <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_rc_one_finger_tap" style="@style/ZMTextView.Small.OnDark"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_rc_one_finger_tap_description" style="@style/ZMTextView.Small.Dimmed"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <ImageView android:layout_gravity="center_vertical" android:paddingRight="5dp" android:paddingBottom="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_rc_one_finger_double_taps"/>
+                <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_rc_one_finger_double_taps" style="@style/ZMTextView.Small.OnDark"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_rc_one_finger_double_taps_description" style="@style/ZMTextView.Small.Dimmed"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <ImageView android:layout_gravity="center_vertical" android:paddingRight="5dp" android:paddingBottom="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_rc_one_finger_long_tap"/>
+                <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_rc_one_long_tap" style="@style/ZMTextView.Small.OnDark"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_rc_one_long_tap_description" style="@style/ZMTextView.Small.Dimmed"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:paddingLeft="5dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <LinearLayout android:orientation="horizontal" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <ImageView android:layout_gravity="center_vertical" android:paddingRight="5dp" android:paddingBottom="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_rc_two_fingers_scroll"/>
+                <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_rc_two_fingers_scroll" style="@style/ZMTextView.Small.OnDark"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_rc_two_fingers_scroll_description" style="@style/ZMTextView.Small.Dimmed"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <ImageView android:layout_gravity="center_vertical" android:paddingRight="5dp" android:paddingBottom="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_rc_two_fingers_pinch"/>
+                <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_rc_two_fingers_pinch" style="@style/ZMTextView.Small.OnDark"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_rc_two_fingers_pinch_description" style="@style/ZMTextView.Small.Dimmed"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <ImageView android:layout_gravity="center_vertical" android:paddingRight="5dp" android:paddingBottom="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_rc_mouse_icon"/>
+                <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_rc_mouse_icon" style="@style/ZMTextView.Small.OnDark"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_rc_mouse_icon_description" style="@style/ZMTextView.Small.Dimmed"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

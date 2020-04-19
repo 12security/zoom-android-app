@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="1">
+    <p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout android:id="@+id/panelTitleBar" android:layout_width="match_parent" android:layout_height="wrap_content" app:zm_leftButton="@+id/btnBack" app:zm_rightButton="@+id/viewRight" app:zm_title="@+id/txtTitle" style="@style/ZMTitleBar">
+        <Button android:id="@+id/btnBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_btn_back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/ZMBackButton"/>
+        <View android:id="@+id/viewRight" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/llTitle" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+            <TextView android:gravity="center_horizontal" android:id="@+id/txtCountryName" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_btn_dial_in" style="@style/ZMTextView.Title"/>
+            <ImageView android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_next_arrow" android:rotation="90"/>
+        </LinearLayout>
+    </p021us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="0dp" android:paddingTop="0dp" android:paddingRight="0dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_gravity="left" android:orientation="vertical" android:id="@+id/panelUseOwnPhoneTip" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+                <TextView android:textColor="@color/zm_gray_8" android:id="@+id/txtUseOwnPhoneTip" android:paddingLeft="7dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_call_in_use_own_phone_number_129757" style="@style/ZMTextView.Normal"/>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="left" android:orientation="vertical" android:id="@+id/panelTeleConfInfo" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+                <TextView android:textStyle="bold" android:textColor="@color/zm_gray_8" android:id="@+id/txtDialNumberTitle" android:paddingLeft="7dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:text="@string/zm_lbl_dial_select_number_18332" style="@style/ZMTextView.Medium"/>
+                <p021us.zoom.androidlib.widget.ZMSettingsCategory android:orientation="vertical" android:id="@+id/dialNumberList" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/zm_setting_item_padding_left" android:paddingTop="20dp" android:paddingRight="@dimen/zm_setting_item_padding_right" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_lbl_dial_meeting_desc_18332" style="@style/ZMTextView.Normal.Dimmed"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/zm_lbl_join_meeting_desc_18332" style="@style/ZMTextView.Normal.Dimmed"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <p021us.zoom.androidlib.widget.ZMSettingsCategory android:orientation="vertical" android:id="@+id/panelMeetingInfo" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

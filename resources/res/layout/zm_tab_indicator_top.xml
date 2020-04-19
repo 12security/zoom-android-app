@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/zm_tab_indicator_top_first" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="40dp">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/imageText" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:layout_gravity="center" android:id="@+id/icon" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@android:drawable/ic_menu_camera"/>
+        <TextView android:gravity="center_horizontal" android:layout_gravity="center" android:id="@+id/title" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Title" style="@style/ZMTextView.TabLabel.Top"/>
+    </LinearLayout>
+    <TextView android:gravity="center" android:id="@+id/txtNoteBubble" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-10dp" android:layout_marginTop="0dp" android:text="9+" android:layout_toRightOf="@+id/imageText" style="@style/ZMTextView.UnreadMessageCount.Small"/>
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="@dimen/zm_item_height_normal">
+    <TextView android:textSize="@dimen/zm_ui_kit_text_size_17sp" android:textColor="@color/zm_black" android:id="@+id/txtDomain" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/zm_margin_normal" android:layout_toLeftOf="@+id/ivDelete" android:layout_centerVertical="true"/>
+    <ImageView android:id="@+id/ivDelete" android:paddingLeft="@dimen/zm_padding_small" android:paddingTop="@dimen/zm_padding_medium" android:paddingRight="@dimen/zm_padding_normal" android:paddingBottom="@dimen/zm_padding_medium" android:layout_width="@dimen/zm_item_height_normal" android:layout_height="@dimen/zm_item_height_normal" android:src="@drawable/zm_ic_delete" android:layout_alignParentRight="true" android:contentDescription="@string/zm_btn_delete"/>
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/zm_mm_giphy_preview_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="6dp" android:layout_marginBottom="6dp">
+        <TextView android:id="@+id/giphy_preview_btn_back" android:background="@drawable/zm_btn_giphy_back_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp"/>
+        <EditText android:textColor="@color/zm_black" android:textColorHint="@color/zm_mm_giphy_preview_search_hint" android:gravity="center_vertical" android:id="@+id/giphy_preview_search_bar" android:background="@drawable/zm_edit_giphy_prevew_search_bg" android:paddingLeft="11dp" android:layout_width="0px" android:layout_height="30dp" android:layout_marginLeft="16dp" android:layout_marginRight="10dp" android:hint="@string/zm_mm_giphy_preview_search_hint_22379" android:drawableLeft="@drawable/zm_mm_giphy_preview_search_icon" android:drawablePadding="10dp" android:layout_weight="1" android:inputType="text" android:imeOptions="actionSearch" style="@style/ZMEditText.GlobalSearch"/>
+        <TextView android:textSize="14sp" android:textColor="@color/zm_im_search_text_color" android:id="@+id/giphy_preview_search_btn" android:padding="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="@string/zm_btn_search"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/giphy_preview_linear" android:layout_width="match_parent" android:layout_height="match_parent">
+        <GridView android:id="@+id/giphy_preview_gridView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@drawable/zm_transparent" android:horizontalSpacing="5dp" android:verticalSpacing="5dp" android:numColumns="4"/>
+        <LinearLayout android:gravity="center" android:id="@+id/giphy_preview_emptyView" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ProgressBar android:id="@+id/giphy_preview_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ZMProgressBar.Small"/>
+            <TextView android:textColor="@color/zm_gray_3" android:id="@+id/giphy_preview_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_mm_giphy_preview_no_match_22379"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

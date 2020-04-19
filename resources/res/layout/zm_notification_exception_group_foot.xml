@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <p021us.zoom.androidlib.widget.ZMSettingsLayout android:orientation="vertical" android:paddingLeft="0dp" android:paddingTop="@dimen/zm_setting_item_group_spacing" android:paddingRight="0dp" android:paddingBottom="@dimen/zm_setting_item_group_spacing" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <p021us.zoom.androidlib.widget.ZMSettingsCategory android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/paneResetAll" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="@drawable/zm_button_text_color" android:gravity="left|center_vertical|center_horizontal|center" android:background="@color/zm_white" android:paddingLeft="@dimen/zm_setting_item_padding_left" android:paddingRight="@dimen/zm_setting_item_padding_right" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/zm_lbl_notification_reset_exception_group_19898" style="@style/ZMButton.SettingsItem"/>
+            </RelativeLayout>
+        </p021us.zoom.androidlib.widget.ZMSettingsCategory>
+    </p021us.zoom.androidlib.widget.ZMSettingsLayout>
+</LinearLayout>

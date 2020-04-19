@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/content" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:paddingTop="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/zm_ui_kit_page_left_padding" android:layout_marginRight="@dimen/zm_ui_kit_page_left_padding">
+        <TextView android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_sip_title_my_caller_id_61381" style="@style/UIKitTextView.DialogTitle"/>
+        <TextView android:gravity="right" android:id="@+id/tv_subtitle" android:paddingBottom="6dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" style="@style/UIKitTextView.PrimaryText.Normal.Dimmed"/>
+    </LinearLayout>
+    <View android:id="@+id/line1" android:layout_marginTop="20dp" style="@style/ZMLightLine"/>
+    <ListView android:id="@+id/listview" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="@dimen/zm_ui_kit_page_left_padding" android:layout_marginRight="@dimen/zm_ui_kit_page_left_padding" android:listSelector="@drawable/zm_picker_material_item_bg" android:divider="@drawable/zm_list_divider" android:dividerHeight="1px" android:layout_weight="1"/>
+    <View android:id="@+id/line2" style="@style/ZMLightLine"/>
+    <TextView android:gravity="center" android:id="@+id/btn_close" android:background="@drawable/zm_ui_kit_big_round_dialog_bottom_btn_transparent_selector" android:paddingTop="20dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/zm_btn_close" android:contentDescription="@string/zm_btn_close" style="@style/UIKitTextView.LargeTitle.Clickable"/>
+</LinearLayout>

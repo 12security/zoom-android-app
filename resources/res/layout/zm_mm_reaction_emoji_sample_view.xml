@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginLeft="8dp" android:layout_marginRight="8dp">
+    <androidx.cardview.widget.CardView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:elevation="4dp" app:cardBackgroundColor="@color/zm_white" app:cardCornerRadius="16dp">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp">
+            <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="22sp" android:textColor="@color/zm_ui_kit_color_black_232333" android:gravity="center" android:id="@+id/emoji1" android:background="@drawable/zm_btn_reaction_emoji_sample" android:layout_width="44dp" android:layout_height="44dp"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="22sp" android:textColor="@color/zm_ui_kit_color_black_232333" android:gravity="center" android:id="@+id/emoji2" android:background="@drawable/zm_btn_reaction_emoji_sample" android:layout_width="44dp" android:layout_height="44dp"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="22sp" android:textColor="@color/zm_ui_kit_color_black_232333" android:gravity="center" android:id="@+id/emoji3" android:background="@drawable/zm_btn_reaction_emoji_sample" android:layout_width="44dp" android:layout_height="44dp"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="22sp" android:textColor="@color/zm_ui_kit_color_black_232333" android:gravity="center" android:id="@+id/emoji4" android:background="@drawable/zm_btn_reaction_emoji_sample" android:layout_width="44dp" android:layout_height="44dp"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="22sp" android:textColor="@color/zm_ui_kit_color_black_232333" android:gravity="center" android:id="@+id/emoji5" android:background="@drawable/zm_btn_reaction_emoji_sample" android:layout_width="44dp" android:layout_height="44dp"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="22sp" android:textColor="@color/zm_ui_kit_color_black_232333" android:gravity="center" android:id="@+id/emoji6" android:background="@drawable/zm_btn_reaction_emoji_sample" android:layout_width="44dp" android:layout_height="44dp"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:gravity="center" android:id="@+id/btn_more" android:padding="5dp" android:layout_width="44dp" android:layout_height="44dp" android:src="@drawable/zm_ic_more_reaction_normal" android:contentDescription="@string/zm_accessibility_more_reaction_88133"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

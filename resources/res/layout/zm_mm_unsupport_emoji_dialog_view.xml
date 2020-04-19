@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:minWidth="300dp" android:minHeight="100dp">
+    <TextView android:layout_gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/zm_lbl_emoji_download_emoji_23626" style="@style/ZMTextView.Large.OnLight"/>
+    <CheckBox android:id="@+id/chkNoMoreShow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:button="@drawable/zm_btn_check_default" android:text="@string/zm_lbl_do_not_remind_me_23626" android:drawablePadding="5dp" style="@style/ZMTextView.Normal.DialogMsg"/>
+</LinearLayout>

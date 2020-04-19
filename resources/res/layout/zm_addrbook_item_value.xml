@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/zm_list_selector_half_transparent_background" android:paddingLeft="32dp" android:paddingRight="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:id="@+id/value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="165dp" style="@style/ZMTextView.AddrBookDetails.Black"/>
+    </LinearLayout>
+</LinearLayout>
